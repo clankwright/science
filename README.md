@@ -20,39 +20,11 @@ See the [research note](https://github.com/toadlyBroodle/science/blob/main/astro
 
 ### [Longevity Research — Knowledge Tree](https://github.com/toadlyBroodle/science/tree/main/longevity)
 
-A Karpathy-style markdown knowledge base of computational entry points
-into longevity / reverse-aging research, with TF-IDF + wikilink-graph
-indexing and a linter to keep it consistent.
+Markdown-source knowledge base of computational entry points into
+longevity and reverse-aging research. 40 curated sources, 32 topics,
+TF-IDF + wikilink graph index, license-aware download pipeline.
 
-- **Coverage:** 40 curated sources, 32 topics, 1 tier-ranked analysis
-- **Pipeline:** `download.py` (HTML/PDF) → `convert.py` (markdown) →
-  `index.py` (TF-IDF + graph) → `lint.py` (consistency checks)
-- **Licensing:** every source tagged in `sources.json`; auto-generated
-  [`LICENSES.md`](LICENSES.md) classifies the 40 sources by
-  redistributability
-
-Quick start:
-
-```bash
-cd longevity
-pip install requests beautifulsoup4 markdownify trafilatura scikit-learn lxml
-sudo apt-get install -y poppler-utils   # for pdftotext
-
-# Build the index and lint the wiki (no network needed)
-python3 scripts/index.py
-python3 scripts/lint.py
-
-# Download primary sources (needs unrestricted HTTP egress) and convert
-python3 scripts/download.py
-python3 scripts/convert.py
-
-# Refresh per-source license tags + regenerate LICENSES.md
-python3 scripts/licenses.py all
-```
-
-Read the wiki: start at [`longevity/wiki/index.md`](longevity/wiki/index.md)
-or [`longevity/wiki/analysis/promising-reverse-aging.md`](longevity/wiki/analysis/promising-reverse-aging.md).
-Full documentation: [`longevity/README.md`](longevity/README.md).
+See [`longevity/README.md`](longevity/README.md) for usage.
 
 ## Structure
 
@@ -64,7 +36,7 @@ science/
 │       ├── research_note_tic22888126_revised.md
 │       └── figs/
 ├── longevity/
-│   ├── README.md            # full pipeline + querying docs
+│   ├── README.md            # full pipeline + usage docs
 │   ├── sources.json         # 40-source manifest
 │   ├── scripts/             # download, convert, index, lint, licenses
 │   └── wiki/                # papers/, topics/, analysis/, index.md
