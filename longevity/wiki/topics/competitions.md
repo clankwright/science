@@ -9,6 +9,8 @@ topic: competitions
 - [[papers/biomarkers-aging-challenge]] — Biomarkers of Aging Consortium
   (Synapse). Phase 3 ($100k, healthspan / multi-morbidity) is the
   current opportunity.
+- [[papers/xprize-healthspan]] — XPRIZE Healthspan, $101M over 7 years,
+  biomarker-measured function restoration.
 
 ## Benchmarks (not prize competitions)
 - [[papers/computagebench]] — 66 harmonized methylation datasets; drop-in

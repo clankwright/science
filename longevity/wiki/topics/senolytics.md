@@ -13,6 +13,13 @@ Compounds that selectively kill senescent cells.
   training positives
 - [[papers/senolytic-predictor-2025]] — 2025 MDPI follow-up with
   MoLFormer embeddings; 98 DrugBank + 714 TCMbank candidates
+- [[papers/agextend-2025]] — broader geroprotector screen also surfaces
+  senolytic candidates
+
+## Human clinical trials
+- [[papers/senolytic-mci-ebiomed-2025]] — STAMINA D+Q in MCI + slow gait
+- [[papers/senolytic-methylation-2024]] — D+Q and D+Q+F vs. methylation
+  clocks
 
 ## Open problems
 - Transfer from small labelled sets to foundation-model embeddings

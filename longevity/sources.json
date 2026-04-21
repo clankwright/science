@@ -228,6 +228,253 @@
       "topics": ["review", "machine-learning", "aging-research"],
       "kind": "paper",
       "access": "open"
+    },
+    {
+      "id": "shift-sb000-2025",
+      "title": "A single factor for safer cellular rejuvenation (SB000, Shift Bioscience)",
+      "pdf_url": [
+        "https://www.biorxiv.org/content/10.1101/2025.06.05.657370v1.full.pdf"
+      ],
+      "url": "https://www.biorxiv.org/content/10.1101/2025.06.05.657370v1.full",
+      "topics": ["partial-reprogramming", "reprogramming", "machine-learning", "aging-clocks"],
+      "kind": "paper",
+      "access": "open"
+    },
+    {
+      "id": "clockbase-agent-2025",
+      "title": "Autonomous AI Agents Discover Aging Interventions from Millions of Molecular Profiles (ClockBase Agent)",
+      "pdf_url": [
+        "https://www.biorxiv.org/content/10.1101/2023.02.28.530532v2.full.pdf"
+      ],
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12667862/",
+      "alt_url": [
+        "https://www.biorxiv.org/content/10.1101/2023.02.28.530532v2"
+      ],
+      "topics": ["machine-learning", "interventions", "aging-clocks", "drug-repurposing", "benchmarks"],
+      "kind": "paper",
+      "access": "open"
+    },
+    {
+      "id": "singular-rejuv-atlas-2024",
+      "title": "The cell rejuvenation atlas: leveraging network biology to identify master regulators of rejuvenation strategies (SINGULAR)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11424581/",
+      "alt_url": [
+        "https://www.aging-us.com/article/206105/text"
+      ],
+      "topics": ["reprogramming", "network-medicine", "transcriptomics", "machine-learning"],
+      "kind": "paper",
+      "access": "open"
+    },
+    {
+      "id": "agextend-2025",
+      "title": "Discovering geroprotectors through the explainable artificial intelligence-based platform AgeXtend",
+      "url": "https://www.nature.com/articles/s43587-024-00763-4",
+      "alt_url": [
+        "https://pubmed.ncbi.nlm.nih.gov/39627462/"
+      ],
+      "topics": ["machine-learning", "drug-discovery", "interventions", "cheminformatics"],
+      "kind": "paper",
+      "access": "gated",
+      "note": "Nature Aging published Jan 2025. PMC version may appear later."
+    },
+    {
+      "id": "scbayesage-2025",
+      "title": "Determining the age of single cells using scBayesAge",
+      "pdf_url": [
+        "https://www.biorxiv.org/content/10.64898/2025.12.04.692166v1.full.pdf"
+      ],
+      "url": "https://www.biorxiv.org/content/10.64898/2025.12.04.692166v1.full",
+      "topics": ["aging-clocks", "single-cell", "transcriptomics", "machine-learning"],
+      "kind": "paper",
+      "access": "open"
+    },
+    {
+      "id": "yang-chemical-cocktails-2023",
+      "title": "Chemically induced reprogramming to reverse cellular aging (Sinclair lab chemical cocktails)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10373966/",
+      "alt_url": [
+        "https://www.aging-us.com/article/204896/text"
+      ],
+      "topics": ["chemical-reprogramming", "reprogramming", "drug-discovery"],
+      "kind": "paper",
+      "access": "open"
+    },
+    {
+      "id": "chemical-reprog-lifespan-2025",
+      "title": "Chemical reprogramming ameliorates cellular hallmarks of aging and extends lifespan",
+      "pdf_url": [
+        "https://www.biorxiv.org/content/10.1101/2022.08.29.505222v2.full.pdf"
+      ],
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12340157/",
+      "alt_url": [
+        "https://www.embopress.org/doi/abs/10.1038/s44321-025-00265-9"
+      ],
+      "topics": ["chemical-reprogramming", "reprogramming", "lifespan", "hallmarks-of-aging"],
+      "kind": "paper",
+      "access": "open"
+    },
+    {
+      "id": "lipid-droplets-reprog-2025",
+      "title": "In vivo chemical reprogramming is associated with a toxic accumulation of lipid droplets hindering rejuvenation",
+      "pdf_url": [
+        "https://www.biorxiv.org/content/10.1101/2025.06.25.661123v1.full.pdf"
+      ],
+      "url": "https://www.biorxiv.org/content/10.1101/2025.06.25.661123v1.full",
+      "alt_url": [
+        "https://onlinelibrary.wiley.com/doi/10.1111/acel.70390"
+      ],
+      "topics": ["chemical-reprogramming", "reprogramming", "safety", "itp-mice"],
+      "kind": "paper",
+      "access": "open"
+    },
+    {
+      "id": "paine-partial-reprog-review-2024",
+      "title": "Partial cellular reprogramming: A deep dive into an emerging rejuvenation technology",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1111/acel.14039",
+      "topics": ["partial-reprogramming", "reprogramming", "review", "yamanaka"],
+      "kind": "paper",
+      "access": "gated"
+    },
+    {
+      "id": "reprogramming-rejuv-review-ncomms-2024",
+      "title": "The long and winding road of reprogramming-induced rejuvenation",
+      "url": "https://www.nature.com/articles/s41467-024-46020-5",
+      "pdf_url": [
+        "https://www.nature.com/articles/s41467-024-46020-5.pdf"
+      ],
+      "topics": ["partial-reprogramming", "reprogramming", "review", "yamanaka"],
+      "kind": "paper",
+      "access": "open"
+    },
+    {
+      "id": "aav-osk-lifespan-2024",
+      "title": "Gene Therapy-Mediated Partial Reprogramming Extends Lifespan and Reverses Age-Related Changes in Aged Mice",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10909732/",
+      "alt_url": [
+        "https://www.liebertpub.com/doi/10.1089/cell.2023.0072"
+      ],
+      "topics": ["partial-reprogramming", "gene-therapy", "yamanaka", "lifespan"],
+      "kind": "paper",
+      "access": "open"
+    },
+    {
+      "id": "pedf-parabiosis-2024",
+      "title": "In vitro heterochronic parabiosis identifies pigment epithelium-derived factor as a systemic mediator of rejuvenation by young blood",
+      "pdf_url": [
+        "https://www.biorxiv.org/content/10.1101/2024.05.02.592258v1.full.pdf"
+      ],
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11092633/",
+      "alt_url": [
+        "https://www.biorxiv.org/content/10.1101/2024.05.02.592258v1"
+      ],
+      "topics": ["parabiosis-blood-factors", "proteomics", "interventions"],
+      "kind": "paper",
+      "access": "open"
+    },
+    {
+      "id": "fgf17-young-csf-2022",
+      "title": "Young CSF restores oligodendrogenesis and memory in aged mice via Fgf17",
+      "url": "https://www.nature.com/articles/s41586-022-04722-0",
+      "pdf_url": [
+        "https://www.nature.com/articles/s41586-022-04722-0.pdf"
+      ],
+      "topics": ["parabiosis-blood-factors", "brain-rejuvenation", "interventions"],
+      "kind": "paper",
+      "access": "gated",
+      "note": "Nature paywall; free-read available via Nature sharable link from paper page."
+    },
+    {
+      "id": "hcpb-review-2024",
+      "title": "Aging insights from heterochronic parabiosis models",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11330497/",
+      "alt_url": [
+        "https://www.nature.com/articles/s41514-024-00166-0"
+      ],
+      "topics": ["parabiosis-blood-factors", "review", "interventions"],
+      "kind": "paper",
+      "access": "open"
+    },
+    {
+      "id": "senolytic-mci-ebiomed-2025",
+      "title": "A pilot study of senolytics to improve cognition and mobility in older adults at risk for Alzheimer's disease (STAMINA)",
+      "url": "https://www.thelancet.com/journals/ebiom/article/PIIS2352-3964(25)00056-8/fulltext",
+      "pdf_url": [
+        "https://www.thelancet.com/action/showPdf?pii=S2352-3964%2825%2900056-8"
+      ],
+      "topics": ["senolytics", "clinical-trials", "brain-rejuvenation"],
+      "kind": "paper",
+      "access": "open"
+    },
+    {
+      "id": "senolytic-methylation-2024",
+      "title": "Exploring the effects of Dasatinib, Quercetin, and Fisetin on DNA methylation clocks: a longitudinal study on senolytic interventions",
+      "url": "https://www.aging-us.com/article/205581/text",
+      "topics": ["senolytics", "clinical-trials", "aging-clocks"],
+      "kind": "paper",
+      "access": "open"
+    },
+    {
+      "id": "nr-longcovid-2025",
+      "title": "Effects of nicotinamide riboside on NAD+ levels, cognition, and symptom recovery in long-COVID: a randomized controlled trial",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12675013/",
+      "alt_url": [
+        "https://www.thelancet.com/journals/eclinm/article/PIIS2589-5370(25)00567-X/fulltext"
+      ],
+      "topics": ["nad-mitophagy", "clinical-trials", "interventions"],
+      "kind": "paper",
+      "access": "open"
+    },
+    {
+      "id": "pearl-rapamycin-2025",
+      "title": "Influence of rapamycin on safety and healthspan metrics after one year: PEARL trial results",
+      "pdf_url": [
+        "https://www.medrxiv.org/content/10.1101/2024.08.21.24312372v1.full.pdf"
+      ],
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12074816/",
+      "alt_url": [
+        "https://www.frontiersin.org/journals/aging/articles/10.3389/fragi.2025.1628187/full"
+      ],
+      "topics": ["clinical-trials", "interventions", "mtor"],
+      "kind": "paper",
+      "access": "open"
+    },
+    {
+      "id": "urolithin-a-immune-2025",
+      "title": "Effect of the mitophagy inducer urolithin A on age-related immune decline: a randomized, placebo-controlled trial",
+      "url": "https://www.nature.com/articles/s43587-025-00996-x",
+      "alt_url": [
+        "https://pubmed.ncbi.nlm.nih.gov/41174221/"
+      ],
+      "topics": ["nad-mitophagy", "clinical-trials", "immune-rejuvenation"],
+      "kind": "paper",
+      "access": "gated",
+      "note": "Nature Aging paywall."
+    },
+    {
+      "id": "tert-knockin-2025",
+      "title": "Telomerase reverse transcriptase gene knock-in unleashes enhanced longevity and accelerated damage repair in mice",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1111/acel.14445",
+      "topics": ["telomeres", "gene-therapy", "lifespan"],
+      "kind": "paper",
+      "access": "gated",
+      "note": "Aging Cell 2025; check Wiley OA status — Aging Cell is increasingly OA."
+    },
+    {
+      "id": "adsc-exosomes-2022",
+      "title": "Small extracellular vesicles from young adipose-derived stem cells prevent frailty, improve health span, and decrease epigenetic age in old mice",
+      "url": "https://www.science.org/doi/10.1126/sciadv.abq2226",
+      "topics": ["exosomes-extracellular-vesicles", "stem-cells", "interventions", "aging-clocks"],
+      "kind": "paper",
+      "access": "open",
+      "note": "Science Advances is fully open access."
+    },
+    {
+      "id": "xprize-healthspan",
+      "title": "XPRIZE Healthspan — $101M global competition",
+      "url": "https://www.xprize.org/competitions/healthspan",
+      "topics": ["competitions", "clinical-trials", "biomarkers-of-aging"],
+      "kind": "resource",
+      "access": "open"
     }
   ]
 }

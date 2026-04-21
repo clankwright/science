@@ -22,6 +22,10 @@ topic: datasets
 ## Transcriptomic reanalysis sources
 - GTEx, TCGA, Tabula Muris Senis, LINCS L1000, GEO partial-reprogramming
   series.
+- [[papers/clockbase-agent-2025]] — aggregates ~2M public methylation
+  + RNA-seq samples with ~40 aging-clock predictions.
+- [[papers/singular-rejuv-atlas-2024]] — unified scRNA-seq view of 6
+  rejuvenation strategies (73 cell types).
 
 ## Drug / chemistry
 - DrugBank, ChEMBL, LOPAC-1280, Prestwick, TCMbank

@@ -23,6 +23,13 @@ Computational models estimating biological age from omics data.
 - [[papers/pathwayage]] — pathway-level interpretable clock
 - [[papers/organ-proteomic-clocks-2025]] — 10 organ clocks from plasma
   proteomics
+- [[papers/scbayesage-2025]] — Bayesian per-cell scRNA-seq age
+
+## As scoring function for rejuvenation
+- [[papers/clockbase-agent-2025]] — clocks as a ranking metric over
+  ~43k published interventions
+- [[papers/shift-sb000-2025]] — transcriptomic clock as a screen
+  objective for single-gene rejuvenators
 
 ## Open problems
 - Disease-aware mixture-of-experts over existing clocks

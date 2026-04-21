@@ -10,6 +10,10 @@ Finding existing drugs that can be redeployed against aging hallmarks.
 ## Current frontier
 - [[papers/network-repurposing-aging]] — SHARP pipeline, pAGE metric,
   370 hits against aging hallmarks.
+- [[papers/clockbase-agent-2025]] — autonomous AI agents over ~2M
+  molecular profiles, 43k perturbations.
+- [[papers/agextend-2025]] — explainable-AI geroprotector platform,
+  1.1B compounds screened.
 
 ## Orthogonal target-class approaches
 - [[papers/smerbarreto2023-senolytics]] / [[papers/senolytic-predictor-2025]]

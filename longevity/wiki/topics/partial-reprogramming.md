@@ -11,6 +11,13 @@ cells without driving them to pluripotency.
 ## Flagship work
 - [[papers/mesenchymal-drift-cell-2025]] — introduces "mesenchymal drift"
   as the aging signature most cleanly reversed by partial reprogramming.
+- [[papers/aav-osk-lifespan-2024]] — AAV-OSK extends lifespan 109% in
+  old mice.
+- [[papers/shift-sb000-2025]] — single-gene alternative to OSK(M).
+
+## Reviews
+- [[papers/paine-partial-reprog-review-2024]]
+- [[papers/reprogramming-rejuv-review-ncomms-2024]]
 
 ## Public data for reanalysis
 - GTEx, TCGA, Tabula Muris Senis (bulk and single-cell)
