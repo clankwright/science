@@ -9,32 +9,74 @@ Knowledge base of computational entry points into longevity and
 reverse-aging research for a CS person. Karpathy-style:
 markdown-as-source, wikilinks, linting, and indexed querying.
 
-## Start here
-- [[topics/aging-research]] — umbrella, full topic map
-- [[topics/biomarkers-of-aging]] / [[topics/aging-clocks]] — how we
-  measure aging
-- [[topics/reprogramming]] / [[topics/partial-reprogramming]] /
-  [[topics/chemical-reprogramming]] — how we reverse it
+## Grok the field
 
-## Analyses
-- [[analysis/promising-reverse-aging]] — tier ranking of current
-  reverse-aging technologies (April 2026)
+A reading path to orient someone new to computational longevity.
+Follow in order; each step assumes the previous one.
 
-## Highest-leverage projects
-1. **Extend / stress-test [[papers/clockbase-agent-2025]]'s agent
-   architecture** — the dataset is public, the clocks are swappable,
-   and most of the ~43k interventions have not been re-scored with
-   newer clocks.
-2. **SHARP × ITP validation** — cross-check
-   [[papers/network-repurposing-aging]] repurposing hits against mouse
-   lifespan data at [[papers/itp-mpd-portal]].
-3. **Reimplement [[papers/shift-sb000-2025]]-style single-gene screen
-   on a published clock** — optimise a transcriptomic clock over gene
-   perturbations (Perturb-seq / LINCS) to find safer rejuvenators.
-4. **Biomarkers of Aging Challenge Phase 3** — active competition
-   ([[papers/biomarkers-aging-challenge]]).
-5. **[[papers/xprize-healthspan]]** — $101M, 7 years, biomarker-measured
-   function restoration; team formation underway.
+### 1. What aging is
+- [[topics/aging-research]]: umbrella, full topic map.
+- [[topics/hallmarks-of-aging]]: the canonical framework the
+  rest of the field cites.
+- [[papers/ai-aging-review-2026]]: modern survey of how
+  computation meets aging biology.
+
+### 2. How we measure it
+- [[topics/biomarkers-of-aging]]: what "biological age" means
+  operationally.
+- [[topics/aging-clocks]]: epigenetic, transcriptomic, proteomic,
+  metabolomic clocks and their tradeoffs.
+- [[papers/nc-2025-14clocks]]: head-to-head comparison of 14
+  clocks on the same cohort.
+- [[papers/hcpb-review-2024]]: review of clock design choices
+  and validation.
+
+### 3. What we intervene with
+- [[topics/reprogramming]] (umbrella) then
+  [[topics/partial-reprogramming]], [[topics/chemical-reprogramming]],
+  [[topics/yamanaka]]: most active rejuvenation avenue.
+- [[topics/senolytics]]: clearance of senescent cells; the most
+  clinically advanced class.
+- [[topics/parabiosis-blood-factors]]: young blood, CSF, plasma
+  fractions; [[papers/pedf-parabiosis-2024]] and
+  [[papers/fgf17-young-csf-2022]] are the anchor results.
+- [[topics/caloric-restriction]]: [[papers/dr-960-mice-nature-2024]]
+  is the flagship DO-mouse study.
+- [[topics/mtor]], [[topics/nad-mitophagy]],
+  [[topics/gene-therapy]], [[topics/telomeres]],
+  [[topics/exosomes-extracellular-vesicles]],
+  [[topics/immune-rejuvenation]],
+  [[topics/brain-rejuvenation]]: the rest of the intervention space.
+
+### 4. Evidence pipelines
+- [[topics/itp-mice]] then [[papers/itp-nia]] and
+  [[papers/itp-mpd-portal]]: the NIH Interventions Testing
+  Program, gold-standard mouse lifespan data.
+- [[topics/uk-biobank]]: human-scale cohort behind most large
+  clock training sets.
+- [[topics/clinical-trials]], [[topics/benchmarks]]: how
+  interventions graduate from models to humans.
+
+### 5. Where the field is now
+- [[analysis/promising-reverse-aging]]: tier ranking of current
+  reverse-aging technologies (April 2026). Read this after you
+  have the topic vocabulary from steps 1 through 4.
+- [[topics/competitions]]: [[papers/biomarkers-aging-challenge]],
+  [[papers/xprize-healthspan]]. Active coordinated efforts that
+  reveal what the field believes is close to tractable.
+
+### 6. Computational leverage points
+- [[topics/deep-learning]], [[topics/machine-learning]],
+  [[topics/interpretability]]: model classes used across clocks
+  and interventions.
+- [[topics/drug-repurposing]], [[topics/drug-discovery]],
+  [[topics/cheminformatics]]: intervention search from existing
+  compound libraries.
+- [[topics/network-medicine]], [[topics/pathway-analysis]]:
+  graph-level views that connect interventions to hallmarks.
+- [[topics/single-cell]], [[topics/transcriptomics]],
+  [[topics/proteomics]], [[topics/metabolomics]],
+  [[topics/epigenetics]]: the data modalities clocks sit on top of.
 
 ## Topic index
 
