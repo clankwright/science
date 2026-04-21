@@ -84,8 +84,29 @@ The build outputs:
 5. Papers not referenced by any other page
 6. `sources.json` ↔ `wiki/papers/*.md` id parity
 7. Front-matter URL-valued fields that aren't actually URLs
+8. Every `sources.json` entry has a `license:` field
 
 Run `python3 scripts/lint.py`; exit code = number of errors.
+
+## Licenses
+
+Each source in `sources.json` has a `license:` and (usually) a
+`license_note:` field reflecting a best-effort lookup of the venue's
+standard license. `scripts/licenses.py` maintains an id-keyed map
+and regenerates `LICENSES.md` (at the repo root and inside the
+`longevity/` directory) from that map:
+
+```bash
+python3 scripts/licenses.py all   # apply + regenerate
+```
+
+`LICENSES.md` groups sources into **redistributable** (CC-BY,
+CC0, public-domain), **restricted** (CC-BY-NC etc.),
+**varies per paper** (preprints with author-selectable license), and
+**not redistributable** (all-rights-reserved). If you commit
+converted full-text markdown from `sources/md/`, only do so for the
+redistributable group, and keep the license + DOI in the committed
+file's YAML front matter.
 
 ## Adding a new paper
 

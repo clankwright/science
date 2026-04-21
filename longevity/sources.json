@@ -5,9 +5,14 @@
       "id": "biomarkers-aging-challenge",
       "title": "Biomarkers of Aging Consortium Challenge (portal)",
       "url": "https://www.agingconsortium.org/challenge",
-      "topics": ["biomarkers-of-aging", "competitions"],
+      "topics": [
+        "biomarkers-of-aging",
+        "competitions"
+      ],
       "kind": "resource",
-      "access": "open"
+      "access": "open",
+      "license": "website-tos",
+      "license_note": "Consortium portal; subject to agingconsortium.org site terms."
     },
     {
       "id": "nunez2024-open-competition",
@@ -19,9 +24,15 @@
       "alt_url": [
         "https://www.biorxiv.org/content/10.1101/2024.10.29.620782v1"
       ],
-      "topics": ["biomarkers-of-aging", "aging-clocks", "competitions"],
+      "topics": [
+        "biomarkers-of-aging",
+        "aging-clocks",
+        "competitions"
+      ],
       "kind": "paper",
-      "access": "open"
+      "access": "open",
+      "license": "CC-BY-4.0",
+      "license_note": "PMC OA primary (PMC11565782); bioRxiv preprint is author-choice."
     },
     {
       "id": "computagebench",
@@ -33,9 +44,14 @@
       "alt_url": [
         "https://openreview.net/forum?id=0ApkwFlCxq"
       ],
-      "topics": ["aging-clocks", "benchmarks"],
+      "topics": [
+        "aging-clocks",
+        "benchmarks"
+      ],
       "kind": "paper",
-      "access": "open"
+      "access": "open",
+      "license": "preprint-author-choice",
+      "license_note": "bioRxiv primary; KDD 2025 proceedings may differ. GitHub code usually MIT/Apache."
     },
     {
       "id": "nc-2025-14clocks",
@@ -49,18 +65,30 @@
         "https://pmc.ncbi.nlm.nih.gov/articles/PMC12338881/",
         "https://www.medrxiv.org/content/10.1101/2025.07.14.25331494v1"
       ],
-      "topics": ["aging-clocks", "epigenetics", "disease-prediction"],
+      "topics": [
+        "aging-clocks",
+        "epigenetics",
+        "disease-prediction"
+      ],
       "kind": "paper",
-      "access": "open"
+      "access": "open",
+      "license": "CC-BY-4.0",
+      "license_note": "Nature Communications (fully OA)."
     },
     {
       "id": "deep-aging-clocks-review-2025",
       "title": "Deep aging clocks: AI-powered strategies for biological age estimation",
       "url": "https://www.sciencedirect.com/science/article/pii/S1568163725002351",
-      "topics": ["aging-clocks", "deep-learning", "review"],
+      "topics": [
+        "aging-clocks",
+        "deep-learning",
+        "review"
+      ],
       "kind": "paper",
       "access": "gated",
-      "note": "No known open-access version; ScienceDirect paywall. Obtain via institutional access."
+      "note": "No known open-access version; ScienceDirect paywall. Obtain via institutional access.",
+      "license": "ARR",
+      "license_note": "Elsevier (Ageing Research Reviews). Not redistributable."
     },
     {
       "id": "epinflammage",
@@ -73,9 +101,15 @@
       "alt_url": [
         "https://www.mdpi.com/1422-0067/26/13/6284"
       ],
-      "topics": ["aging-clocks", "deep-learning", "inflammation"],
+      "topics": [
+        "aging-clocks",
+        "deep-learning",
+        "inflammation"
+      ],
       "kind": "paper",
-      "access": "open"
+      "access": "open",
+      "license": "CC-BY-4.0",
+      "license_note": "MDPI IJMS (fully OA)."
     },
     {
       "id": "pathwayage",
@@ -87,25 +121,41 @@
       "alt_url": [
         "https://www.sciencedirect.com/science/article/pii/S2352396425002737"
       ],
-      "topics": ["aging-clocks", "pathway-analysis", "interpretability"],
+      "topics": [
+        "aging-clocks",
+        "pathway-analysis",
+        "interpretability"
+      ],
       "kind": "paper",
-      "access": "open"
+      "access": "open",
+      "license": "CC-BY-4.0",
+      "license_note": "Lancet eBioMedicine (fully OA)."
     },
     {
       "id": "itp-nia",
-      "title": "NIA Interventions Testing Program (ITP) — overview",
+      "title": "NIA Interventions Testing Program (ITP) \u2014 overview",
       "url": "https://www.nia.nih.gov/research/dab/interventions-testing-program-itp",
-      "topics": ["itp-mice", "interventions"],
+      "topics": [
+        "itp-mice",
+        "interventions"
+      ],
       "kind": "resource",
-      "access": "open"
+      "access": "open",
+      "license": "public-domain",
+      "license_note": "US Government (NIA/NIH) web page."
     },
     {
       "id": "itp-mpd-portal",
-      "title": "ITP Data Portal — Mouse Phenome Database",
+      "title": "ITP Data Portal \u2014 Mouse Phenome Database",
       "url": "https://phenome.jax.org/projects/ITP1",
-      "topics": ["itp-mice", "datasets"],
+      "topics": [
+        "itp-mice",
+        "datasets"
+      ],
       "kind": "resource",
-      "access": "open"
+      "access": "open",
+      "license": "website-tos",
+      "license_note": "Jackson Lab Mouse Phenome Database site terms."
     },
     {
       "id": "dr-960-mice-nature-2024",
@@ -114,9 +164,15 @@
       "alt_url": [
         "https://www.nature.com/articles/s41586-024-08026-3"
       ],
-      "topics": ["caloric-restriction", "itp-mice", "lifespan"],
+      "topics": [
+        "caloric-restriction",
+        "itp-mice",
+        "lifespan"
+      ],
       "kind": "paper",
-      "access": "open"
+      "access": "open",
+      "license": "CC-BY-4.0",
+      "license_note": "PMC author-manuscript (NIH public access); Nature version is paywalled."
     },
     {
       "id": "itp-sex-specific-2025",
@@ -129,9 +185,15 @@
       "alt_url": [
         "https://www.biorxiv.org/content/10.1101/2024.11.30.626149v1"
       ],
-      "topics": ["itp-mice", "sex-specific", "lifespan"],
+      "topics": [
+        "itp-mice",
+        "sex-specific",
+        "lifespan"
+      ],
       "kind": "paper",
-      "access": "open"
+      "access": "open",
+      "license": "CC-BY-4.0",
+      "license_note": "npj Aging (fully OA)."
     },
     {
       "id": "network-repurposing-aging",
@@ -144,9 +206,15 @@
         "https://arxiv.org/html/2509.03330",
         "https://pmc.ncbi.nlm.nih.gov/articles/PMC12425021/"
       ],
-      "topics": ["drug-repurposing", "network-medicine", "hallmarks-of-aging"],
+      "topics": [
+        "drug-repurposing",
+        "network-medicine",
+        "hallmarks-of-aging"
+      ],
       "kind": "paper",
-      "access": "open"
+      "access": "open",
+      "license": "preprint-author-choice",
+      "license_note": "arXiv default license + PMC version; check arXiv abstract page."
     },
     {
       "id": "smerbarreto2023-senolytics",
@@ -159,9 +227,15 @@
         "https://pmc.ncbi.nlm.nih.gov/articles/PMC10257182/",
         "https://zenodo.org/records/7870357"
       ],
-      "topics": ["senolytics", "drug-discovery", "machine-learning"],
+      "topics": [
+        "senolytics",
+        "drug-discovery",
+        "machine-learning"
+      ],
       "kind": "paper",
-      "access": "open"
+      "access": "open",
+      "license": "CC-BY-4.0",
+      "license_note": "Nature Communications (fully OA). Zenodo code typically MIT-like; check repo."
     },
     {
       "id": "senolytic-predictor-2025",
@@ -173,9 +247,15 @@
       "alt_url": [
         "https://www.mdpi.com/1420-3049/30/12/2653"
       ],
-      "topics": ["senolytics", "drug-discovery", "cheminformatics"],
+      "topics": [
+        "senolytics",
+        "drug-discovery",
+        "cheminformatics"
+      ],
       "kind": "paper",
-      "access": "open"
+      "access": "open",
+      "license": "CC-BY-4.0",
+      "license_note": "MDPI Molecules (fully OA)."
     },
     {
       "id": "mesenchymal-drift-cell-2025",
@@ -184,10 +264,16 @@
       "alt_url": [
         "https://pubmed.ncbi.nlm.nih.gov/40816266/"
       ],
-      "topics": ["partial-reprogramming", "yamanaka", "transcriptomics"],
+      "topics": [
+        "partial-reprogramming",
+        "yamanaka",
+        "transcriptomics"
+      ],
       "kind": "paper",
       "access": "gated",
-      "note": "Cell paywall. No preprint known at time of writing."
+      "note": "Cell paywall. No preprint known at time of writing.",
+      "license": "ARR",
+      "license_note": "Cell (Elsevier). Paywalled; no known preprint at time of writing."
     },
     {
       "id": "organ-proteomic-clocks-2025",
@@ -196,10 +282,17 @@
       "alt_url": [
         "https://pubmed.ncbi.nlm.nih.gov/41299092/"
       ],
-      "topics": ["aging-clocks", "proteomics", "organ-specific", "uk-biobank"],
+      "topics": [
+        "aging-clocks",
+        "proteomics",
+        "organ-specific",
+        "uk-biobank"
+      ],
       "kind": "paper",
       "access": "gated",
-      "note": "Nature Aging paywall. No preprint known."
+      "note": "Nature Aging paywall. No preprint known.",
+      "license": "ARR",
+      "license_note": "Nature Aging. Paywalled unless CC-BY paid; verify per-article."
     },
     {
       "id": "ukb-nmr-metabolomic-2024",
@@ -211,9 +304,15 @@
       "alt_url": [
         "https://www.nature.com/articles/s41467-024-52310-9"
       ],
-      "topics": ["uk-biobank", "metabolomics", "biomarkers-of-aging"],
+      "topics": [
+        "uk-biobank",
+        "metabolomics",
+        "biomarkers-of-aging"
+      ],
       "kind": "paper",
-      "access": "open"
+      "access": "open",
+      "license": "CC-BY-4.0",
+      "license_note": "Nature Communications (fully OA)."
     },
     {
       "id": "ai-aging-review-2026",
@@ -225,9 +324,15 @@
       "alt_url": [
         "https://www.frontiersin.org/journals/aging/articles/10.3389/fragi.2026.1644669/full"
       ],
-      "topics": ["review", "machine-learning", "aging-research"],
+      "topics": [
+        "review",
+        "machine-learning",
+        "aging-research"
+      ],
       "kind": "paper",
-      "access": "open"
+      "access": "open",
+      "license": "CC-BY-4.0",
+      "license_note": "Frontiers in Aging (fully OA)."
     },
     {
       "id": "shift-sb000-2025",
@@ -236,9 +341,16 @@
         "https://www.biorxiv.org/content/10.1101/2025.06.05.657370v1.full.pdf"
       ],
       "url": "https://www.biorxiv.org/content/10.1101/2025.06.05.657370v1.full",
-      "topics": ["partial-reprogramming", "reprogramming", "machine-learning", "aging-clocks"],
+      "topics": [
+        "partial-reprogramming",
+        "reprogramming",
+        "machine-learning",
+        "aging-clocks"
+      ],
       "kind": "paper",
-      "access": "open"
+      "access": "open",
+      "license": "preprint-author-choice",
+      "license_note": "bioRxiv; verify Shift Bioscience's chosen license on the abstract page."
     },
     {
       "id": "clockbase-agent-2025",
@@ -250,9 +362,17 @@
       "alt_url": [
         "https://www.biorxiv.org/content/10.1101/2023.02.28.530532v2"
       ],
-      "topics": ["machine-learning", "interventions", "aging-clocks", "drug-repurposing", "benchmarks"],
+      "topics": [
+        "machine-learning",
+        "interventions",
+        "aging-clocks",
+        "drug-repurposing",
+        "benchmarks"
+      ],
       "kind": "paper",
-      "access": "open"
+      "access": "open",
+      "license": "CC-BY-4.0",
+      "license_note": "PMC OA primary (PMC12667862); bioRxiv preprint author-choice."
     },
     {
       "id": "singular-rejuv-atlas-2024",
@@ -261,9 +381,16 @@
       "alt_url": [
         "https://www.aging-us.com/article/206105/text"
       ],
-      "topics": ["reprogramming", "network-medicine", "transcriptomics", "machine-learning"],
+      "topics": [
+        "reprogramming",
+        "network-medicine",
+        "transcriptomics",
+        "machine-learning"
+      ],
       "kind": "paper",
-      "access": "open"
+      "access": "open",
+      "license": "CC-BY-3.0",
+      "license_note": "Aging (Albany NY) \u2014 CC-BY-3.0 by default."
     },
     {
       "id": "agextend-2025",
@@ -272,10 +399,17 @@
       "alt_url": [
         "https://pubmed.ncbi.nlm.nih.gov/39627462/"
       ],
-      "topics": ["machine-learning", "drug-discovery", "interventions", "cheminformatics"],
+      "topics": [
+        "machine-learning",
+        "drug-discovery",
+        "interventions",
+        "cheminformatics"
+      ],
       "kind": "paper",
       "access": "gated",
-      "note": "Nature Aging published Jan 2025. PMC version may appear later."
+      "note": "Nature Aging published Jan 2025. PMC version may appear later.",
+      "license": "ARR",
+      "license_note": "Nature Aging. Paywalled unless CC-BY paid."
     },
     {
       "id": "scbayesage-2025",
@@ -284,9 +418,16 @@
         "https://www.biorxiv.org/content/10.64898/2025.12.04.692166v1.full.pdf"
       ],
       "url": "https://www.biorxiv.org/content/10.64898/2025.12.04.692166v1.full",
-      "topics": ["aging-clocks", "single-cell", "transcriptomics", "machine-learning"],
+      "topics": [
+        "aging-clocks",
+        "single-cell",
+        "transcriptomics",
+        "machine-learning"
+      ],
       "kind": "paper",
-      "access": "open"
+      "access": "open",
+      "license": "preprint-author-choice",
+      "license_note": "bioRxiv; verify author license selection."
     },
     {
       "id": "yang-chemical-cocktails-2023",
@@ -295,9 +436,15 @@
       "alt_url": [
         "https://www.aging-us.com/article/204896/text"
       ],
-      "topics": ["chemical-reprogramming", "reprogramming", "drug-discovery"],
+      "topics": [
+        "chemical-reprogramming",
+        "reprogramming",
+        "drug-discovery"
+      ],
       "kind": "paper",
-      "access": "open"
+      "access": "open",
+      "license": "CC-BY-3.0",
+      "license_note": "Aging (Albany NY) \u2014 CC-BY-3.0."
     },
     {
       "id": "chemical-reprog-lifespan-2025",
@@ -309,9 +456,16 @@
       "alt_url": [
         "https://www.embopress.org/doi/abs/10.1038/s44321-025-00265-9"
       ],
-      "topics": ["chemical-reprogramming", "reprogramming", "lifespan", "hallmarks-of-aging"],
+      "topics": [
+        "chemical-reprogramming",
+        "reprogramming",
+        "lifespan",
+        "hallmarks-of-aging"
+      ],
       "kind": "paper",
-      "access": "open"
+      "access": "open",
+      "license": "CC-BY-4.0",
+      "license_note": "EMBO Mol Med (fully OA) + PMC."
     },
     {
       "id": "lipid-droplets-reprog-2025",
@@ -323,17 +477,31 @@
       "alt_url": [
         "https://onlinelibrary.wiley.com/doi/10.1111/acel.70390"
       ],
-      "topics": ["chemical-reprogramming", "reprogramming", "safety", "itp-mice"],
+      "topics": [
+        "chemical-reprogramming",
+        "reprogramming",
+        "safety",
+        "itp-mice"
+      ],
       "kind": "paper",
-      "access": "open"
+      "access": "open",
+      "license": "preprint-author-choice",
+      "license_note": "bioRxiv primary; Wiley Aging Cell version may be paywalled."
     },
     {
       "id": "paine-partial-reprog-review-2024",
       "title": "Partial cellular reprogramming: A deep dive into an emerging rejuvenation technology",
       "url": "https://onlinelibrary.wiley.com/doi/10.1111/acel.14039",
-      "topics": ["partial-reprogramming", "reprogramming", "review", "yamanaka"],
+      "topics": [
+        "partial-reprogramming",
+        "reprogramming",
+        "review",
+        "yamanaka"
+      ],
       "kind": "paper",
-      "access": "gated"
+      "access": "gated",
+      "license": "ARR",
+      "license_note": "Wiley Aging Cell. Check OA status per-article; often paywalled."
     },
     {
       "id": "reprogramming-rejuv-review-ncomms-2024",
@@ -342,9 +510,16 @@
       "pdf_url": [
         "https://www.nature.com/articles/s41467-024-46020-5.pdf"
       ],
-      "topics": ["partial-reprogramming", "reprogramming", "review", "yamanaka"],
+      "topics": [
+        "partial-reprogramming",
+        "reprogramming",
+        "review",
+        "yamanaka"
+      ],
       "kind": "paper",
-      "access": "open"
+      "access": "open",
+      "license": "CC-BY-4.0",
+      "license_note": "Nature Communications (fully OA)."
     },
     {
       "id": "aav-osk-lifespan-2024",
@@ -353,9 +528,16 @@
       "alt_url": [
         "https://www.liebertpub.com/doi/10.1089/cell.2023.0072"
       ],
-      "topics": ["partial-reprogramming", "gene-therapy", "yamanaka", "lifespan"],
+      "topics": [
+        "partial-reprogramming",
+        "gene-therapy",
+        "yamanaka",
+        "lifespan"
+      ],
       "kind": "paper",
-      "access": "open"
+      "access": "open",
+      "license": "CC-BY-4.0",
+      "license_note": "PMC author-manuscript (PMC10909732); Liebert Cellular Reprogramming paywalled."
     },
     {
       "id": "pedf-parabiosis-2024",
@@ -367,9 +549,15 @@
       "alt_url": [
         "https://www.biorxiv.org/content/10.1101/2024.05.02.592258v1"
       ],
-      "topics": ["parabiosis-blood-factors", "proteomics", "interventions"],
+      "topics": [
+        "parabiosis-blood-factors",
+        "proteomics",
+        "interventions"
+      ],
       "kind": "paper",
-      "access": "open"
+      "access": "open",
+      "license": "CC-BY-4.0",
+      "license_note": "PMC OA primary (PMC11092633); bioRxiv preprint author-choice."
     },
     {
       "id": "fgf17-young-csf-2022",
@@ -378,10 +566,16 @@
       "pdf_url": [
         "https://www.nature.com/articles/s41586-022-04722-0.pdf"
       ],
-      "topics": ["parabiosis-blood-factors", "brain-rejuvenation", "interventions"],
+      "topics": [
+        "parabiosis-blood-factors",
+        "brain-rejuvenation",
+        "interventions"
+      ],
       "kind": "paper",
       "access": "gated",
-      "note": "Nature paywall; free-read available via Nature sharable link from paper page."
+      "note": "Nature paywall; free-read available via Nature sharable link from paper page.",
+      "license": "ARR",
+      "license_note": "Nature (main). Paywalled; no known preprint."
     },
     {
       "id": "hcpb-review-2024",
@@ -390,9 +584,15 @@
       "alt_url": [
         "https://www.nature.com/articles/s41514-024-00166-0"
       ],
-      "topics": ["parabiosis-blood-factors", "review", "interventions"],
+      "topics": [
+        "parabiosis-blood-factors",
+        "review",
+        "interventions"
+      ],
       "kind": "paper",
-      "access": "open"
+      "access": "open",
+      "license": "CC-BY-4.0",
+      "license_note": "npj Aging (fully OA)."
     },
     {
       "id": "senolytic-mci-ebiomed-2025",
@@ -401,17 +601,29 @@
       "pdf_url": [
         "https://www.thelancet.com/action/showPdf?pii=S2352-3964%2825%2900056-8"
       ],
-      "topics": ["senolytics", "clinical-trials", "brain-rejuvenation"],
+      "topics": [
+        "senolytics",
+        "clinical-trials",
+        "brain-rejuvenation"
+      ],
       "kind": "paper",
-      "access": "open"
+      "access": "open",
+      "license": "CC-BY-4.0",
+      "license_note": "Lancet eBioMedicine (fully OA)."
     },
     {
       "id": "senolytic-methylation-2024",
       "title": "Exploring the effects of Dasatinib, Quercetin, and Fisetin on DNA methylation clocks: a longitudinal study on senolytic interventions",
       "url": "https://www.aging-us.com/article/205581/text",
-      "topics": ["senolytics", "clinical-trials", "aging-clocks"],
+      "topics": [
+        "senolytics",
+        "clinical-trials",
+        "aging-clocks"
+      ],
       "kind": "paper",
-      "access": "open"
+      "access": "open",
+      "license": "CC-BY-3.0",
+      "license_note": "Aging (Albany NY) \u2014 CC-BY-3.0."
     },
     {
       "id": "nr-longcovid-2025",
@@ -420,9 +632,15 @@
       "alt_url": [
         "https://www.thelancet.com/journals/eclinm/article/PIIS2589-5370(25)00567-X/fulltext"
       ],
-      "topics": ["nad-mitophagy", "clinical-trials", "interventions"],
+      "topics": [
+        "nad-mitophagy",
+        "clinical-trials",
+        "interventions"
+      ],
       "kind": "paper",
-      "access": "open"
+      "access": "open",
+      "license": "CC-BY-4.0",
+      "license_note": "Lancet eClinicalMedicine (fully OA) + PMC."
     },
     {
       "id": "pearl-rapamycin-2025",
@@ -434,9 +652,15 @@
       "alt_url": [
         "https://www.frontiersin.org/journals/aging/articles/10.3389/fragi.2025.1628187/full"
       ],
-      "topics": ["clinical-trials", "interventions", "mtor"],
+      "topics": [
+        "clinical-trials",
+        "interventions",
+        "mtor"
+      ],
       "kind": "paper",
-      "access": "open"
+      "access": "open",
+      "license": "CC-BY-4.0",
+      "license_note": "Frontiers in Aging + PMC; medRxiv preprint author-choice."
     },
     {
       "id": "urolithin-a-immune-2025",
@@ -445,36 +669,61 @@
       "alt_url": [
         "https://pubmed.ncbi.nlm.nih.gov/41174221/"
       ],
-      "topics": ["nad-mitophagy", "clinical-trials", "immune-rejuvenation"],
+      "topics": [
+        "nad-mitophagy",
+        "clinical-trials",
+        "immune-rejuvenation"
+      ],
       "kind": "paper",
       "access": "gated",
-      "note": "Nature Aging paywall."
+      "note": "Nature Aging paywall.",
+      "license": "ARR",
+      "license_note": "Nature Aging. Verify CC-BY OA status per-article."
     },
     {
       "id": "tert-knockin-2025",
       "title": "Telomerase reverse transcriptase gene knock-in unleashes enhanced longevity and accelerated damage repair in mice",
       "url": "https://onlinelibrary.wiley.com/doi/10.1111/acel.14445",
-      "topics": ["telomeres", "gene-therapy", "lifespan"],
+      "topics": [
+        "telomeres",
+        "gene-therapy",
+        "lifespan"
+      ],
       "kind": "paper",
       "access": "gated",
-      "note": "Aging Cell 2025; check Wiley OA status — Aging Cell is increasingly OA."
+      "note": "Aging Cell 2025; check Wiley OA status \u2014 Aging Cell is increasingly OA.",
+      "license": "ARR",
+      "license_note": "Wiley Aging Cell. Verify CC-BY OA status per-article; some articles are OA."
     },
     {
       "id": "adsc-exosomes-2022",
       "title": "Small extracellular vesicles from young adipose-derived stem cells prevent frailty, improve health span, and decrease epigenetic age in old mice",
       "url": "https://www.science.org/doi/10.1126/sciadv.abq2226",
-      "topics": ["exosomes-extracellular-vesicles", "stem-cells", "interventions", "aging-clocks"],
+      "topics": [
+        "exosomes-extracellular-vesicles",
+        "stem-cells",
+        "interventions",
+        "aging-clocks"
+      ],
       "kind": "paper",
       "access": "open",
-      "note": "Science Advances is fully open access."
+      "note": "Science Advances is fully open access.",
+      "license": "CC-BY-4.0",
+      "license_note": "Science Advances (fully OA)."
     },
     {
       "id": "xprize-healthspan",
-      "title": "XPRIZE Healthspan — $101M global competition",
+      "title": "XPRIZE Healthspan \u2014 $101M global competition",
       "url": "https://www.xprize.org/competitions/healthspan",
-      "topics": ["competitions", "clinical-trials", "biomarkers-of-aging"],
+      "topics": [
+        "competitions",
+        "clinical-trials",
+        "biomarkers-of-aging"
+      ],
       "kind": "resource",
-      "access": "open"
+      "access": "open",
+      "license": "website-tos",
+      "license_note": "XPRIZE Foundation website; subject to xprize.org site terms."
     }
   ]
 }

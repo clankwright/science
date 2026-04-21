@@ -88,6 +88,11 @@ def main() -> int:
             errors.append(f"sources.json has `{sid}` but wiki/papers/{sid}.md is missing")
         for sid in sorted(only_papers):
             errors.append(f"wiki/papers/{sid}.md has no entry in sources.json")
+        # Every source must have a `license` string.
+        for src in manifest.get("sources", []):
+            lic = src.get("license")
+            if not isinstance(lic, str) or not lic:
+                errors.append(f"sources.json[{src['id']}]: missing `license`; run scripts/licenses.py apply")
 
     # ---------- 7. front-matter URL sanity ----------
     url_keys = {"url", "pdf_url", "alt_url", "code", "pmc", "biorxiv", "medrxiv",
