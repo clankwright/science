@@ -15,7 +15,7 @@ analysis, 88 wiki pages, 579 wikilink edges.
 ## Layout
 
 ```
-longevity/
+biology/longevity/
 ├── sources.json          # canonical 40-source manifest
 ├── LICENSES.md           # generated; per-source license table
 ├── sources/              # raw downloads (gitignored)
@@ -46,11 +46,11 @@ sudo apt-get install -y poppler-utils   # for pdftotext
 
 ## Usage
 
-All scripts run from the `longevity/` directory. Network-free steps
+All scripts run from the `biology/longevity/` directory. Network-free steps
 first; network-dependent steps last.
 
 ```bash
-cd longevity
+cd biology/longevity
 
 # (1) Build the index over the wiki — no network needed.
 python3 scripts/index.py
@@ -128,8 +128,8 @@ python3 scripts/licenses.py generate   # rebuild LICENSES.md
 python3 scripts/licenses.py all        # both
 ```
 
-`LICENSES.md` (regenerated at both the repo root and inside
-`longevity/`) groups the 40 sources into:
+`LICENSES.md` (regenerated in both `biology/` and inside
+`biology/longevity/`) groups the 40 sources into:
 
 - **Redistributable** — CC-BY-4.0 / CC-BY-3.0 / public-domain
 - **Restricted** — CC-BY-NC etc. (currently empty)
