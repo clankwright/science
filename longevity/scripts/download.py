@@ -1,13 +1,15 @@
 """Download all sources in sources.json to sources/{html,pdf}/.
 
-Strategy:
-  - arXiv: grab PDF from pdf_url.
-  - Everything else: GET the canonical URL with a real UA. If the response
-    looks like a landing page (Nature/Cell) and an alt_url (PMC) exists,
-    also fetch the alt_url.
-  - Writes sources/download_log.json with per-source status.
+URL priority per source (tried in order, first that yields content wins
+for each label):
+  1. ``pdf_url``   — single URL or list; PDFs preferred when available
+  2. ``url``       — canonical landing page
+  3. ``alt_url``   — single URL or list; fallbacks
 
-Skips downloads that already exist on disk. Re-run is safe.
+Already-cached files (by source id + label) are skipped on re-run.
+PDF responses are saved under ``sources/pdf/``; HTML under
+``sources/html/``. Writes ``sources/download_log.json`` with per-attempt
+status.
 """
 from __future__ import annotations
 
@@ -15,7 +17,7 @@ import json
 import pathlib
 import sys
 import time
-import urllib.parse
+from collections.abc import Iterable
 
 import requests
 
@@ -56,17 +58,34 @@ def is_pdf(resp: requests.Response) -> bool:
     return "pdf" in ct or resp.url.lower().endswith(".pdf")
 
 
+def _as_list(value) -> list[str]:
+    if value is None:
+        return []
+    if isinstance(value, str):
+        return [value]
+    return list(value)
+
+
+def candidate_urls(src: dict) -> Iterable[tuple[str, str]]:
+    """Yield (label, url) in priority order. First successful hit for a
+    given label wins; labels with the same prefix (``pdf``) are numbered
+    when multiple URLs are provided."""
+    pdf_urls = _as_list(src.get("pdf_url"))
+    for i, u in enumerate(pdf_urls):
+        label = "pdf" if len(pdf_urls) == 1 else f"pdf{i + 1}"
+        yield label, u
+    if "url" in src:
+        yield "primary", src["url"]
+    alt_urls = _as_list(src.get("alt_url"))
+    for i, u in enumerate(alt_urls):
+        label = "alt" if len(alt_urls) == 1 else f"alt{i + 1}"
+        yield label, u
+
+
 def download_one(src: dict) -> dict:
     sid = src["id"]
-    urls: list[tuple[str, str]] = []
-    if "pdf_url" in src:
-        urls.append(("pdf", src["pdf_url"]))
-    urls.append(("primary", src["url"]))
-    if "alt_url" in src:
-        urls.append(("alt", src["alt_url"]))
-
     record = {"id": sid, "attempts": []}
-    for label, url in urls:
+    for label, url in candidate_urls(src):
         html_path = HTML_DIR / f"{sid}__{label}.html"
         pdf_path = PDF_DIR / f"{sid}__{label}.pdf"
         if html_path.exists() or pdf_path.exists():
@@ -80,12 +99,14 @@ def download_one(src: dict) -> dict:
         if is_pdf(resp):
             save(pdf_path, resp.content)
             record["attempts"].append(
-                {"label": label, "url": url, "status": "ok", "path": str(pdf_path.relative_to(ROOT)), "bytes": len(resp.content)}
+                {"label": label, "url": url, "status": "ok",
+                 "path": str(pdf_path.relative_to(ROOT)), "bytes": len(resp.content)}
             )
         else:
             save(html_path, resp.content)
             record["attempts"].append(
-                {"label": label, "url": url, "status": "ok", "path": str(html_path.relative_to(ROOT)), "bytes": len(resp.content)}
+                {"label": label, "url": url, "status": "ok",
+                 "path": str(html_path.relative_to(ROOT)), "bytes": len(resp.content)}
             )
         time.sleep(1.0)
     return record
