@@ -15,7 +15,15 @@ intervention across mice and lower organisms.
 ## Mouse-level
 - [[papers/itp-nia]] — rapamycin is the flagship ITP hit (20–25%
   lifespan extension)
+- [[papers/trametinib-rapamycin-itp-2025]] — adding trametinib (MEK
+  inhibitor) on top of rapamycin yields ~29% (F) / 27% (M) **additive**
+  median-lifespan extension.
+
+## Related signalling axis
+- [[papers/il11-inhibition-2024]] — IL-11 signalling drives an
+  ERK-AMPK-mTORC1 aging axis; antibody blockade extends lifespan
+  +22-25%.
 
 ## Adjacent
 - [[topics/interventions]], [[topics/clinical-trials]],
-  [[topics/caloric-restriction]]
+  [[topics/caloric-restriction]], [[topics/drug-repurposing]]

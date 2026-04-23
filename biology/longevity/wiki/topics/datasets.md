@@ -31,3 +31,15 @@ topic: datasets
 - DrugBank, ChEMBL, LOPAC-1280, Prestwick, TCMbank
   — used in [[papers/smerbarreto2023-senolytics]],
   [[papers/senolytic-predictor-2025]], [[papers/network-repurposing-aging]].
+
+## Perturbation / Perturb-seq
+- [[papers/x-atlas-orion-perturbseq-2025]] — 8M cells, all human
+  protein-coding genes (Xaira Therapeutics, HuggingFace).
+
+## Single-cell aging cohorts
+- [[papers/scimmuaging-immune-clocks-2025]] — 1,081-donor PBMC
+  scRNA-seq (open code).
+
+## Multi-omic intervention atlases
+- [[papers/lifestyle-atlas-tirolgesund-2025]] — 156 women, 6 months
+  intermittent fasting / smoking cessation, 7 tissues, public portal.

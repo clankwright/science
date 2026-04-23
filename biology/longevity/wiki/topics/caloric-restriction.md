@@ -10,5 +10,10 @@ topic: caloric-restriction
   (1d, 2d) in 960 DO mice. CR extends lifespan in proportion to
   restriction; genetics > diet; resilience traits matter.
 
+## Human longitudinal evidence
+- [[papers/lifestyle-atlas-tirolgesund-2025]] — multi-omic intermittent
+  fasting cohort; high-compliance fasters show age-opposing molecular
+  trajectories within 6 months.
+
 ## Adjacent
-- [[topics/itp-mice]], [[topics/interventions]]
+- [[topics/itp-mice]], [[topics/interventions]], [[topics/mtor]]

@@ -13,3 +13,9 @@ features up to biological units (pathways, organ systems, hallmarks).
 - [[papers/pathwayage]] — GO/KEGG pathway-level features
 - [[papers/organ-proteomic-clocks-2025]] — organ-specific
 - [[papers/epinflammage]] — per-sample feature contributions
+- [[papers/spatial-aging-clocks-brain-2024]] — cell-type and proximity
+  decomposition of brain aging.
+- [[papers/scimmuaging-immune-clocks-2025]] — per-cell-type aging-
+  driver gene modules.
+- [[papers/scageclock-2026]] — gated attention surfaces ribosome /
+  translation / programmed-cell-death modules as top age-driving sets.

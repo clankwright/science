@@ -15,6 +15,14 @@ Human RCTs testing interventions with aging-related endpoints.
 - [[papers/senolytic-mci-ebiomed-2025]] — STAMINA D+Q in MCI
 - [[papers/senolytic-methylation-2024]] — D+Q±fisetin vs. methylation
   clocks
+- [[papers/tpe-ivig-biological-age-rct-2025]] — TPE+IVIG -2.61 yr
+  biological age vs sham (positive RCT).
+- [[papers/plasmapheresis-aging-trial-2025]] — plasmapheresis-without-
+  IVIG, no rejuvenation (negative result).
+- [[papers/semaglutide-glp1-epigenetic-age-rct-2025]] — first GLP-1
+  agonist RCT with epigenetic-age outcomes.
+- [[papers/lifestyle-atlas-tirolgesund-2025]] — TirolGESUND
+  intermittent-fasting / smoking-cessation multi-omic atlas.
 
 ## Competition-adjacent
 - [[papers/xprize-healthspan]] — $101M competition requiring

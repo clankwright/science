@@ -17,6 +17,12 @@ model organisms.
 - [[papers/chemical-reprog-lifespan-2025]] — chemical reprogramming
   extends lifespan
 - [[papers/tert-knockin-2025]] — telomerase knock-in
+- [[papers/klotho-skl-aav-2025]] — AAV9-s-KL +20% in wild-type mice
+
+## Cytokine / signalling-axis lifespan extension
+- [[papers/il11-inhibition-2024]] — anti-IL-11 antibody +22–25%.
+- [[papers/trametinib-rapamycin-itp-2025]] — trametinib + rapamycin
+  +27–29%, additive over rapamycin alone.
 
 ## Adjacent
 - [[topics/itp-mice]], [[topics/interventions]],

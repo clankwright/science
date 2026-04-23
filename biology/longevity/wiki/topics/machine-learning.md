@@ -22,3 +22,21 @@ Umbrella topic; see finer-grained [[topics/deep-learning]],
   single-gene rejuvenators.
 - [[papers/singular-rejuv-atlas-2024]] — network-biology atlas of
   rejuvenation master regulators.
+
+## Foundation models for aging biology
+- [[papers/longevity-llm-2026]] — Qwen3-14B fine-tuned on aging
+  biodata; beats Horvath on epigenetic-age MAE.
+- [[papers/longevity-bench-2026]] — benchmark suite for evaluating
+  LLMs on aging tasks.
+- [[papers/scageclock-2026]] — gated multi-head attention NN over 16M
+  single cells.
+- [[papers/x-atlas-orion-perturbseq-2025]] — 8M-cell Perturb-seq atlas
+  for training virtual-cell models.
+
+## Cell-type specific clocks
+- [[papers/scimmuaging-immune-clocks-2025]] — per-cell-type immune
+  aging clocks.
+- [[papers/spatial-aging-clocks-brain-2024]] — spatial aging clock
+  with cell-proximity learned features.
+- [[papers/ipsc-mononuclear-phagocyte-aging-brain-2025]] — uses an ML
+  age estimator as a per-cell-type readout for cell-therapy efficacy.

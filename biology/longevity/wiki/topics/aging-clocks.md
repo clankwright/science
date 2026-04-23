@@ -23,13 +23,28 @@ Computational models estimating biological age from omics data.
 - [[papers/pathwayage]] — pathway-level interpretable clock
 - [[papers/organ-proteomic-clocks-2025]] — 10 organ clocks from plasma
   proteomics
+- [[papers/plasma-proteomics-brain-immune-2025]] — UKB plasma proteomic
+  ages, 11 organs, brain and immune are the load-bearing predictors
 - [[papers/scbayesage-2025]] — Bayesian per-cell scRNA-seq age
+- [[papers/scageclock-2026]] — gated multi-head attention NN over 16M
+  single cells, 40+ tissues, 400+ cell types
+- [[papers/scimmuaging-immune-clocks-2025]] — per-cell-type immune
+  clocks, 1,081 donors
+- [[papers/spatial-aging-clocks-brain-2024]] — first spatial aging
+  clock; cell-proximity effects in mouse brain
+
+## Foundation-model framing
+- [[papers/longevity-llm-2026]] — Qwen3-14B fine-tuned, beats Horvath
+  on epigenetic-age MAE
+- [[papers/longevity-bench-2026]] — companion benchmark suite
 
 ## As scoring function for rejuvenation
 - [[papers/clockbase-agent-2025]] — clocks as a ranking metric over
   ~43k published interventions
 - [[papers/shift-sb000-2025]] — transcriptomic clock as a screen
   objective for single-gene rejuvenators
+- [[papers/x-atlas-orion-perturbseq-2025]] — 8M-cell Perturb-seq atlas
+  to feed clock-as-objective screens
 
 ## Open problems
 - Disease-aware mixture-of-experts over existing clocks

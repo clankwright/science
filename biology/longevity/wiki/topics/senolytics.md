@@ -21,6 +21,16 @@ Compounds that selectively kill senescent cells.
 - [[papers/senolytic-methylation-2024]] — D+Q and D+Q+F vs. methylation
   clocks
 
+## Engineered-cell senolytics
+- [[papers/senolytic-cart-upar-2024]] — anti-uPAR CAR T, single dose,
+  >12-month persistence in mice.
+- [[papers/anti-upar-cart-intestinal-2025]] — anti-uPAR CAR T extended
+  to gut aging and radiation protection.
+
+## PROTAC senolytics
+- [[papers/bcl-xl-protac-753b-senolytic-2025]] — 753b clears senescent
+  hepatocytes without navitoclax-class thrombocytopenia.
+
 ## Open problems
 - Transfer from small labelled sets to foundation-model embeddings
   (MolE, Uni-Mol2, ChemBERTa-2)

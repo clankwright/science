@@ -30,32 +30,63 @@ Follow in order; each step assumes the previous one.
   clocks on the same cohort.
 - [[papers/hcpb-review-2024]]: review of clock design choices
   and validation.
+- [[papers/scageclock-2026]],
+  [[papers/spatial-aging-clocks-brain-2024]],
+  [[papers/scimmuaging-immune-clocks-2025]]: 2025/2026 single-cell
+  and spatial frontier; per-cell-type biological age.
+- [[papers/longevity-llm-2026]],
+  [[papers/longevity-bench-2026]]: foundation models and benchmarks
+  framing aging clocks as one task class among many.
 
 ### 3. What we intervene with
 - [[topics/reprogramming]] (umbrella) then
   [[topics/partial-reprogramming]], [[topics/chemical-reprogramming]],
   [[topics/yamanaka]]: most active rejuvenation avenue.
+  Targeted-cell extension via [[papers/retro-precision-reprog-2025]];
+  organ-specific safety map via
+  [[papers/organ-dedifferentiation-review-2025]] and
+  [[papers/mouse-strains-osk-induction-2025]].
 - [[topics/senolytics]]: clearance of senescent cells; the most
-  clinically advanced class.
+  clinically advanced class. New modalities:
+  CAR-T ([[papers/senolytic-cart-upar-2024]],
+  [[papers/anti-upar-cart-intestinal-2025]]) and
+  PROTAC ([[papers/bcl-xl-protac-753b-senolytic-2025]]).
 - [[topics/parabiosis-blood-factors]]: young blood, CSF, plasma
-  fractions; [[papers/pedf-parabiosis-2024]] and
-  [[papers/fgf17-young-csf-2022]] are the anchor results.
+  fractions; [[papers/pedf-parabiosis-2024]],
+  [[papers/fgf17-young-csf-2022]], and the new
+  [[papers/gpld1-tnap-brain-vasculature-2026]] are the anchor results.
+  Plasma exchange evidence is split:
+  [[papers/tpe-ivig-biological-age-rct-2025]] (positive RCT) vs.
+  [[papers/plasmapheresis-aging-trial-2025]] (negative RCT).
 - [[topics/caloric-restriction]]: [[papers/dr-960-mice-nature-2024]]
-  is the flagship DO-mouse study.
-- [[topics/mtor]], [[topics/nad-mitophagy]],
-  [[topics/gene-therapy]], [[topics/telomeres]],
+  is the flagship DO-mouse study; human longitudinal evidence in
+  [[papers/lifestyle-atlas-tirolgesund-2025]].
+- [[topics/mtor]] (now: [[papers/trametinib-rapamycin-itp-2025]]
+  additive MEK+mTOR), [[topics/nad-mitophagy]],
+  [[topics/gene-therapy]] (incl. [[papers/klotho-skl-aav-2025]]
+  AAV9-s-KL +20% lifespan), [[topics/telomeres]],
   [[topics/exosomes-extracellular-vesicles]],
-  [[topics/immune-rejuvenation]],
-  [[topics/brain-rejuvenation]]: the rest of the intervention space.
+  [[topics/immune-rejuvenation]] (incl.
+  [[papers/ipsc-mononuclear-phagocyte-aging-brain-2025]] iPSC-derived
+  young immune cells), [[topics/brain-rejuvenation]]: the rest of the
+  intervention space.
+- New cytokine-axis hits: [[papers/il11-inhibition-2024]] (anti-IL-11
+  antibody, +22-25% lifespan late-life).
 
 ### 4. Evidence pipelines
 - [[topics/itp-mice]] then [[papers/itp-nia]] and
   [[papers/itp-mpd-portal]]: the NIH Interventions Testing
   Program, gold-standard mouse lifespan data.
 - [[topics/uk-biobank]]: human-scale cohort behind most large
-  clock training sets.
+  clock training sets. New parallel UKB analysis:
+  [[papers/plasma-proteomics-brain-immune-2025]] (brain and immune
+  ages dominate healthspan).
 - [[topics/clinical-trials]], [[topics/benchmarks]]: how
-  interventions graduate from models to humans.
+  interventions graduate from models to humans. Recent RCTs:
+  [[papers/tpe-ivig-biological-age-rct-2025]] (TPE+IVIG),
+  [[papers/semaglutide-glp1-epigenetic-age-rct-2025]] (GLP-1).
+- Genome-wide perturbation training data:
+  [[papers/x-atlas-orion-perturbseq-2025]].
 
 ### 5. Where the field is now
 - [[analysis/promising-reverse-aging]]: tier ranking of current

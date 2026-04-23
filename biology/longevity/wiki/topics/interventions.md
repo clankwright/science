@@ -14,6 +14,14 @@ Drug, diet, or genetic manipulations that extend lifespan or healthspan.
 - [[papers/itp-sex-specific-2025]]
 - [[papers/dr-960-mice-nature-2024]]
 
+## New mouse-lifespan hits (>20% extension)
+- [[papers/il11-inhibition-2024]] — anti-IL-11 antibody +22–25%.
+- [[papers/klotho-skl-aav-2025]] — AAV9-s-KL +20% (males).
+- [[papers/trametinib-rapamycin-itp-2025]] — trametinib + rapamycin
+  +27–29% (additive over rapamycin alone).
+- [[papers/aav-osk-lifespan-2024]] — AAV-OSK +109% remaining lifespan
+  in 124-week-old mice.
+
 ## Computational pipelines
 - [[papers/network-repurposing-aging]] — systematic hallmark-matched
   repurposing.

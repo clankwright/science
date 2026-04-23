@@ -14,3 +14,5 @@ topic: review
 - [[papers/reprogramming-rejuv-review-ncomms-2024]] — "long and winding
   road" of reprogramming-induced rejuvenation.
 - [[papers/hcpb-review-2024]] — heterochronic parabiosis.
+- [[papers/organ-dedifferentiation-review-2025]] — organ-by-organ
+  in-vivo reprogramming review.

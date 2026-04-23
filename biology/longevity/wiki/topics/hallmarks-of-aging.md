@@ -23,5 +23,14 @@ altered intercellular communication, chronic inflammation, and dysbiosis.
 - [[papers/clockbase-agent-2025]] — scores interventions by their
   effect on aging clocks across hallmarks.
 
+## New flagship hits hitting multiple hallmarks
+- [[papers/il11-inhibition-2024]] — anti-IL-11 antibody hits chronic
+  inflammation, fibrosis, and the ERK-AMPK-mTORC1 nutrient axis.
+- [[papers/trametinib-rapamycin-itp-2025]] — additive MEK + mTOR
+  inhibition across hallmarks.
+- [[papers/bcl-xl-protac-753b-senolytic-2025]] — cellular-senescence
+  hallmark, organ-targeted.
+
 ## Related
-- [[topics/drug-repurposing]], [[topics/aging-clocks]]
+- [[topics/drug-repurposing]], [[topics/aging-clocks]],
+  [[topics/inflammation]], [[topics/senolytics]]

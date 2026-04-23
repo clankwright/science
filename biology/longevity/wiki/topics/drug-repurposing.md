@@ -21,6 +21,12 @@ Finding existing drugs that can be redeployed against aging hallmarks.
 - [[papers/itp-nia]] — the gold-standard in-vivo validation pipeline
   (UM-HET3 mouse lifespan)
 
+## Recent already-FDA-approved-drug repurposing wins
+- [[papers/trametinib-rapamycin-itp-2025]] — trametinib (MEK
+  inhibitor) plus rapamycin: additive +27-29% mouse lifespan.
+- [[papers/semaglutide-glp1-epigenetic-age-rct-2025]] — first GLP-1
+  agonist RCT with epigenetic-age outcomes.
+
 ## Building blocks (all public)
 - GenAge longevity-gene list
 - STRING / BioGRID / HuRI interactome

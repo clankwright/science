@@ -13,6 +13,12 @@ vs. female mice (and likely humans).
   lifespan extension; weight loss is a key male-specific mediator.
 - [[papers/itp-nia]] — 17α-estradiol is male-only; acarbose is
   male-biased.
+- [[papers/trametinib-rapamycin-itp-2025]] — additive lifespan
+  extension is similar between sexes (29% F, 27% M); rare for an
+  ITP-class hit.
+- [[papers/klotho-skl-aav-2025]] — male-only longevity readout
+  (female cohort confounded by ulcerative dermatitis); bone effects
+  strongest in females.
 
 ## Adjacent
 - [[topics/itp-mice]], [[topics/interventions]]

@@ -20,6 +20,9 @@ is straightforward.
 ## Papers that mined UKB for aging
 - [[papers/ukb-nmr-metabolomic-2024]]
 - [[papers/organ-proteomic-clocks-2025]]
+- [[papers/plasma-proteomics-brain-immune-2025]] — 11-organ proteomic
+  ages on 44,498 UKB participants; brain and immune dominate
+  healthspan prediction.
 
 ## Open problems
 - Multi-omic integration at UKB scale (proteome × methylome × metabolome)

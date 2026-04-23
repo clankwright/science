@@ -22,45 +22,72 @@ per-paper before redistributing full text.
 | `dr-960-mice-nature-2024` | `CC-BY-4.0` | https://pmc.ncbi.nlm.nih.gov/articles/PMC11485257/ | PMC author-manuscript (NIH public access); Nature version is paywalled. |
 | `epinflammage` | `CC-BY-4.0` | https://pmc.ncbi.nlm.nih.gov/articles/PMC12249966/ | MDPI IJMS (fully OA). |
 | `hcpb-review-2024` | `CC-BY-4.0` | https://pmc.ncbi.nlm.nih.gov/articles/PMC11330497/ | npj Aging (fully OA). |
+| `il11-inhibition-2024` | `CC-BY-4.0` | https://www.nature.com/articles/s41586-024-07701-9 | Nature (CC-BY by author choice); PMC mirror PMC11291288. |
+| `ipsc-mononuclear-phagocyte-aging-brain-2025` | `CC-BY-4.0` | https://advanced.onlinelibrary.wiley.com/doi/10.1002/advs.202417848 | Advanced Science (Wiley OA, CC-BY-4.0); PMC OA mirror. |
 | `itp-nia` | `public-domain` | https://www.nia.nih.gov/research/dab/interventions-testing-program-itp | US Government (NIA/NIH) web page. |
 | `itp-sex-specific-2025` | `CC-BY-4.0` | https://www.nature.com/articles/s41514-025-00229-w | npj Aging (fully OA). |
+| `mouse-strains-osk-induction-2025` | `CC-BY-4.0` | https://www.cell.com/cell-reports/fulltext/S2211-1247(25)00650-3 | Cell Reports (fully OA); bioRxiv preprint. |
 | `nc-2025-14clocks` | `CC-BY-4.0` | https://www.nature.com/articles/s41467-025-66106-y | Nature Communications (fully OA). |
 | `nr-longcovid-2025` | `CC-BY-4.0` | https://pmc.ncbi.nlm.nih.gov/articles/PMC12675013/ | Lancet eClinicalMedicine (fully OA) + PMC. |
 | `nunez2024-open-competition` | `CC-BY-4.0` | https://pmc.ncbi.nlm.nih.gov/articles/PMC11565782/ | PMC OA primary (PMC11565782); bioRxiv preprint is author-choice. |
+| `organ-dedifferentiation-review-2025` | `CC-BY-4.0` | https://pmc.ncbi.nlm.nih.gov/articles/PMC12610414/ | Aging Cell (CC-BY-4.0 by author choice); PMC OA primary. |
 | `pathwayage` | `CC-BY-4.0` | https://www.thelancet.com/journals/ebiom/article/PIIS2352-3964(25)00273-7/fulltext | Lancet eBioMedicine (fully OA). |
 | `pearl-rapamycin-2025` | `CC-BY-4.0` | https://pmc.ncbi.nlm.nih.gov/articles/PMC12074816/ | Frontiers in Aging + PMC; medRxiv preprint author-choice. |
 | `pedf-parabiosis-2024` | `CC-BY-4.0` | https://pmc.ncbi.nlm.nih.gov/articles/PMC11092633/ | PMC OA primary (PMC11092633); bioRxiv preprint author-choice. |
 | `reprogramming-rejuv-review-ncomms-2024` | `CC-BY-4.0` | https://www.nature.com/articles/s41467-024-46020-5 | Nature Communications (fully OA). |
+| `scageclock-2026` | `CC-BY-4.0` | https://www.nature.com/articles/s41514-026-00379-5 | npj Aging (fully OA). |
+| `scimmuaging-immune-clocks-2025` | `CC-BY-4.0` | https://www.nature.com/articles/s43587-025-00819-z | Nature Aging (CC-BY-4.0); PMC OA mirror. |
+| `senolytic-cart-upar-2024` | `CC-BY-4.0` | https://www.nature.com/articles/s43587-023-00560-5 | Nature Aging (CC-BY-4.0 by author choice); PMC mirror PMC10950785. |
 | `senolytic-mci-ebiomed-2025` | `CC-BY-4.0` | https://www.thelancet.com/journals/ebiom/article/PIIS2352-3964(25)00056-8/fulltext | Lancet eBioMedicine (fully OA). |
 | `senolytic-methylation-2024` | `CC-BY-3.0` | https://www.aging-us.com/article/205581/text | Aging (Albany NY) — CC-BY-3.0. |
 | `senolytic-predictor-2025` | `CC-BY-4.0` | https://pmc.ncbi.nlm.nih.gov/articles/PMC12196162/ | MDPI Molecules (fully OA). |
 | `singular-rejuv-atlas-2024` | `CC-BY-3.0` | https://pmc.ncbi.nlm.nih.gov/articles/PMC11424581/ | Aging (Albany NY) — CC-BY-3.0 by default. |
 | `smerbarreto2023-senolytics` | `CC-BY-4.0` | https://www.nature.com/articles/s41467-023-39120-1 | Nature Communications (fully OA). Zenodo code typically MIT-like; check repo. |
+| `tpe-ivig-biological-age-rct-2025` | `CC-BY-4.0` | https://onlinelibrary.wiley.com/doi/10.1111/acel.70103 | Aging Cell (CC-BY-4.0); PMC OA primary. |
+| `trametinib-rapamycin-itp-2025` | `CC-BY-4.0` | https://www.nature.com/articles/s43587-025-00876-4 | Nature Aging (CC-BY-4.0); PMC OA primary. |
 | `ukb-nmr-metabolomic-2024` | `CC-BY-4.0` | https://pmc.ncbi.nlm.nih.gov/articles/PMC11402978/ | Nature Communications (fully OA). |
 | `yang-chemical-cocktails-2023` | `CC-BY-3.0` | https://pmc.ncbi.nlm.nih.gov/articles/PMC10373966/ | Aging (Albany NY) — CC-BY-3.0. |
+
+## Redistributable with restrictions (check NC/SA terms)
+
+| ID | License | URL | Note |
+|---|---|---|---|
+| `klotho-skl-aav-2025` | `CC-BY-NC-4.0` | https://pmc.ncbi.nlm.nih.gov/articles/PMC11997498/ | Molecular Therapy article CC-BY-NC-ND-4.0 (PMC author manuscript OA); classified here as restricted (NC). |
+| `plasmapheresis-aging-trial-2025` | `CC-BY-NC-4.0` | https://pmc.ncbi.nlm.nih.gov/articles/PMC12218284/ | Scientific Reports article notes CC-BY-NC-ND-4.0; classified here as restricted (NC). PMC OA primary. |
+| `spatial-aging-clocks-brain-2024` | `CC-BY-NC-4.0` | https://www.nature.com/articles/s41586-024-08334-8 | Nature article CC-BY-NC-ND-4.0; classified as restricted (NC). PMC author manuscript OA. |
 
 ## Varies per paper — verify before redistributing
 
 | ID | License | URL | Note |
 |---|---|---|---|
 | `computagebench` | `preprint-author-choice` | https://www.biorxiv.org/content/10.1101/2024.06.06.597715v2 | bioRxiv primary; KDD 2025 proceedings may differ. GitHub code usually MIT/Apache. |
+| `lifestyle-atlas-tirolgesund-2025` | `preprint-author-choice` | https://www.biorxiv.org/content/10.1101/2025.08.30.673115v2 | bioRxiv preprint; verify license on abstract page. |
 | `lipid-droplets-reprog-2025` | `preprint-author-choice` | https://www.biorxiv.org/content/10.1101/2025.06.25.661123v1.full | bioRxiv primary; Wiley Aging Cell version may be paywalled. |
+| `longevity-bench-2026` | `preprint-author-choice` | https://www.biorxiv.org/content/10.64898/2026.01.12.698650v3 | bioRxiv preprint (Insilico Medicine, Abu Dhabi); verify license on abstract page. |
+| `longevity-llm-2026` | `preprint-author-choice` | https://www.biorxiv.org/content/10.64898/2026.03.28.714980v1 | bioRxiv preprint (Insilico Medicine); verify license on abstract page. |
 | `network-repurposing-aging` | `preprint-author-choice` | https://arxiv.org/abs/2509.03330 | arXiv default license + PMC version; check arXiv abstract page. |
 | `scbayesage-2025` | `preprint-author-choice` | https://www.biorxiv.org/content/10.64898/2025.12.04.692166v1.full | bioRxiv; verify author license selection. |
+| `semaglutide-glp1-epigenetic-age-rct-2025` | `preprint-author-choice` | https://www.medrxiv.org/content/10.1101/2025.07.09.25331038v1 | medRxiv preprint; verify license on abstract page. |
 | `shift-sb000-2025` | `preprint-author-choice` | https://www.biorxiv.org/content/10.1101/2025.06.05.657370v1.full | bioRxiv; verify Shift Bioscience's chosen license on the abstract page. |
+| `x-atlas-orion-perturbseq-2025` | `preprint-author-choice` | https://www.biorxiv.org/content/10.1101/2025.06.11.659105v1 | bioRxiv preprint; dataset under non-commercial license. |
 
 ## Not redistributable (all rights reserved / site terms)
 
 | ID | License | URL | Note |
 |---|---|---|---|
 | `agextend-2025` | `ARR` | https://www.nature.com/articles/s43587-024-00763-4 | Nature Aging. Paywalled unless CC-BY paid. |
+| `anti-upar-cart-intestinal-2025` | `ARR` | https://www.nature.com/articles/s43587-025-01022-w | Nature Aging. Verify CC-BY OA status per-article; PMC mirror PMC12823409. |
+| `bcl-xl-protac-753b-senolytic-2025` | `ARR` | https://www.nature.com/articles/s43587-025-00811-7 | Nature Aging (paywalled); PMC author manuscript OA (PMC12683667). |
 | `biomarkers-aging-challenge` | `website-tos` | https://www.agingconsortium.org/challenge | Consortium portal; subject to agingconsortium.org site terms. |
 | `deep-aging-clocks-review-2025` | `ARR` | https://www.sciencedirect.com/science/article/pii/S1568163725002351 | Elsevier (Ageing Research Reviews). Not redistributable. |
 | `fgf17-young-csf-2022` | `ARR` | https://www.nature.com/articles/s41586-022-04722-0 | Nature (main). Paywalled; no known preprint. |
+| `gpld1-tnap-brain-vasculature-2026` | `ARR` | https://www.cell.com/cell/fulltext/S0092-8674(26)00111-X | Cell (Elsevier paywall); PMC author manuscript OA (PMC13070421). |
 | `itp-mpd-portal` | `website-tos` | https://phenome.jax.org/projects/ITP1 | Jackson Lab Mouse Phenome Database site terms. |
 | `mesenchymal-drift-cell-2025` | `ARR` | https://www.cell.com/cell/abstract/S0092-8674(25)00853-0 | Cell (Elsevier). Paywalled; no known preprint at time of writing. |
 | `organ-proteomic-clocks-2025` | `ARR` | https://www.nature.com/articles/s43587-025-01016-8 | Nature Aging. Paywalled unless CC-BY paid; verify per-article. |
 | `paine-partial-reprog-review-2024` | `ARR` | https://onlinelibrary.wiley.com/doi/10.1111/acel.14039 | Wiley Aging Cell. Check OA status per-article; often paywalled. |
+| `plasma-proteomics-brain-immune-2025` | `ARR` | https://www.nature.com/articles/s41591-025-03798-1 | Nature Medicine (paywalled unless CC-BY paid); bioRxiv preprint author-choice. |
+| `retro-precision-reprog-2025` | `ARR` | https://www.liebertpub.com/doi/10.1089/cell.2025.0018 | Liebert Cellular Reprogramming. Paywalled; verify per-article OA status. |
 | `tert-knockin-2025` | `ARR` | https://onlinelibrary.wiley.com/doi/10.1111/acel.14445 | Wiley Aging Cell. Verify CC-BY OA status per-article; some articles are OA. |
 | `urolithin-a-immune-2025` | `ARR` | https://www.nature.com/articles/s43587-025-00996-x | Nature Aging. Verify CC-BY OA status per-article. |
 | `xprize-healthspan` | `website-tos` | https://www.xprize.org/competitions/healthspan | XPRIZE Foundation website; subject to xprize.org site terms. |
@@ -69,12 +96,12 @@ per-paper before redistributing full text.
 
 | Category | Count |
 |---|---|
-| Redistributable | 24 |
-| Restricted | 0 |
-| Varies per paper | 5 |
-| Not redistributable | 11 |
+| Redistributable | 33 |
+| Restricted | 3 |
+| Varies per paper | 10 |
+| Not redistributable | 16 |
 | Unknown | 0 |
-| **Total** | **40** |
+| **Total** | **62** |
 
 ## Safe-to-commit pipeline contract
 

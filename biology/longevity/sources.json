@@ -724,6 +724,475 @@
       "access": "open",
       "license": "website-tos",
       "license_note": "XPRIZE Foundation website; subject to xprize.org site terms."
+    },
+    {
+      "id": "il11-inhibition-2024",
+      "title": "Inhibition of IL-11 signalling extends mammalian healthspan and lifespan",
+      "pdf_url": [
+        "https://www.nature.com/articles/s41586-024-07701-9.pdf"
+      ],
+      "url": "https://www.nature.com/articles/s41586-024-07701-9",
+      "alt_url": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11291288/"
+      ],
+      "topics": [
+        "interventions",
+        "lifespan",
+        "inflammation",
+        "hallmarks-of-aging"
+      ],
+      "kind": "paper",
+      "access": "open",
+      "license": "CC-BY-4.0",
+      "license_note": "Nature (CC-BY by author choice); PMC mirror PMC11291288."
+    },
+    {
+      "id": "klotho-skl-aav-2025",
+      "title": "Long-term effects of s-KL treatment in wild-type mice: enhancing longevity, physical well-being, and neurological resilience",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11997498/",
+      "alt_url": [
+        "https://www.cell.com/molecular-therapy-family/molecular-therapy/fulltext/S1525-0016(25)00120-0",
+        "https://pubmed.ncbi.nlm.nih.gov/39988871/"
+      ],
+      "topics": [
+        "gene-therapy",
+        "lifespan",
+        "brain-rejuvenation",
+        "interventions"
+      ],
+      "kind": "paper",
+      "access": "open",
+      "note": "Molecular Therapy 2025 (DOI 10.1016/j.ymthe.2025.02.030). AAV9-s-KL, +20% median lifespan in wild-type mice.",
+      "license": "CC-BY-NC-4.0",
+      "license_note": "Molecular Therapy article CC-BY-NC-ND-4.0 (PMC author manuscript OA); classified here as restricted (NC)."
+    },
+    {
+      "id": "retro-precision-reprog-2025",
+      "title": "Precision reprogramming: restoring function to aged cells (Retro Biosciences)",
+      "url": "https://www.liebertpub.com/doi/10.1089/cell.2025.0018",
+      "topics": [
+        "partial-reprogramming",
+        "gene-therapy",
+        "yamanaka",
+        "drug-discovery"
+      ],
+      "kind": "paper",
+      "access": "gated",
+      "note": "Cellular Reprogramming 2025 (DOI 10.1089/cell.2025.0018). AAV-OSK targeted to Cdkn2a+ cells; first Retro publication.",
+      "license": "ARR",
+      "license_note": "Liebert Cellular Reprogramming. Paywalled; verify per-article OA status."
+    },
+    {
+      "id": "longevity-llm-2026",
+      "title": "The End of Aging Clocks: training foundation models to reason in aging and longevity (Longevity-LLM)",
+      "pdf_url": [
+        "https://www.biorxiv.org/content/10.64898/2026.03.28.714980v1.full.pdf"
+      ],
+      "url": "https://www.biorxiv.org/content/10.64898/2026.03.28.714980v1",
+      "topics": [
+        "machine-learning",
+        "deep-learning",
+        "aging-clocks",
+        "biomarkers-of-aging"
+      ],
+      "kind": "paper",
+      "access": "open",
+      "license": "preprint-author-choice",
+      "license_note": "bioRxiv preprint (Insilico Medicine); verify license on abstract page."
+    },
+    {
+      "id": "longevity-bench-2026",
+      "title": "LongevityBench: are SotA LLMs ready for aging research?",
+      "pdf_url": [
+        "https://www.biorxiv.org/content/10.64898/2026.01.12.698650v3.full.pdf"
+      ],
+      "url": "https://www.biorxiv.org/content/10.64898/2026.01.12.698650v3",
+      "topics": [
+        "benchmarks",
+        "machine-learning",
+        "aging-clocks",
+        "biomarkers-of-aging"
+      ],
+      "kind": "paper",
+      "access": "open",
+      "license": "preprint-author-choice",
+      "license_note": "bioRxiv preprint (Insilico Medicine, Abu Dhabi); verify license on abstract page."
+    },
+    {
+      "id": "scageclock-2026",
+      "title": "scAgeClock: a single-cell transcriptome-based human aging clock model using gated multi-head attention neural networks",
+      "pdf_url": [
+        "https://www.nature.com/articles/s41514-026-00379-5.pdf"
+      ],
+      "url": "https://www.nature.com/articles/s41514-026-00379-5",
+      "topics": [
+        "aging-clocks",
+        "single-cell",
+        "transcriptomics",
+        "deep-learning"
+      ],
+      "kind": "paper",
+      "access": "open",
+      "license": "CC-BY-4.0",
+      "license_note": "npj Aging (fully OA)."
+    },
+    {
+      "id": "plasma-proteomics-brain-immune-2025",
+      "title": "Plasma proteomics links brain and immune system aging with healthspan and longevity",
+      "url": "https://www.nature.com/articles/s41591-025-03798-1",
+      "alt_url": [
+        "https://www.biorxiv.org/content/10.1101/2024.06.07.597771v1.full.pdf",
+        "https://www.biorxiv.org/content/10.1101/2024.06.07.597771v1"
+      ],
+      "topics": [
+        "aging-clocks",
+        "proteomics",
+        "organ-specific",
+        "uk-biobank",
+        "brain-rejuvenation",
+        "immune-rejuvenation"
+      ],
+      "kind": "paper",
+      "access": "gated",
+      "note": "Nature Medicine 2025; brain & immune-system proteomic age strongest healthspan predictors. bioRxiv preprint open.",
+      "license": "ARR",
+      "license_note": "Nature Medicine (paywalled unless CC-BY paid); bioRxiv preprint author-choice."
+    },
+    {
+      "id": "plasmapheresis-aging-trial-2025",
+      "title": "Human clinical trial of plasmapheresis effects on biomarkers of aging (efficacy and safety trial)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12218284/",
+      "alt_url": [
+        "https://www.nature.com/articles/s41598-025-05396-0"
+      ],
+      "topics": [
+        "parabiosis-blood-factors",
+        "clinical-trials",
+        "aging-clocks",
+        "safety"
+      ],
+      "kind": "paper",
+      "access": "open",
+      "note": "Negative result: 8 plasmapheresis sessions over 18 weeks did NOT reduce epigenetic age; some clocks accelerated.",
+      "license": "CC-BY-NC-4.0",
+      "license_note": "Scientific Reports article notes CC-BY-NC-ND-4.0; classified here as restricted (NC). PMC OA primary."
+    },
+    {
+      "id": "senolytic-cart-upar-2024",
+      "title": "Prophylactic and long-lasting efficacy of senolytic CAR T cells against age-related metabolic dysfunction",
+      "pdf_url": [
+        "https://www.nature.com/articles/s43587-023-00560-5.pdf"
+      ],
+      "url": "https://www.nature.com/articles/s43587-023-00560-5",
+      "alt_url": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10950785/"
+      ],
+      "topics": [
+        "senolytics",
+        "gene-therapy",
+        "immune-rejuvenation",
+        "interventions"
+      ],
+      "kind": "paper",
+      "access": "open",
+      "license": "CC-BY-4.0",
+      "license_note": "Nature Aging (CC-BY-4.0 by author choice); PMC mirror PMC10950785."
+    },
+    {
+      "id": "mouse-strains-osk-induction-2025",
+      "title": "Comparative analysis of mouse strains for in vivo induction of reprogramming factors",
+      "pdf_url": [
+        "https://www.biorxiv.org/content/10.1101/2024.03.08.584074v1.full.pdf"
+      ],
+      "url": "https://www.cell.com/cell-reports/fulltext/S2211-1247(25)00650-3",
+      "alt_url": [
+        "https://www.biorxiv.org/content/10.1101/2024.03.08.584074v1"
+      ],
+      "topics": [
+        "partial-reprogramming",
+        "yamanaka",
+        "safety",
+        "itp-mice"
+      ],
+      "kind": "paper",
+      "access": "open",
+      "license": "CC-BY-4.0",
+      "license_note": "Cell Reports (fully OA); bioRxiv preprint."
+    },
+    {
+      "id": "organ-dedifferentiation-review-2025",
+      "title": "Organ-specific dedifferentiation and epigenetic remodeling in in vivo reprogramming",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12610414/",
+      "alt_url": [
+        "https://onlinelibrary.wiley.com/doi/10.1111/acel.70268"
+      ],
+      "topics": [
+        "partial-reprogramming",
+        "yamanaka",
+        "review",
+        "safety"
+      ],
+      "kind": "paper",
+      "access": "open",
+      "license": "CC-BY-4.0",
+      "license_note": "Aging Cell (CC-BY-4.0 by author choice); PMC OA primary."
+    },
+    {
+      "id": "anti-upar-cart-intestinal-2025",
+      "title": "Anti-uPAR CAR T cells reverse and prevent aging-associated defects in intestinal regeneration and fitness",
+      "url": "https://www.nature.com/articles/s43587-025-01022-w",
+      "alt_url": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12823409/"
+      ],
+      "topics": [
+        "senolytics",
+        "immune-rejuvenation",
+        "gene-therapy",
+        "organ-specific",
+        "stem-cells"
+      ],
+      "kind": "paper",
+      "access": "gated",
+      "note": "Amor lab follow-up to senolytic-cart-upar-2024; first CAR-T senolysis demo in gut aging.",
+      "license": "ARR",
+      "license_note": "Nature Aging. Verify CC-BY OA status per-article; PMC mirror PMC12823409."
+    },
+    {
+      "id": "tpe-ivig-biological-age-rct-2025",
+      "title": "Multi-omics analysis reveals biomarkers that contribute to biological age rejuvenation in response to single-blinded randomized placebo-controlled therapeutic plasma exchange",
+      "pdf_url": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12341816/pdf/ACEL-24-e70103.pdf"
+      ],
+      "url": "https://onlinelibrary.wiley.com/doi/10.1111/acel.70103",
+      "alt_url": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12341816/"
+      ],
+      "topics": [
+        "parabiosis-blood-factors",
+        "clinical-trials",
+        "aging-clocks",
+        "immune-rejuvenation",
+        "interventions"
+      ],
+      "kind": "paper",
+      "access": "open",
+      "note": "Buck Institute RCT (n=42, 50+yo); biweekly TPE+IVIG -2.61 years biological age vs sham.",
+      "license": "CC-BY-4.0",
+      "license_note": "Aging Cell (CC-BY-4.0); PMC OA primary."
+    },
+    {
+      "id": "trametinib-rapamycin-itp-2025",
+      "title": "The geroprotectors trametinib and rapamycin combine additively to extend mouse healthspan and lifespan",
+      "pdf_url": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12270913/pdf/43587_2025_Article_876.pdf"
+      ],
+      "url": "https://www.nature.com/articles/s43587-025-00876-4",
+      "alt_url": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12270913/"
+      ],
+      "topics": [
+        "mtor",
+        "drug-repurposing",
+        "lifespan",
+        "interventions",
+        "sex-specific",
+        "hallmarks-of-aging"
+      ],
+      "kind": "paper",
+      "access": "open",
+      "license": "CC-BY-4.0",
+      "license_note": "Nature Aging (CC-BY-4.0); PMC OA primary."
+    },
+    {
+      "id": "spatial-aging-clocks-brain-2024",
+      "title": "Spatial transcriptomic clocks reveal cell proximity effects in brain ageing",
+      "pdf_url": [
+        "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11798877/pdf/41586_2024_Article_8334.pdf"
+      ],
+      "url": "https://www.nature.com/articles/s41586-024-08334-8",
+      "alt_url": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11798877/"
+      ],
+      "topics": [
+        "aging-clocks",
+        "single-cell",
+        "brain-rejuvenation",
+        "transcriptomics",
+        "interpretability",
+        "machine-learning",
+        "organ-specific"
+      ],
+      "kind": "paper",
+      "access": "open",
+      "note": "Brunet/Rando/Zou; first spatial aging clock \u2014 4.2M brain cells, identifies pro-aging T cells and pro-rejuv NSC neighborhoods.",
+      "license": "CC-BY-NC-4.0",
+      "license_note": "Nature article CC-BY-NC-ND-4.0; classified as restricted (NC). PMC author manuscript OA."
+    },
+    {
+      "id": "bcl-xl-protac-753b-senolytic-2025",
+      "title": "A BCL-xL/BCL-2 PROTAC effectively clears senescent cells in the liver and reduces MASH-driven hepatocellular carcinoma in mice",
+      "pdf_url": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12683667/pdf/nihms-2118143.pdf"
+      ],
+      "url": "https://www.nature.com/articles/s43587-025-00811-7",
+      "alt_url": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12683667/"
+      ],
+      "topics": [
+        "senolytics",
+        "drug-discovery",
+        "organ-specific",
+        "hallmarks-of-aging",
+        "safety",
+        "interventions"
+      ],
+      "kind": "paper",
+      "access": "gated",
+      "note": "First PROTAC senolytic with tissue tropism; avoids navitoclax thrombocytopenia.",
+      "license": "ARR",
+      "license_note": "Nature Aging (paywalled); PMC author manuscript OA (PMC12683667)."
+    },
+    {
+      "id": "gpld1-tnap-brain-vasculature-2026",
+      "title": "Liver exerkine reverses aging- and Alzheimer's-related memory loss via vasculature",
+      "pdf_url": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC13070421/pdf/nihms-2174063.pdf"
+      ],
+      "url": "https://www.cell.com/cell/fulltext/S0092-8674(26)00111-X",
+      "alt_url": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC13070421/"
+      ],
+      "topics": [
+        "brain-rejuvenation",
+        "parabiosis-blood-factors",
+        "drug-discovery",
+        "interventions",
+        "organ-specific"
+      ],
+      "kind": "paper",
+      "access": "gated",
+      "note": "Villeda lab follow-up to GPLD1 2020 work; identifies TNAP as the BBB substrate. Exercise-mimetic axis.",
+      "license": "ARR",
+      "license_note": "Cell (Elsevier paywall); PMC author manuscript OA (PMC13070421)."
+    },
+    {
+      "id": "ipsc-mononuclear-phagocyte-aging-brain-2025",
+      "title": "Human iPSC-derived mononuclear phagocytes improve cognition and neural health across multiple mouse models of aging and Alzheimer's disease",
+      "pdf_url": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12591165/pdf/ADVS-12-e17848.pdf"
+      ],
+      "url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/advs.202417848",
+      "alt_url": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12591165/"
+      ],
+      "topics": [
+        "stem-cells",
+        "immune-rejuvenation",
+        "brain-rejuvenation",
+        "interventions",
+        "machine-learning"
+      ],
+      "kind": "paper",
+      "access": "open",
+      "note": "Cedars-Sinai/Svendsen; iPSC-derived young immune cells as systemic rejuvenation therapy.",
+      "license": "CC-BY-4.0",
+      "license_note": "Advanced Science (Wiley OA, CC-BY-4.0); PMC OA mirror."
+    },
+    {
+      "id": "scimmuaging-immune-clocks-2025",
+      "title": "Single-cell immune aging clocks reveal inter-individual heterogeneity during infection and vaccination",
+      "pdf_url": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12003178/pdf/43587_2025_Article_819.pdf"
+      ],
+      "url": "https://www.nature.com/articles/s43587-025-00819-z",
+      "alt_url": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12003178/"
+      ],
+      "topics": [
+        "aging-clocks",
+        "single-cell",
+        "immune-rejuvenation",
+        "transcriptomics",
+        "interpretability",
+        "machine-learning",
+        "datasets"
+      ],
+      "kind": "paper",
+      "access": "open",
+      "note": "scImmuAging: cell-type-specific scRNA-seq aging clocks (n=1,081 donors); shows clock reversibility post-COVID and post-BCG.",
+      "license": "CC-BY-4.0",
+      "license_note": "Nature Aging (CC-BY-4.0); PMC OA mirror."
+    },
+    {
+      "id": "x-atlas-orion-perturbseq-2025",
+      "title": "X-Atlas/Orion: genome-wide Perturb-seq datasets via a scalable fix-cryopreserve platform for training dose-dependent biological foundation models",
+      "pdf_url": [
+        "https://www.biorxiv.org/content/10.1101/2025.06.11.659105v1.full.pdf"
+      ],
+      "url": "https://www.biorxiv.org/content/10.1101/2025.06.11.659105v1",
+      "alt_url": [
+        "https://huggingface.co/datasets/Xaira-Therapeutics/X-Atlas-Orion"
+      ],
+      "topics": [
+        "single-cell",
+        "datasets",
+        "drug-discovery",
+        "deep-learning",
+        "machine-learning",
+        "transcriptomics",
+        "benchmarks"
+      ],
+      "kind": "paper",
+      "access": "open",
+      "note": "Xaira Therapeutics; largest published Perturb-seq atlas (8M cells, all human protein-coding genes).",
+      "license": "preprint-author-choice",
+      "license_note": "bioRxiv preprint; dataset under non-commercial license."
+    },
+    {
+      "id": "semaglutide-glp1-epigenetic-age-rct-2025",
+      "title": "Semaglutide slows epigenetic aging in people with HIV-associated lipohypertrophy: evidence from a randomized controlled trial",
+      "pdf_url": [
+        "https://www.medrxiv.org/content/10.1101/2025.07.09.25331038v1.full.pdf"
+      ],
+      "url": "https://www.medrxiv.org/content/10.1101/2025.07.09.25331038v1",
+      "topics": [
+        "clinical-trials",
+        "drug-repurposing",
+        "aging-clocks",
+        "epigenetics",
+        "interventions",
+        "metabolomics"
+      ],
+      "kind": "paper",
+      "access": "open",
+      "note": "First RCT with epigenetic-age outcomes for a GLP-1 agonist; 32-week, n=84.",
+      "license": "preprint-author-choice",
+      "license_note": "medRxiv preprint; verify license on abstract page."
+    },
+    {
+      "id": "lifestyle-atlas-tirolgesund-2025",
+      "title": "Multi-modal atlas of lifestyle interventions reveals malleability of ageing-linked molecular features",
+      "pdf_url": [
+        "https://www.biorxiv.org/content/10.1101/2025.08.30.673115v2.full.pdf"
+      ],
+      "url": "https://www.biorxiv.org/content/10.1101/2025.08.30.673115v2",
+      "alt_url": [
+        "https://chiaraherzog.github.io/projects/ongoing/lifestyle_atlas/"
+      ],
+      "topics": [
+        "clinical-trials",
+        "datasets",
+        "epigenetics",
+        "metabolomics",
+        "transcriptomics",
+        "caloric-restriction",
+        "interventions"
+      ],
+      "kind": "paper",
+      "access": "open",
+      "note": "TirolGESUND lifestyle atlas; n=156, 6mo intermittent fasting or smoking cessation, 4 timepoints, 7 tissues.",
+      "license": "preprint-author-choice",
+      "license_note": "bioRxiv preprint; verify license on abstract page."
     }
   ]
 }

@@ -10,5 +10,11 @@ topic: metabolomics
   UKB participants, metabolomic aging score, 439 candidate
   biomarker-disease causal pairs via MR.
 
+## Intervention readouts
+- [[papers/semaglutide-glp1-epigenetic-age-rct-2025]] — GLP-1 agonist
+  RCT, organ-system clock effects.
+- [[papers/lifestyle-atlas-tirolgesund-2025]] — TirolGESUND lifestyle
+  atlas with metabolomics timecourse.
+
 ## Adjacent
 - [[topics/uk-biobank]], [[topics/biomarkers-of-aging]]

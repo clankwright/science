@@ -16,6 +16,12 @@ expression rejuvenates cells without driving them to pluripotency.
   old mice.
 - [[papers/shift-sb000-2025]] — SB000, a single-gene alternative
   without pluripotency activation.
+- [[papers/retro-precision-reprog-2025]] — Cdkn2a-promoter AAV-OSK
+  restricted to senescent cells.
+- [[papers/mouse-strains-osk-induction-2025]] — strain-level OSKM
+  off-target tissue induction.
+- [[papers/organ-dedifferentiation-review-2025]] — organ-by-organ
+  in-vivo reprogramming review.
 - [[papers/paine-partial-reprog-review-2024]],
   [[papers/reprogramming-rejuv-review-ncomms-2024]] — reviews.
 

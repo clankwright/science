@@ -14,6 +14,12 @@ topic: deep-learning
 - [[papers/agextend-2025]] (explainable AI on 1.1B compounds)
 - [[papers/clockbase-agent-2025]] (autonomous agent architecture)
 - [[papers/shift-sb000-2025]] (generative clock-directed screen)
+- [[papers/scageclock-2026]] (gated multi-head attention single-cell
+  clock at atlas scale)
+- [[papers/longevity-llm-2026]] (Qwen3-14B fine-tuned for aging tasks)
+- [[papers/longevity-bench-2026]] (LLM benchmark for aging biology)
+- [[papers/x-atlas-orion-perturbseq-2025]] (training data for virtual
+  cell foundation models)
 
 ## Adjacent
 - [[topics/machine-learning]], [[topics/aging-clocks]],

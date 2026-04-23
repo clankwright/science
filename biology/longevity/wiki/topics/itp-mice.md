@@ -17,9 +17,16 @@ in-vivo test bed for candidate lifespan-extending compounds.
 - [[papers/itp-sex-specific-2025]] — sex-specificity; weight-loss
   confound
 
+## Mouse-strain reagents
+- [[papers/mouse-strains-osk-induction-2025]] — comparative analysis of
+  reprogrammable mouse strains (4Fj, 4Fk, etc.) for in-vivo OSKM
+  induction; tissue-level off-target patterns.
+
 ## Validation substrate for
 - [[papers/network-repurposing-aging]] — SHARP captures 90.9% of ITP
   lifespan-extending compounds
+- [[papers/trametinib-rapamycin-itp-2025]] — additive lifespan
+  extension, Cologne replication framework.
 - [[topics/drug-repurposing]] candidate projects
 
 ## Open problems
