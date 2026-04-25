@@ -156,6 +156,17 @@ Follow in order; each step assumes the previous one.
   [[topics/clinical-trials]], [[topics/disease-prediction]],
   [[topics/lifespan]], [[topics/sex-specific]], [[topics/safety]]
 
+### General prevention (load-bearing for healthspan)
+- [[topics/cardiorespiratory-fitness]] — VO2max as a mortality
+  predictor; the 4x4 protocol.
+- [[topics/muscle-strength]] — grip strength + resistance training.
+- [[topics/sleep]] — U-shaped duration-mortality curve.
+- [[topics/body-composition]] — waist circumference beyond BMI.
+- [[topics/cardiovascular-prevention]] — BP, apoB, statins.
+- [[topics/smoking]], [[topics/alcohol]] — modifiable mortality
+  accelerators.
+- [[topics/vitamins-supplements]] — what works, what doesn't.
+
 ### Syntheses
 - [[topics/review]]
 

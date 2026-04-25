@@ -136,6 +136,19 @@ LICENSE_MAP: dict[str, tuple[str, str]] = {
     "x-atlas-orion-perturbseq-2025": ("preprint-author-choice", "bioRxiv preprint; dataset under non-commercial license."),
     "semaglutide-glp1-epigenetic-age-rct-2025": ("preprint-author-choice", "medRxiv preprint; verify license on abstract page."),
     "lifestyle-atlas-tirolgesund-2025": ("preprint-author-choice", "bioRxiv preprint; verify license on abstract page."),
+    "mandsager-2018-vo2max-mortality": ("CC-BY-4.0", "JAMA Network Open (fully OA, CC-BY-4.0); PMC OA primary."),
+    "helgerud-2007-4x4-vo2max": ("ARR", "Lippincott / ACSM. Paywalled; PubMed abstract free."),
+    "leong-2015-pure-grip-strength": ("CC-BY-NC-4.0", "Lancet article paywalled; PMC author manuscript OA."),
+    "saeidifard-2019-resistance-mortality": ("CC-BY-NC-4.0", "Eur J Prev Cardiol article paywalled; PMC author manuscript OA."),
+    "garcia-hermoso-2018-strength-mortality": ("CC-BY-NC-4.0", "Arch Phys Med Rehabil article paywalled; PMC author manuscript OA."),
+    "cappuccio-2010-sleep-mortality": ("CC-BY-NC-4.0", "Sleep (Oxford) author manuscript via PMC OA."),
+    "pischon-2008-waist-mortality": ("CC-BY-NC-4.0", "NEJM article paywalled; PMC author manuscript OA."),
+    "jha-2013-smoking-mortality": ("CC-BY-NC-4.0", "NEJM article paywalled; PMC author manuscript OA."),
+    "wood-2018-alcohol-thresholds": ("CC-BY-4.0", "Lancet (CC-BY-4.0); PMC OA primary."),
+    "sprint-2015-intensive-bp": ("CC-BY-NC-4.0", "NEJM article paywalled; PMC author manuscript OA."),
+    "ctt-2012-statins-low-risk": ("CC-BY-4.0", "Lancet (CC-BY-4.0); PMC OA primary."),
+    "sniderman-2011-apob-meta": ("CC-BY-NC-4.0", "Circ CV Qual Outcomes article paywalled; PMC author manuscript OA."),
+    "vital-2019-vitd-omega3": ("CC-BY-NC-4.0", "NEJM article paywalled; PMC author manuscript OA."),
 }
 
 

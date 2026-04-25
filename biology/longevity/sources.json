@@ -1193,6 +1193,256 @@
       "note": "TirolGESUND lifestyle atlas; n=156, 6mo intermittent fasting or smoking cessation, 4 timepoints, 7 tissues.",
       "license": "preprint-author-choice",
       "license_note": "bioRxiv preprint; verify license on abstract page."
+    },
+    {
+      "id": "mandsager-2018-vo2max-mortality",
+      "title": "Association of cardiorespiratory fitness with long-term mortality among adults undergoing exercise treadmill testing",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6324439/",
+      "alt_url": [
+        "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2707428",
+        "https://pubmed.ncbi.nlm.nih.gov/30646252/"
+      ],
+      "topics": [
+        "cardiorespiratory-fitness",
+        "interventions",
+        "lifespan",
+        "clinical-trials"
+      ],
+      "kind": "paper",
+      "access": "open",
+      "note": "Cleveland Clinic retrospective cohort, n=122,007. Low vs elite CRF: HR 5.04 for all-cause mortality. No upper limit of benefit observed.",
+      "license": "CC-BY-4.0",
+      "license_note": "JAMA Network Open (fully OA, CC-BY-4.0); PMC OA primary."
+    },
+    {
+      "id": "helgerud-2007-4x4-vo2max",
+      "title": "Aerobic high-intensity intervals improve VO2max more than moderate training",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17414804/",
+      "alt_url": [
+        "https://journals.lww.com/acsm-msse/fulltext/2007/04000/aerobic_high_intensity_intervals_improve_v_o2max.20.aspx"
+      ],
+      "topics": [
+        "cardiorespiratory-fitness",
+        "interventions"
+      ],
+      "kind": "paper",
+      "access": "gated",
+      "note": "Helgerud et al. 2007, Med Sci Sports Exerc. The 4x4 (4 min @ 90-95% HRmax x 4) protocol vs moderate training: +13% VO2max in 8 weeks.",
+      "license": "ARR",
+      "license_note": "Lippincott / ACSM. Paywalled; PubMed abstract free."
+    },
+    {
+      "id": "leong-2015-pure-grip-strength",
+      "title": "Prognostic value of grip strength: findings from the Prospective Urban Rural Epidemiology (PURE) study",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4470673/",
+      "alt_url": [
+        "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(14)62000-6/abstract",
+        "https://pubmed.ncbi.nlm.nih.gov/25982160/"
+      ],
+      "topics": [
+        "muscle-strength",
+        "interventions",
+        "lifespan"
+      ],
+      "kind": "paper",
+      "access": "open",
+      "note": "PURE cohort, n=139,691, 17 countries. HR 1.16 per 5 kg lower grip strength for all-cause mortality. Stronger predictor than systolic BP.",
+      "license": "CC-BY-NC-4.0",
+      "license_note": "Lancet article paywalled; PMC author manuscript OA."
+    },
+    {
+      "id": "saeidifard-2019-resistance-mortality",
+      "title": "The association of resistance training with mortality: a systematic review and meta-analysis",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6815753/",
+      "alt_url": [
+        "https://journals.sagepub.com/doi/10.1177/2047487319850718",
+        "https://pubmed.ncbi.nlm.nih.gov/31104484/"
+      ],
+      "topics": [
+        "muscle-strength",
+        "interventions",
+        "lifespan",
+        "review"
+      ],
+      "kind": "paper",
+      "access": "open",
+      "note": "Resistance training inversely associated with all-cause mortality; additive effect when combined with aerobic exercise.",
+      "license": "CC-BY-NC-4.0",
+      "license_note": "Eur J Prev Cardiol article paywalled; PMC author manuscript OA."
+    },
+    {
+      "id": "garcia-hermoso-2018-strength-mortality",
+      "title": "Muscular strength as a predictor of all-cause mortality in an apparently healthy population: a systematic review and meta-analysis of data from approximately 2 million men and women",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6261449/",
+      "alt_url": [
+        "https://www.archives-pmr.org/article/S0003-9993(18)30079-0/abstract",
+        "https://pubmed.ncbi.nlm.nih.gov/29425700/"
+      ],
+      "topics": [
+        "muscle-strength",
+        "interventions",
+        "lifespan",
+        "review"
+      ],
+      "kind": "paper",
+      "access": "open",
+      "note": "Meta-analysis pooled ~2M adults. Higher upper- and lower-body muscular strength associated with lower all-cause mortality, regardless of age or follow-up.",
+      "license": "CC-BY-NC-4.0",
+      "license_note": "Arch Phys Med Rehabil article paywalled; PMC author manuscript OA."
+    },
+    {
+      "id": "cappuccio-2010-sleep-mortality",
+      "title": "Sleep duration and all-cause mortality: a systematic review and meta-analysis of prospective studies",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2864873/",
+      "alt_url": [
+        "https://academic.oup.com/sleep/article-abstract/33/5/585/2454478",
+        "https://pubmed.ncbi.nlm.nih.gov/20469800/"
+      ],
+      "topics": [
+        "sleep",
+        "interventions",
+        "lifespan",
+        "review"
+      ],
+      "kind": "paper",
+      "access": "open",
+      "note": "Meta-analysis ~1.4M adults across 16 prospective studies. U-shaped: short (<6 hr) RR 1.12; long (>9 hr) RR 1.30 for all-cause mortality.",
+      "license": "CC-BY-NC-4.0",
+      "license_note": "Sleep (Oxford) author manuscript via PMC OA."
+    },
+    {
+      "id": "pischon-2008-waist-mortality",
+      "title": "General and abdominal adiposity and risk of death in Europe",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2723953/",
+      "alt_url": [
+        "https://www.nejm.org/doi/full/10.1056/NEJMoa0801891",
+        "https://pubmed.ncbi.nlm.nih.gov/19005195/"
+      ],
+      "topics": [
+        "body-composition",
+        "interventions",
+        "lifespan"
+      ],
+      "kind": "paper",
+      "access": "open",
+      "note": "EPIC cohort, n=359,387, 9.7-yr follow-up. Waist circumference and waist-to-hip ratio independently predict mortality beyond BMI.",
+      "license": "CC-BY-NC-4.0",
+      "license_note": "NEJM article paywalled; PMC author manuscript OA."
+    },
+    {
+      "id": "jha-2013-smoking-mortality",
+      "title": "21st-century hazards of smoking and benefits of cessation in the United States",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3702977/",
+      "alt_url": [
+        "https://www.nejm.org/doi/full/10.1056/NEJMsa1211128",
+        "https://pubmed.ncbi.nlm.nih.gov/23343063/"
+      ],
+      "topics": [
+        "smoking",
+        "interventions",
+        "lifespan"
+      ],
+      "kind": "paper",
+      "access": "open",
+      "note": "n=200k US adults. Current smokers lose >10 years of life vs never-smokers; quitting at 25-34 recovers ~10 yrs, at 35-44 recovers ~9 yrs, at 45-54 recovers ~6 yrs.",
+      "license": "CC-BY-NC-4.0",
+      "license_note": "NEJM article paywalled; PMC author manuscript OA."
+    },
+    {
+      "id": "wood-2018-alcohol-thresholds",
+      "title": "Risk thresholds for alcohol consumption: combined analysis of individual-participant data for 599 912 current drinkers in 83 prospective studies",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5899998/",
+      "alt_url": [
+        "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(18)30134-X/fulltext",
+        "https://pubmed.ncbi.nlm.nih.gov/29676281/"
+      ],
+      "topics": [
+        "alcohol",
+        "interventions",
+        "lifespan"
+      ],
+      "kind": "paper",
+      "access": "open",
+      "note": "Pooled IPD analysis n=599,912 drinkers. Lowest all-cause mortality threshold ~100 g/week (~7 standard drinks). Cardiovascular subtypes show no safe lower threshold.",
+      "license": "CC-BY-4.0",
+      "license_note": "Lancet (CC-BY-4.0); PMC OA primary."
+    },
+    {
+      "id": "sprint-2015-intensive-bp",
+      "title": "A randomized trial of intensive versus standard blood-pressure control",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4689591/",
+      "alt_url": [
+        "https://www.nejm.org/doi/full/10.1056/NEJMoa1511939",
+        "https://pubmed.ncbi.nlm.nih.gov/26551272/"
+      ],
+      "topics": [
+        "cardiovascular-prevention",
+        "clinical-trials",
+        "interventions"
+      ],
+      "kind": "paper",
+      "access": "open",
+      "note": "SPRINT, n=9,361, non-diabetic hypertensives. SBP target <120 vs <140: 25% reduction in major CV events, 27% reduction in all-cause mortality. Trial halted early for benefit.",
+      "license": "CC-BY-NC-4.0",
+      "license_note": "NEJM article paywalled; PMC author manuscript OA."
+    },
+    {
+      "id": "ctt-2012-statins-low-risk",
+      "title": "The effects of lowering LDL cholesterol with statin therapy in people at low risk of vascular disease: meta-analysis of individual data from 27 randomised trials",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2988224/",
+      "alt_url": [
+        "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(12)60367-5/fulltext",
+        "https://pubmed.ncbi.nlm.nih.gov/22607822/"
+      ],
+      "topics": [
+        "cardiovascular-prevention",
+        "interventions",
+        "lifespan",
+        "review"
+      ],
+      "kind": "paper",
+      "access": "open",
+      "note": "Cholesterol Treatment Trialists (CTT) IPD meta-analysis of 27 RCTs. Each 1 mmol/L LDL-C reduction cuts major vascular events ~21%, including in low-risk primary-prevention subgroups.",
+      "license": "CC-BY-4.0",
+      "license_note": "Lancet (CC-BY-4.0); PMC OA primary."
+    },
+    {
+      "id": "sniderman-2011-apob-meta",
+      "title": "A meta-analysis of low-density lipoprotein cholesterol, non-high-density lipoprotein cholesterol, and apolipoprotein B as markers of cardiovascular risk",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3093965/",
+      "alt_url": [
+        "https://www.ahajournals.org/doi/10.1161/CIRCOUTCOMES.111.962100",
+        "https://pubmed.ncbi.nlm.nih.gov/21487090/"
+      ],
+      "topics": [
+        "cardiovascular-prevention",
+        "interventions",
+        "review"
+      ],
+      "kind": "paper",
+      "access": "open",
+      "note": "Sniderman et al. 2011 Circ Cardiovasc Qual Outcomes. Head-to-head: apoB beats non-HDL-C by 5.7%, beats LDL-C by 12% on relative risk reduction across studies.",
+      "license": "CC-BY-NC-4.0",
+      "license_note": "Circ CV Qual Outcomes article paywalled; PMC author manuscript OA."
+    },
+    {
+      "id": "vital-2019-vitd-omega3",
+      "title": "Vitamin D supplements and prevention of cancer and cardiovascular disease (VITAL)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6425757/",
+      "alt_url": [
+        "https://www.nejm.org/doi/full/10.1056/NEJMoa1809944",
+        "https://pubmed.ncbi.nlm.nih.gov/30415629/"
+      ],
+      "topics": [
+        "vitamins-supplements",
+        "clinical-trials",
+        "interventions"
+      ],
+      "kind": "paper",
+      "access": "open",
+      "note": "VITAL trial, n=25,871, 5.3 yr follow-up. Vitamin D 2000 IU/day did NOT reduce invasive cancer (HR 0.96), CVD events (HR 0.97), or all-cause mortality (HR 0.99). Disconfirms supplementation in non-deficient adults.",
+      "license": "CC-BY-NC-4.0",
+      "license_note": "NEJM article paywalled; PMC author manuscript OA."
     }
   ]
 }

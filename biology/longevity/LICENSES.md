@@ -19,6 +19,7 @@ per-paper before redistributing full text.
 | `ai-aging-review-2026` | `CC-BY-4.0` | https://pmc.ncbi.nlm.nih.gov/articles/PMC12891069/ | Frontiers in Aging (fully OA). |
 | `chemical-reprog-lifespan-2025` | `CC-BY-4.0` | https://pmc.ncbi.nlm.nih.gov/articles/PMC12340157/ | EMBO Mol Med (fully OA) + PMC. |
 | `clockbase-agent-2025` | `CC-BY-4.0` | https://pmc.ncbi.nlm.nih.gov/articles/PMC12667862/ | PMC OA primary (PMC12667862); bioRxiv preprint author-choice. |
+| `ctt-2012-statins-low-risk` | `CC-BY-4.0` | https://pmc.ncbi.nlm.nih.gov/articles/PMC2988224/ | Lancet (CC-BY-4.0); PMC OA primary. |
 | `dr-960-mice-nature-2024` | `CC-BY-4.0` | https://pmc.ncbi.nlm.nih.gov/articles/PMC11485257/ | PMC author-manuscript (NIH public access); Nature version is paywalled. |
 | `epinflammage` | `CC-BY-4.0` | https://pmc.ncbi.nlm.nih.gov/articles/PMC12249966/ | MDPI IJMS (fully OA). |
 | `hcpb-review-2024` | `CC-BY-4.0` | https://pmc.ncbi.nlm.nih.gov/articles/PMC11330497/ | npj Aging (fully OA). |
@@ -26,6 +27,7 @@ per-paper before redistributing full text.
 | `ipsc-mononuclear-phagocyte-aging-brain-2025` | `CC-BY-4.0` | https://advanced.onlinelibrary.wiley.com/doi/10.1002/advs.202417848 | Advanced Science (Wiley OA, CC-BY-4.0); PMC OA mirror. |
 | `itp-nia` | `public-domain` | https://www.nia.nih.gov/research/dab/interventions-testing-program-itp | US Government (NIA/NIH) web page. |
 | `itp-sex-specific-2025` | `CC-BY-4.0` | https://www.nature.com/articles/s41514-025-00229-w | npj Aging (fully OA). |
+| `mandsager-2018-vo2max-mortality` | `CC-BY-4.0` | https://pmc.ncbi.nlm.nih.gov/articles/PMC6324439/ | JAMA Network Open (fully OA, CC-BY-4.0); PMC OA primary. |
 | `mouse-strains-osk-induction-2025` | `CC-BY-4.0` | https://www.cell.com/cell-reports/fulltext/S2211-1247(25)00650-3 | Cell Reports (fully OA); bioRxiv preprint. |
 | `nc-2025-14clocks` | `CC-BY-4.0` | https://www.nature.com/articles/s41467-025-66106-y | Nature Communications (fully OA). |
 | `nr-longcovid-2025` | `CC-BY-4.0` | https://pmc.ncbi.nlm.nih.gov/articles/PMC12675013/ | Lancet eClinicalMedicine (fully OA) + PMC. |
@@ -46,15 +48,25 @@ per-paper before redistributing full text.
 | `tpe-ivig-biological-age-rct-2025` | `CC-BY-4.0` | https://onlinelibrary.wiley.com/doi/10.1111/acel.70103 | Aging Cell (CC-BY-4.0); PMC OA primary. |
 | `trametinib-rapamycin-itp-2025` | `CC-BY-4.0` | https://www.nature.com/articles/s43587-025-00876-4 | Nature Aging (CC-BY-4.0); PMC OA primary. |
 | `ukb-nmr-metabolomic-2024` | `CC-BY-4.0` | https://pmc.ncbi.nlm.nih.gov/articles/PMC11402978/ | Nature Communications (fully OA). |
+| `wood-2018-alcohol-thresholds` | `CC-BY-4.0` | https://pmc.ncbi.nlm.nih.gov/articles/PMC5899998/ | Lancet (CC-BY-4.0); PMC OA primary. |
 | `yang-chemical-cocktails-2023` | `CC-BY-3.0` | https://pmc.ncbi.nlm.nih.gov/articles/PMC10373966/ | Aging (Albany NY) — CC-BY-3.0. |
 
 ## Redistributable with restrictions (check NC/SA terms)
 
 | ID | License | URL | Note |
 |---|---|---|---|
+| `cappuccio-2010-sleep-mortality` | `CC-BY-NC-4.0` | https://pmc.ncbi.nlm.nih.gov/articles/PMC2864873/ | Sleep (Oxford) author manuscript via PMC OA. |
+| `garcia-hermoso-2018-strength-mortality` | `CC-BY-NC-4.0` | https://pmc.ncbi.nlm.nih.gov/articles/PMC6261449/ | Arch Phys Med Rehabil article paywalled; PMC author manuscript OA. |
+| `jha-2013-smoking-mortality` | `CC-BY-NC-4.0` | https://pmc.ncbi.nlm.nih.gov/articles/PMC3702977/ | NEJM article paywalled; PMC author manuscript OA. |
 | `klotho-skl-aav-2025` | `CC-BY-NC-4.0` | https://pmc.ncbi.nlm.nih.gov/articles/PMC11997498/ | Molecular Therapy article CC-BY-NC-ND-4.0 (PMC author manuscript OA); classified here as restricted (NC). |
+| `leong-2015-pure-grip-strength` | `CC-BY-NC-4.0` | https://pmc.ncbi.nlm.nih.gov/articles/PMC4470673/ | Lancet article paywalled; PMC author manuscript OA. |
+| `pischon-2008-waist-mortality` | `CC-BY-NC-4.0` | https://pmc.ncbi.nlm.nih.gov/articles/PMC2723953/ | NEJM article paywalled; PMC author manuscript OA. |
 | `plasmapheresis-aging-trial-2025` | `CC-BY-NC-4.0` | https://pmc.ncbi.nlm.nih.gov/articles/PMC12218284/ | Scientific Reports article notes CC-BY-NC-ND-4.0; classified here as restricted (NC). PMC OA primary. |
+| `saeidifard-2019-resistance-mortality` | `CC-BY-NC-4.0` | https://pmc.ncbi.nlm.nih.gov/articles/PMC6815753/ | Eur J Prev Cardiol article paywalled; PMC author manuscript OA. |
+| `sniderman-2011-apob-meta` | `CC-BY-NC-4.0` | https://pmc.ncbi.nlm.nih.gov/articles/PMC3093965/ | Circ CV Qual Outcomes article paywalled; PMC author manuscript OA. |
 | `spatial-aging-clocks-brain-2024` | `CC-BY-NC-4.0` | https://www.nature.com/articles/s41586-024-08334-8 | Nature article CC-BY-NC-ND-4.0; classified as restricted (NC). PMC author manuscript OA. |
+| `sprint-2015-intensive-bp` | `CC-BY-NC-4.0` | https://pmc.ncbi.nlm.nih.gov/articles/PMC4689591/ | NEJM article paywalled; PMC author manuscript OA. |
+| `vital-2019-vitd-omega3` | `CC-BY-NC-4.0` | https://pmc.ncbi.nlm.nih.gov/articles/PMC6425757/ | NEJM article paywalled; PMC author manuscript OA. |
 
 ## Varies per paper — verify before redistributing
 
@@ -82,6 +94,7 @@ per-paper before redistributing full text.
 | `deep-aging-clocks-review-2025` | `ARR` | https://www.sciencedirect.com/science/article/pii/S1568163725002351 | Elsevier (Ageing Research Reviews). Not redistributable. |
 | `fgf17-young-csf-2022` | `ARR` | https://www.nature.com/articles/s41586-022-04722-0 | Nature (main). Paywalled; no known preprint. |
 | `gpld1-tnap-brain-vasculature-2026` | `ARR` | https://www.cell.com/cell/fulltext/S0092-8674(26)00111-X | Cell (Elsevier paywall); PMC author manuscript OA (PMC13070421). |
+| `helgerud-2007-4x4-vo2max` | `ARR` | https://pubmed.ncbi.nlm.nih.gov/17414804/ | Lippincott / ACSM. Paywalled; PubMed abstract free. |
 | `itp-mpd-portal` | `website-tos` | https://phenome.jax.org/projects/ITP1 | Jackson Lab Mouse Phenome Database site terms. |
 | `mesenchymal-drift-cell-2025` | `ARR` | https://www.cell.com/cell/abstract/S0092-8674(25)00853-0 | Cell (Elsevier). Paywalled; no known preprint at time of writing. |
 | `organ-proteomic-clocks-2025` | `ARR` | https://www.nature.com/articles/s43587-025-01016-8 | Nature Aging. Paywalled unless CC-BY paid; verify per-article. |
@@ -96,12 +109,12 @@ per-paper before redistributing full text.
 
 | Category | Count |
 |---|---|
-| Redistributable | 33 |
-| Restricted | 3 |
+| Redistributable | 36 |
+| Restricted | 12 |
 | Varies per paper | 10 |
-| Not redistributable | 16 |
+| Not redistributable | 17 |
 | Unknown | 0 |
-| **Total** | **62** |
+| **Total** | **75** |
 
 ## Safe-to-commit pipeline contract
 
