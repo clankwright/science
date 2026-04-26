@@ -2,7 +2,7 @@
 
 Domain: how built environments, therapeutic devices, and psychosocial factors measurably affect healing speed and health outcomes.
 
-18 sources. 5 topics. 6 papers. Verified against primary URLs (PubMed, DOI, NASA).
+19 sources. 7 topics. 7 papers. Verified against primary URLs (PubMed, DOI, NASA, PMC).
 
 ---
 
@@ -24,8 +24,9 @@ Domain: how built environments, therapeutic devices, and psychosocial factors me
 
 | Page | Year | Summary |
 |---|---|---|
-| [ulrich-1984](papers/ulrich-1984.md) | 1984 | Tree view vs brick wall: 8.5% shorter surgical recovery. N=46. Founded evidence-based healthcare design. |
-| [kiecolt-glaser-1995](papers/kiecolt-glaser-1995.md) | 1995 | Wounds heal 40% slower under psychological stress. N=13, Lancet. Crossover. |
+| [ulrich-1984](papers/ulrich-1984.md) | 1984 | Tree view vs brick wall: 8.5% shorter surgical recovery. N=23 matched pairs (46 total). Founded evidence-based healthcare design. |
+| [kiecolt-glaser-1995](papers/kiecolt-glaser-1995.md) | 1995 | Alzheimer's caregiver stress → impaired wound healing. N=13 vs 13, Lancet. Cytokine suppression mechanism. |
+| [marucha-1998](papers/marucha-1998.md) | 1998 | Dental students: wounds heal 40% longer during exams vs summer. Crossover design (same subjects). Psychosom Med. |
 | [felitti-1998](papers/felitti-1998.md) | 1998 | ACE study. N=9,508. Childhood trauma dose-response → all major causes of adult death. |
 | [nasa-pemf-2003](papers/nasa-pemf-2003.md) | 2003 | NASA PEMF in vitro. 2.5-4x neural regeneration. Preclinical only — not clinical evidence. |
 | [allen-cogfx-2016](papers/allen-cogfx-2016.md) | 2016 | Harvard COGfx. N=24. Enhanced ventilation + low VOC → 101% cognitive function improvement. |

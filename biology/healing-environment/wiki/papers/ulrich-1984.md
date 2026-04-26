@@ -24,7 +24,7 @@ Patients recovering from cholecystectomy (gallbladder surgery) assigned to rooms
 
 ## Key Findings
 
-- **N=46** matched pairs (same room, consecutive assignment, matched for age, sex, weight, smoking, year)
+- **N=23 matched pairs** (46 total patients; same room, consecutive assignment, matched for age, sex, weight, smoking, year)
 - Tree-view patients: **8.5% shorter hospital stay** (7.96 vs 8.70 days)
 - Tree-view patients: fewer negative nursing notes ("patient upset", "needs much encouragement")
 - Tree-view patients: **fewer analgesics** (fewer strong doses, more weak doses)

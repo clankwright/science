@@ -15,7 +15,8 @@ topics:
 **Authors:** Joseph G. Allen, Piers MacNaughton, Usha Satish, Suresh Santanam, Jose Vallarino, John D. Spengler  
 **Journal:** Environmental Health Perspectives  
 **DOI:** 10.1289/ehp.1510037  
-**URL:** https://ehp.niehs.nih.gov/doi/10.1289/ehp.1510037
+**PMC:** https://pmc.ncbi.nlm.nih.gov/articles/PMC4892924/  
+**DOI:** https://doi.org/10.1289/ehp.1510037
 
 ## Summary
 

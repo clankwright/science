@@ -11,7 +11,9 @@ topic: stress-healing
 
 ## Tier 1 Evidence
 
-**Wound healing under stress.** [Kiecolt-Glaser 1995](../papers/kiecolt-glaser-1995.md) (Lancet, N=13 matched pairs): standardized punch wounds healed 40% slower in participants under chronic psychological stress vs matched controls. Direct causal pathway via cytokine suppression.
+**Wound healing under stress — two studies, same mechanism:**
+- [Kiecolt-Glaser 1995](../papers/kiecolt-glaser-1995.md) (Lancet, N=13 caregivers + 13 controls): Alzheimer's caregivers showed measurably impaired wound healing vs matched controls. Mechanism: reduced IL-1β at wound site.
+- [Marucha 1998](../papers/marucha-1998.md) (Psychosom Med, crossover): dental students' wounds healed **40% longer** during exam period vs summer vacation. Same subjects = strongest causal design.
 
 **Surgical prehabilitation.** [UCLA 2025](../papers/ucla-prehab-2025.md) meta-analysis (20 RCTs, N=2,376): psychological prehabilitation before surgery → 1.62 days shorter hospital stay. Effect holds across surgery types.
 

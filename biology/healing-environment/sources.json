@@ -10,7 +10,7 @@
     "access": "abstract-free",
     "license": "paywall",
     "topics": ["biophilic-design", "hospital-outcomes"],
-    "notes": "N=46 matched pairs. Tree view vs brick wall. 8.5% shorter hospital stay, less analgesia."
+    "notes": "N=23 matched pairs (46 total). Tree view vs brick wall. 8.5% shorter hospital stay, less analgesia."
   },
   {
     "id": "gaston-2025",
@@ -31,11 +31,24 @@
     "year": 1995,
     "venue": "The Lancet",
     "url": "https://pubmed.ncbi.nlm.nih.gov/7475659/",
-    "doi": "10.1016/S0140-6736(95)91898-4",
+    "doi": "10.1016/S0140-6736(95)92899-5",
     "access": "abstract-free",
     "license": "paywall",
     "topics": ["stress-healing", "psychoneuroimmunology"],
-    "notes": "N=13 dental students. Wounds heal 40% slower under psychological stress. Matched pairs."
+    "notes": "N=13 Alzheimer's caregivers vs 13 matched controls. Wound healing impaired under chronic caregiver stress. Lancet."
+  },
+  {
+    "id": "marucha-1998",
+    "title": "Mucosal Wound Healing Is Impaired by Examination Stress",
+    "authors": ["Phillip T. Marucha", "Janice K. Kiecolt-Glaser", "Mehrdad Favagehi"],
+    "year": 1998,
+    "venue": "Psychosomatic Medicine",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/9625226/",
+    "doi": "10.1097/00006842-199805000-00025",
+    "access": "abstract-free",
+    "license": "paywall",
+    "topics": ["stress-healing", "psychoneuroimmunology"],
+    "notes": "Dental students. Standardized wounds healed 40% longer during exam period vs summer vacation. Crossover design — same subjects, controls for individual variation."
   },
   {
     "id": "felitti-1998",
@@ -189,7 +202,7 @@
     "authors": ["Joseph G. Allen et al."],
     "year": 2016,
     "venue": "Environmental Health Perspectives",
-    "url": "https://ehp.niehs.nih.gov/doi/10.1289/ehp.1510037",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4892924/",
     "doi": "10.1289/ehp.1510037",
     "access": "open",
     "license": "CC-BY",
