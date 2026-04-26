@@ -1,0 +1,2 @@
+2026-04-27 INIT: healing-environment wiki created. 18 sources from verified research (3-pass verification, 150+ original sources reviewed, filtered to primary evidence only).
+2026-04-27 INGEST: ulrich-1984, gaston-2025, kiecolt-glaser-1995, felitti-1998, park-mattson-2008, li-2009, ucla-prehab-2025, cell-reports-well-2024, frontiers-biophilic-2024, salutogenic-arch-2024, mdpi-circadian-2025, hospital-noise-2020, cbt-physio-2022, horticultural-therapy-2023, nasa-pemf-2003, allen-cogfx-2016, ekholm-blankets-2020, komori-breathing-2018 — initial batch, all with PubMed/DOI URLs
