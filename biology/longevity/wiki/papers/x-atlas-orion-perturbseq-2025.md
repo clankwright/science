@@ -8,6 +8,9 @@ alt_url: https://huggingface.co/datasets/Xaira-Therapeutics/X-Atlas-Orion
 access: open
 kind: paper
 topics: [single-cell, datasets, drug-discovery, deep-learning, machine-learning, transcriptomics, benchmarks]
+evidence_tier: T0
+endpoint: n/a
+
 ---
 
 # X-Atlas / Orion: largest public Perturb-seq atlas

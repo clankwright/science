@@ -8,6 +8,9 @@ alt_url: https://www.aging-us.com/article/206105/text
 access: open
 kind: paper
 topics: [reprogramming, network-medicine, transcriptomics, machine-learning]
+evidence_tier: T1
+endpoint: n/a
+
 ---
 
 # SINGULAR — Cell Rejuvenation Atlas

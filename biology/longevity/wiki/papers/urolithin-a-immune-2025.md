@@ -8,6 +8,9 @@ pubmed: https://pubmed.ncbi.nlm.nih.gov/41174221/
 access: gated
 kind: paper
 topics: [nad-mitophagy, clinical-trials, immune-rejuvenation]
+evidence_tier: T6
+endpoint: primary_met
+
 ---
 
 # Urolithin A immune rejuvenation RCT

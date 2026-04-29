@@ -7,6 +7,9 @@ url: https://www.biorxiv.org/content/10.64898/2026.01.12.698650v3
 access: open
 kind: paper
 topics: [benchmarks, machine-learning, aging-clocks, biomarkers-of-aging]
+evidence_tier: T0
+endpoint: n/a
+
 ---
 
 # LongevityBench: an LLM benchmark for aging biology

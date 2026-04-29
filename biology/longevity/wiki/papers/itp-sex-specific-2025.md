@@ -8,6 +8,9 @@ biorxiv: https://www.biorxiv.org/content/10.1101/2024.11.30.626149v1.full
 access: open
 kind: paper
 topics: [itp-mice, sex-specific, lifespan]
+evidence_tier: T3
+endpoint: n/a
+
 ---
 
 # Sex-specific lifespan extension and weight loss (ITP reanalysis)

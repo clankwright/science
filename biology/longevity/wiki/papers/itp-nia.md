@@ -5,6 +5,9 @@ url: https://www.nia.nih.gov/research/dab/interventions-testing-program-itp
 access: open
 kind: resource
 topics: [itp-mice, interventions]
+evidence_tier: T3
+endpoint: primary_met
+
 ---
 
 # Interventions Testing Program (ITP)

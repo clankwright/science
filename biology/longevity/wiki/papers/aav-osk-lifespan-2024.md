@@ -8,6 +8,9 @@ alt_url: https://www.liebertpub.com/doi/10.1089/cell.2023.0072
 access: open
 kind: paper
 topics: [partial-reprogramming, gene-therapy, yamanaka, lifespan]
+evidence_tier: T2
+endpoint: primary_met
+
 ---
 
 # AAV-OSK extends lifespan in old mice

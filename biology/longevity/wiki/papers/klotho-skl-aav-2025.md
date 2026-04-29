@@ -8,6 +8,9 @@ alt_url: https://www.cell.com/molecular-therapy-family/molecular-therapy/fulltex
 access: open
 kind: paper
 topics: [gene-therapy, lifespan, brain-rejuvenation, interventions]
+evidence_tier: T2
+endpoint: primary_met
+
 ---
 
 # AAV9-s-KL gene therapy extends lifespan ~20% in wild-type mice

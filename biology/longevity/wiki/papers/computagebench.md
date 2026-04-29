@@ -11,6 +11,9 @@ huggingface: https://huggingface.co/datasets/computage/computage_bench
 access: open
 kind: paper
 topics: [aging-clocks, benchmarks]
+evidence_tier: T0
+endpoint: n/a
+
 ---
 
 # ComputAgeBench: Epigenetic Aging Clocks Benchmark

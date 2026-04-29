@@ -9,6 +9,9 @@ pmc: https://pmc.ncbi.nlm.nih.gov/articles/PMC12425021/
 access: open
 kind: paper
 topics: [drug-repurposing, network-medicine, hallmarks-of-aging]
+evidence_tier: T0
+endpoint: n/a
+
 ---
 
 # Network-driven drug repurposing for hallmarks of aging

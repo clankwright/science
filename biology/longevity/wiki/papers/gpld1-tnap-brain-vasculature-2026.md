@@ -8,6 +8,9 @@ alt_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC13070421/
 access: gated
 kind: paper
 topics: [brain-rejuvenation, parabiosis-blood-factors, drug-discovery, interventions, organ-specific]
+evidence_tier: T2
+endpoint: primary_met
+
 ---
 
 # GPLD1 → TNAP: liver exerkine rejuvenates the brain through the vasculature

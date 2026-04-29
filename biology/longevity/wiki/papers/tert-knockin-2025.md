@@ -8,6 +8,9 @@ url: https://onlinelibrary.wiley.com/doi/10.1111/acel.14445
 access: gated
 kind: paper
 topics: [telomeres, gene-therapy, lifespan]
+evidence_tier: T2
+endpoint: primary_met
+
 ---
 
 # TERT knock-in extends lifespan

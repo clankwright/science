@@ -8,6 +8,9 @@ url: https://onlinelibrary.wiley.com/doi/10.1111/acel.14039
 access: gated
 kind: paper
 topics: [partial-reprogramming, reprogramming, review, yamanaka]
+evidence_tier: T0
+endpoint: n/a
+
 ---
 
 # Partial cellular reprogramming — 2024 review

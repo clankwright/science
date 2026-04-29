@@ -9,6 +9,9 @@ preprint: https://www.biorxiv.org/content/biorxiv/early/2025/03/14/2025.03.11.64
 access: open
 kind: paper
 topics: [aging-clocks, deep-learning, inflammation]
+evidence_tier: T0
+endpoint: n/a
+
 ---
 
 # EpInflammAge

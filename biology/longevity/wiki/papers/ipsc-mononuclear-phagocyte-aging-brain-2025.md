@@ -8,6 +8,9 @@ alt_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12591165/
 access: open
 kind: paper
 topics: [stem-cells, immune-rejuvenation, brain-rejuvenation, interventions, machine-learning]
+evidence_tier: T2
+endpoint: primary_met
+
 ---
 
 # IV iPSC-derived young immune cells rescue brain aging

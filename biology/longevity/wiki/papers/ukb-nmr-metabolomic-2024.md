@@ -8,6 +8,9 @@ pmc: https://pmc.ncbi.nlm.nih.gov/articles/PMC11402978/
 access: open
 kind: paper
 topics: [uk-biobank, metabolomics, biomarkers-of-aging]
+evidence_tier: T6
+endpoint: observational
+
 ---
 
 # Metabolomic profile of biological aging in UK Biobank (n = 250,341)

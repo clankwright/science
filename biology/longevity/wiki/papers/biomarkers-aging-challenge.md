@@ -5,6 +5,9 @@ url: https://www.agingconsortium.org/challenge
 access: open
 kind: resource
 topics: [biomarkers-of-aging, competitions]
+evidence_tier: T0
+endpoint: n/a
+
 ---
 
 # Biomarkers of Aging Consortium — Challenge portal

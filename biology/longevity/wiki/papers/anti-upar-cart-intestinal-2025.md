@@ -8,6 +8,9 @@ alt_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12823409/
 access: gated
 kind: paper
 topics: [senolytics, immune-rejuvenation, gene-therapy, organ-specific, stem-cells]
+evidence_tier: T2
+endpoint: primary_met
+
 ---
 
 # Anti-uPAR CAR T cells extend senolytic CAR-T into gut aging

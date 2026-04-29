@@ -5,6 +5,9 @@ url: https://phenome.jax.org/projects/ITP1
 access: open
 kind: resource
 topics: [itp-mice, datasets]
+evidence_tier: T3
+endpoint: n/a
+
 ---
 
 # Mouse Phenome Database — ITP portal

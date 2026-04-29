@@ -8,6 +8,9 @@ pubmed: https://pubmed.ncbi.nlm.nih.gov/41299092/
 access: gated
 kind: paper
 topics: [aging-clocks, proteomics, organ-specific, uk-biobank]
+evidence_tier: T1
+endpoint: n/a
+
 ---
 
 # Organ-specific proteomic aging clocks

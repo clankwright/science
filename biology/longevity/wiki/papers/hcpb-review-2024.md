@@ -8,6 +8,9 @@ alt_url: https://www.nature.com/articles/s41514-024-00166-0
 access: open
 kind: paper
 topics: [parabiosis-blood-factors, review, interventions]
+evidence_tier: T0
+endpoint: n/a
+
 ---
 
 # Heterochronic parabiosis — 2024 review

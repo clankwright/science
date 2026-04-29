@@ -7,6 +7,9 @@ url: https://www.aging-us.com/article/205581/text
 access: open
 kind: paper
 topics: [senolytics, clinical-trials, aging-clocks]
+evidence_tier: T5
+endpoint: primary_met
+
 ---
 
 # D+Q + Fisetin vs. methylation clocks

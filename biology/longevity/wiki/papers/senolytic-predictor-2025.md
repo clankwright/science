@@ -8,6 +8,9 @@ pmc: https://pmc.ncbi.nlm.nih.gov/articles/PMC12196162/
 access: open
 kind: paper
 topics: [senolytics, drug-discovery, cheminformatics]
+evidence_tier: T0
+endpoint: n/a
+
 ---
 
 # Senolytic Predictor (2025)

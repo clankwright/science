@@ -7,6 +7,9 @@ url: https://www.nature.com/articles/s41514-026-00379-5
 access: open
 kind: paper
 topics: [aging-clocks, single-cell, transcriptomics, deep-learning]
+evidence_tier: T0
+endpoint: n/a
+
 ---
 
 # scAgeClock: attention-based single-cell aging clock at atlas scale

@@ -8,6 +8,9 @@ url: https://www.nature.com/articles/s41586-022-04722-0
 access: gated
 kind: paper
 topics: [parabiosis-blood-factors, brain-rejuvenation, interventions]
+evidence_tier: T2
+endpoint: primary_met
+
 ---
 
 # FGF17 in young CSF rejuvenates aged brain

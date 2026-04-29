@@ -8,6 +8,9 @@ biorxiv: https://www.biorxiv.org/content/10.1101/2024.05.02.592258v1
 access: open
 kind: paper
 topics: [parabiosis-blood-factors, proteomics, interventions]
+evidence_tier: T2
+endpoint: primary_met
+
 ---
 
 # PEDF — a young-blood rejuvenation factor

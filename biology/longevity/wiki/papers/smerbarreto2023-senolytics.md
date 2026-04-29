@@ -10,6 +10,9 @@ code: https://zenodo.org/records/7870357
 access: open
 kind: paper
 topics: [senolytics, drug-discovery, machine-learning]
+evidence_tier: T0
+endpoint: n/a
+
 ---
 
 # Discovery of senolytics using machine learning

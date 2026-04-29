@@ -8,6 +8,9 @@ alt_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12683667/
 access: gated
 kind: paper
 topics: [senolytics, drug-discovery, organ-specific, hallmarks-of-aging, safety, interventions]
+evidence_tier: T2
+endpoint: primary_met
+
 ---
 
 # 753b: a tissue-tropic PROTAC senolytic that avoids navitoclax thrombocytopenia

@@ -9,6 +9,9 @@ pubmed: https://pubmed.ncbi.nlm.nih.gov/40816266/
 access: gated
 kind: paper
 topics: [partial-reprogramming, yamanaka, transcriptomics]
+evidence_tier: T1
+endpoint: n/a
+
 ---
 
 # Mesenchymal drift reversed by partial reprogramming

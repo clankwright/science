@@ -8,6 +8,9 @@ alt_url: https://chiaraherzog.github.io/projects/ongoing/lifestyle_atlas/
 access: open
 kind: paper
 topics: [clinical-trials, datasets, epigenetics, metabolomics, transcriptomics, caloric-restriction, interventions]
+evidence_tier: T5
+endpoint: observational
+
 ---
 
 # TirolGESUND: open multi-omic atlas of lifestyle-intervention effects

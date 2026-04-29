@@ -9,6 +9,9 @@ pmc: https://pmc.ncbi.nlm.nih.gov/articles/PMC11485257/
 access: open
 kind: paper
 topics: [caloric-restriction, itp-mice, lifespan]
+evidence_tier: T3
+endpoint: primary_met
+
 ---
 
 # Dietary restriction in 960 genetically diverse mice

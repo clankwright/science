@@ -8,6 +8,9 @@ pubmed: https://pubmed.ncbi.nlm.nih.gov/39627462/
 access: gated
 kind: paper
 topics: [machine-learning, drug-discovery, interventions, cheminformatics]
+evidence_tier: T0
+endpoint: n/a
+
 ---
 
 # AgeXtend

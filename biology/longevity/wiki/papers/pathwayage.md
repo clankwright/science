@@ -8,6 +8,9 @@ sciencedirect: https://www.sciencedirect.com/science/article/pii/S23523964250027
 access: open
 kind: paper
 topics: [aging-clocks, pathway-analysis, interpretability]
+evidence_tier: T0
+endpoint: n/a
+
 ---
 
 # PathwayAge

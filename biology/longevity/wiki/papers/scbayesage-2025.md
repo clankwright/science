@@ -7,6 +7,9 @@ url: https://www.biorxiv.org/content/10.64898/2025.12.04.692166v1.full
 access: open
 kind: paper
 topics: [aging-clocks, single-cell, transcriptomics, machine-learning]
+evidence_tier: T0
+endpoint: n/a
+
 ---
 
 # scBayesAge

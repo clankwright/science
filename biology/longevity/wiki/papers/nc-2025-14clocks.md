@@ -10,6 +10,9 @@ pmc: https://pmc.ncbi.nlm.nih.gov/articles/PMC12338881/
 access: open
 kind: paper
 topics: [aging-clocks, epigenetics, disease-prediction]
+evidence_tier: T0
+endpoint: n/a
+
 ---
 
 # Unbiased comparison of 14 epigenetic clocks vs. 174 incident disease outcomes

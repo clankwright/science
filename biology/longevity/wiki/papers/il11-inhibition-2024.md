@@ -8,6 +8,9 @@ alt_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC11291288/
 access: open
 kind: paper
 topics: [interventions, lifespan, inflammation, hallmarks-of-aging]
+evidence_tier: T2
+endpoint: primary_met
+
 ---
 
 # IL-11 inhibition extends mouse healthspan and lifespan

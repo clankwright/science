@@ -8,6 +8,9 @@ biorxiv: https://www.biorxiv.org/content/10.1101/2024.10.29.620782v1
 access: open
 kind: paper
 topics: [biomarkers-of-aging, aging-clocks, competitions]
+evidence_tier: T0
+endpoint: n/a
+
 ---
 
 # An Open Competition for Biomarkers of Aging

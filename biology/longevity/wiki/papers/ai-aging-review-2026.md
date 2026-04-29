@@ -8,6 +8,9 @@ pmc: https://pmc.ncbi.nlm.nih.gov/articles/PMC12891069/
 access: open
 kind: paper
 topics: [review, machine-learning, aging-research]
+evidence_tier: T0
+endpoint: n/a
+
 ---
 
 # AI as a catalyst in aging research (2026 review)

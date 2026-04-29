@@ -7,6 +7,9 @@ url: https://www.liebertpub.com/doi/10.1089/cell.2025.0018
 access: gated
 kind: paper
 topics: [partial-reprogramming, gene-therapy, yamanaka, drug-discovery]
+evidence_tier: T2
+endpoint: primary_met
+
 ---
 
 # Cdkn2a-targeted AAV-OSK from Retro Biosciences

@@ -8,6 +8,9 @@ alt_url: https://onlinelibrary.wiley.com/doi/10.1111/acel.70268
 access: open
 kind: paper
 topics: [partial-reprogramming, yamanaka, review, safety]
+evidence_tier: T0
+endpoint: n/a
+
 ---
 
 # In-vivo reprogramming, organ by organ

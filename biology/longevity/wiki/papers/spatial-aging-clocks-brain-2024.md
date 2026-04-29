@@ -8,6 +8,9 @@ alt_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC11798877/
 access: open
 kind: paper
 topics: [aging-clocks, single-cell, brain-rejuvenation, transcriptomics, interpretability, machine-learning, organ-specific]
+evidence_tier: T1
+endpoint: n/a
+
 ---
 
 # First spatial aging clock — and a "T cell shadow" on the aging brain

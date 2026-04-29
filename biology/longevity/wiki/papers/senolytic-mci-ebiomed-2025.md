@@ -7,6 +7,9 @@ url: https://www.thelancet.com/journals/ebiom/article/PIIS2352-3964(25)00056-8/f
 access: open
 kind: paper
 topics: [senolytics, clinical-trials, brain-rejuvenation]
+evidence_tier: T5
+endpoint: primary_met
+
 ---
 
 # STAMINA — senolytics for MCI + slow gait (2025)

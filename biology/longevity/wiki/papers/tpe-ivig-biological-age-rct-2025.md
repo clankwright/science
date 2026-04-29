@@ -8,6 +8,9 @@ alt_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12341816/
 access: open
 kind: paper
 topics: [parabiosis-blood-factors, clinical-trials, aging-clocks, immune-rejuvenation, interventions]
+evidence_tier: T6
+endpoint: primary_met
+
 ---
 
 # TPE+IVIG cuts biological age by 2.6 years in healthy adults (RCT)

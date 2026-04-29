@@ -8,6 +8,9 @@ alt_url: https://www.thelancet.com/journals/eclinm/article/PIIS2589-5370(25)0056
 access: open
 kind: paper
 topics: [nad-mitophagy, clinical-trials, interventions]
+evidence_tier: T6
+endpoint: primary_not_met
+
 ---
 
 # NR for long-COVID — RCT

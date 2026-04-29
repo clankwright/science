@@ -7,6 +7,9 @@ url: https://www.medrxiv.org/content/10.1101/2025.07.09.25331038v1
 access: open
 kind: paper
 topics: [clinical-trials, drug-repurposing, aging-clocks, epigenetics, interventions, metabolomics]
+evidence_tier: T6
+endpoint: primary_met
+
 ---
 
 # First RCT of GLP-1 agonist with epigenetic-age outcomes

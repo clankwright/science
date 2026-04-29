@@ -7,6 +7,9 @@ url: https://www.biorxiv.org/content/10.64898/2026.03.28.714980v1
 access: open
 kind: paper
 topics: [machine-learning, deep-learning, aging-clocks, biomarkers-of-aging]
+evidence_tier: T0
+endpoint: n/a
+
 ---
 
 # Longevity-LLM: a Qwen3-14B foundation model for aging biology

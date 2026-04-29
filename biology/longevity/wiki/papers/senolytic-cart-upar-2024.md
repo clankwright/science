@@ -8,6 +8,9 @@ alt_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC10950785/
 access: open
 kind: paper
 topics: [senolytics, gene-therapy, immune-rejuvenation, interventions]
+evidence_tier: T5
+endpoint: primary_met
+
 ---
 
 # Senolytic CAR T cells targeting uPAR — single dose, year-long effect

@@ -9,6 +9,9 @@ alt_url: https://onlinelibrary.wiley.com/doi/10.1111/acel.70390
 access: open
 kind: paper
 topics: [chemical-reprogramming, reprogramming, safety, itp-mice]
+evidence_tier: T2
+endpoint: primary_met
+
 ---
 
 # Lipid-droplet toxicity from in-vivo chemical reprogramming

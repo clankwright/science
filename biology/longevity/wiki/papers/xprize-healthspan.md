@@ -5,6 +5,9 @@ url: https://www.xprize.org/competitions/healthspan
 access: open
 kind: resource
 topics: [competitions, clinical-trials, biomarkers-of-aging]
+evidence_tier: T0
+endpoint: n/a
+
 ---
 
 # XPRIZE Healthspan

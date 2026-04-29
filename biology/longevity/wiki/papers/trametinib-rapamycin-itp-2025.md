@@ -8,6 +8,9 @@ alt_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12270913/
 access: open
 kind: paper
 topics: [mtor, drug-repurposing, lifespan, interventions, sex-specific, hallmarks-of-aging]
+evidence_tier: T3
+endpoint: primary_met
+
 ---
 
 # Trametinib + rapamycin: additive ~30% mouse lifespan extension

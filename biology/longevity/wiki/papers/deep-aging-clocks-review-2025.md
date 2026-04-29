@@ -7,6 +7,9 @@ url: https://www.sciencedirect.com/science/article/pii/S1568163725002351
 access: gated
 kind: paper
 topics: [aging-clocks, deep-learning, review]
+evidence_tier: T0
+endpoint: n/a
+
 ---
 
 # Deep aging clocks: AI-powered strategies for biological age estimation

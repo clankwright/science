@@ -8,6 +8,9 @@ alt_url: https://www.nature.com/articles/s41598-025-05396-0
 access: open
 kind: paper
 topics: [parabiosis-blood-factors, clinical-trials, aging-clocks, safety]
+evidence_tier: T6
+endpoint: primary_not_met
+
 ---
 
 # Negative result: plasmapheresis does not reduce epigenetic age in healthy adults

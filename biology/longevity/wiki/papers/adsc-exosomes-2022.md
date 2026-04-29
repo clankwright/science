@@ -7,6 +7,9 @@ url: https://www.science.org/doi/10.1126/sciadv.abq2226
 access: open
 kind: paper
 topics: [exosomes-extracellular-vesicles, stem-cells, interventions, aging-clocks]
+evidence_tier: T2
+endpoint: primary_met
+
 ---
 
 # Young ADSC exosomes rejuvenate old mice

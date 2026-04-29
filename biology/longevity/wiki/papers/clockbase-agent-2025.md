@@ -10,6 +10,9 @@ pubmed: https://pubmed.ncbi.nlm.nih.gov/41332661/
 access: open
 kind: paper
 topics: [machine-learning, interventions, aging-clocks, drug-repurposing, benchmarks]
+evidence_tier: T0
+endpoint: n/a
+
 ---
 
 # ClockBase Agent

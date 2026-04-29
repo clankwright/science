@@ -8,6 +8,9 @@ alt_url: https://www.biorxiv.org/content/10.1101/2024.03.08.584074v1
 access: open
 kind: paper
 topics: [partial-reprogramming, yamanaka, safety, itp-mice]
+evidence_tier: T2
+endpoint: primary_met
+
 ---
 
 # Off-target OSKM in reprogrammable mouse strains

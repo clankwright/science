@@ -8,6 +8,9 @@ alt_url: https://www.biorxiv.org/content/10.1101/2024.06.07.597771v1
 access: gated
 kind: paper
 topics: [aging-clocks, proteomics, organ-specific, uk-biobank, brain-rejuvenation, immune-rejuvenation]
+evidence_tier: T1
+endpoint: n/a
+
 ---
 
 # Brain and immune proteomic ages predict healthspan in 44k UKB participants

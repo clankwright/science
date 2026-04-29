@@ -7,6 +7,9 @@ url: https://www.nature.com/articles/s41467-024-46020-5
 access: open
 kind: paper
 topics: [partial-reprogramming, reprogramming, review, yamanaka]
+evidence_tier: T0
+endpoint: n/a
+
 ---
 
 # The long and winding road of reprogramming-induced rejuvenation

@@ -9,6 +9,9 @@ alt_url: https://www.embopress.org/doi/abs/10.1038/s44321-025-00265-9
 access: open
 kind: paper
 topics: [chemical-reprogramming, reprogramming, lifespan, hallmarks-of-aging]
+evidence_tier: T2
+endpoint: primary_met
+
 ---
 
 # Chemical reprogramming extends lifespan

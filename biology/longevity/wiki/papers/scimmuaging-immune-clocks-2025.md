@@ -8,6 +8,9 @@ alt_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12003178/
 access: open
 kind: paper
 topics: [aging-clocks, single-cell, immune-rejuvenation, transcriptomics, interpretability, machine-learning, datasets]
+evidence_tier: T0
+endpoint: n/a
+
 ---
 
 # scImmuAging: per-cell-type immune aging clocks, longitudinal

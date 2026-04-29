@@ -9,6 +9,9 @@ alt_url: https://www.aging-us.com/article/204896/text
 access: open
 kind: paper
 topics: [chemical-reprogramming, reprogramming, drug-discovery]
+evidence_tier: T2
+endpoint: primary_met
+
 ---
 
 # Chemical cocktails reverse cellular aging
