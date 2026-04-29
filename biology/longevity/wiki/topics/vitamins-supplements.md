@@ -28,6 +28,14 @@ don't bother."
   Aging RCT showed immune-marker improvements at 4 weeks. Modest
   effect, real mechanism.
 
+## Solid evidence on validated biomarker (no direct mortality endpoint)
+- [[papers/chilibeck-2017-creatine-older-adults]] — meta-analysis
+  of 22 RCTs (n=721) showing creatine + resistance training
+  adds +1.37 kg lean mass and significant 1RM gains vs RT alone
+  in older adults. The biomarker (lean mass, strength) is itself
+  well-validated as a mortality predictor (see
+  [[topics/muscle-strength]]).
+
 ## Adjacent
 - [[topics/clinical-trials]], [[topics/interventions]],
   [[topics/nad-mitophagy]]

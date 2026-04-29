@@ -105,6 +105,12 @@ per-paper before redistributing full text.
 | `urolithin-a-immune-2025` | `ARR` | https://www.nature.com/articles/s43587-025-00996-x | Nature Aging. Verify CC-BY OA status per-article. |
 | `xprize-healthspan` | `website-tos` | https://www.xprize.org/competitions/healthspan | XPRIZE Foundation website; subject to xprize.org site terms. |
 
+## Unknown — needs investigation
+
+| ID | License | URL | Note |
+|---|---|---|---|
+| `chilibeck-2017-creatine-older-adults` | `CC-BY-NC-3.0` | https://pmc.ncbi.nlm.nih.gov/articles/PMC5679696/ | Open Access J Sports Med (Dove Press) CC-BY-NC. |
+
 ## Summary
 
 | Category | Count |
@@ -113,8 +119,8 @@ per-paper before redistributing full text.
 | Restricted | 12 |
 | Varies per paper | 10 |
 | Not redistributable | 17 |
-| Unknown | 0 |
-| **Total** | **75** |
+| Unknown | 1 |
+| **Total** | **76** |
 
 ## Safe-to-commit pipeline contract
 

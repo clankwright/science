@@ -1443,6 +1443,26 @@
       "note": "VITAL trial, n=25,871, 5.3 yr follow-up. Vitamin D 2000 IU/day did NOT reduce invasive cancer (HR 0.96), CVD events (HR 0.97), or all-cause mortality (HR 0.99). Disconfirms supplementation in non-deficient adults.",
       "license": "CC-BY-NC-4.0",
       "license_note": "NEJM article paywalled; PMC author manuscript OA."
+    },
+    {
+      "id": "chilibeck-2017-creatine-older-adults",
+      "title": "Effect of creatine supplementation during resistance training on lean tissue mass and muscular strength in older adults: a meta-analysis",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5679696/",
+      "alt_url": [
+        "https://www.dovepress.com/effect-of-creatine-supplementation-during-resistance-training-on-lean--peer-reviewed-fulltext-article-OAJSM",
+        "https://pubmed.ncbi.nlm.nih.gov/29138605/"
+      ],
+      "topics": [
+        "muscle-strength",
+        "interventions",
+        "vitamins-supplements",
+        "review"
+      ],
+      "kind": "paper",
+      "access": "open",
+      "note": "Chilibeck et al. 2017 Open Access J Sports Med. Meta-analysis of 22 RCTs in older adults (n=721, mean age 57+) of creatine + resistance training vs RT alone. Creatine added +1.37 kg lean tissue mass (95% CI 0.97-1.76, p<0.00001) and significantly larger gains in chest press and leg press 1RM. Effect size on the same biomarkers (lean mass, strength) the wiki uses to justify resistance training.",
+      "license": "CC-BY-NC-3.0",
+      "license_note": "Open Access J Sports Med (Dove Press) CC-BY-NC."
     }
   ]
 }

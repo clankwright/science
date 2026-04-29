@@ -91,6 +91,13 @@ tier reached by *any* trial of that intervention, not an average.
 - **Blood pressure control to <120 SBP** in non-diabetic
   hypertensives. [[papers/sprint-2015-intensive-bp]].
 - **Statin therapy** for LDL-C lowering. [[papers/ctt-2012-statins-low-risk]].
+- **Resistance training** for lean mass / strength /
+  all-cause mortality. [[papers/saeidifard-2019-resistance-mortality]],
+  [[papers/garcia-hermoso-2018-strength-mortality]].
+- **Creatine monohydrate as RT adjunct** for lean mass / strength
+  in older adults. [[papers/chilibeck-2017-creatine-older-adults]]
+  is T7 on the biomarker; mortality benefit is by analogy to the
+  strength-mortality literature, not directly demonstrated.
 
 ### Tier 6 (Phase 2/3 RCT, surrogate endpoint)
 - **GLP-1 agonists** for biological age / metabolic markers.

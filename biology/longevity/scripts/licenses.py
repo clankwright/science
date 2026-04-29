@@ -149,6 +149,7 @@ LICENSE_MAP: dict[str, tuple[str, str]] = {
     "ctt-2012-statins-low-risk": ("CC-BY-4.0", "Lancet (CC-BY-4.0); PMC OA primary."),
     "sniderman-2011-apob-meta": ("CC-BY-NC-4.0", "Circ CV Qual Outcomes article paywalled; PMC author manuscript OA."),
     "vital-2019-vitd-omega3": ("CC-BY-NC-4.0", "NEJM article paywalled; PMC author manuscript OA."),
+    "chilibeck-2017-creatine-older-adults": ("CC-BY-NC-3.0", "Open Access J Sports Med (Dove Press) CC-BY-NC."),
 }
 
 

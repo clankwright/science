@@ -78,6 +78,27 @@ per session is enough.
 Tracks **lean mass**, **strength** (incl. grip), and **functional
 capacity** biomarkers (see Part 2).
 
+#### Creatine monohydrate as RT adjunct (Tier 7 on biomarker)
+**Evidence: T7** (meta-analysis on the same biomarkers — lean mass,
+1RM strength — that the wiki has already validated as mortality
+predictors). [[papers/chilibeck-2017-creatine-older-adults]]: 22
+RCTs, n=721 older adults, creatine + RT vs RT alone added
+**+1.37 kg lean mass** (95% CI 0.97–1.76, p<0.00001) plus
+significantly larger gains in chest-press and leg-press 1RM.
+
+Creatine is the cleanest supplement-aisle case in the wiki's
+framework. The evidence on the biomarker is at the same tier as the
+strength-mortality literature; the inferred mortality benefit is by
+analogy, not directly demonstrated, but the chain of reasoning is
+parallel to the one used to promote resistance training itself.
+
+- 5 g/day creatine monohydrate, with or after training. Loading
+  phases optional.
+- Cheap, well-tolerated, decades of safety data including
+  renal-safety RCTs.
+- Adjunct to RT, not a replacement; without progressive RT the
+  effect is much smaller.
+
 ### Sleep 7-9 hours, regular schedule (Tier 7 short-sleep arm)
 **Evidence: T7** (meta-analysis, n=1.4M, all-cause mortality).
 [[papers/cappuccio-2010-sleep-mortality]]: U-shaped sleep-mortality
