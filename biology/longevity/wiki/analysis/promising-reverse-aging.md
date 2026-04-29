@@ -104,9 +104,13 @@ that all touch the **ERK / AMPK / mTORC1** circuitry, all in mice over
 the last 24 months:
 
 - [[papers/itp-nia]] + [[papers/pearl-rapamycin-2025]]: rapamycin is
-  the most reproducible mouse-lifespan intervention (+20-25%) and now
-  has a clean human RCT showing safe, dose-dependent benefits at 1
-  year.
+  the most reproducible mouse-lifespan intervention (+20-25%) and
+  now has a 1-year human RCT (PEARL). PEARL's primary efficacy
+  endpoint (visceral adiposity) was not met; sex-stratified subgroup
+  analyses of secondary endpoints showed lean-mass/pain benefit in
+  women on 10 mg and bone-mineral-content benefit in men on 10 mg.
+  Safety endpoint was met. Read it as a feasibility/safety result,
+  not a longevity-efficacy RCT.
 - [[papers/trametinib-rapamycin-itp-2025]] (*Nature Aging* 2025):
   combining rapamycin with the FDA-approved MEK inhibitor trametinib
   gives **~29% (F) / 27% (M) median lifespan extension, additive over

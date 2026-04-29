@@ -17,8 +17,9 @@ prior CAD in head-to-head analyses.
 
 ## How to raise it
 - [[papers/helgerud-2007-4x4-vo2max]] — Norwegian 4x4 protocol:
-  4 min × 4 intervals at 90-95% HRmax, 3 min easy between. +13%
-  VO2max in 8 weeks vs ~3% on continuous moderate training.
+  4 min × 4 intervals at 90-95% HRmax, 3 min easy between. +7.2%
+  VO2max in 8 weeks in moderately trained subjects; no significant
+  change in continuous-moderate group.
 
 ## Adjacent
 - [[topics/muscle-strength]] — orthogonal, additive mortality

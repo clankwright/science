@@ -25,8 +25,9 @@ a 40-something is 42+ mL/kg/min; 50+ is excellent.
 
 Protocol that works for most untrained adults
 ([[papers/helgerud-2007-4x4-vo2max]], the canonical Norwegian 4x4
-study: +13% VO2max in 8 weeks vs ~3% on continuous moderate
-training):
+study: +7.2% VO2max in 8 weeks in moderately trained subjects, with
+no significant change in the continuous-moderate group; untrained
+beginners typically see 10-15%):
 
 - **2 hard sessions per week**: warm up 10 min, then 4 min hard
   ("can only get a few words out"), 3 min easy, 4 rounds. Bike or
@@ -143,10 +144,16 @@ deficiencies. Don't megadose.
 ### 9. Rapamycin (off-label)
 The single drug from the wiki's [[papers/itp-nia]] / 
 [[papers/pearl-rapamycin-2025]] / 
-[[papers/trametinib-rapamycin-itp-2025]] cluster that has both
-strong mouse-lifespan evidence (+20-25% in UM-HET3) and a real human
-RCT (PEARL, 1 year, healthspan markers improved at 5-10 mg weekly,
-acceptable safety).
+[[papers/trametinib-rapamycin-itp-2025]] cluster with both strong
+mouse-lifespan evidence (+20-25% in UM-HET3) and a real human RCT.
+
+PEARL caveat: the trial's primary efficacy endpoint (visceral
+adiposity) was **not met** (p=0.379). Significant healthspan effects
+emerged only in sex-stratified subgroup analyses of secondary
+endpoints — lean tissue mass and pain in women on 10 mg, bone
+mineral content in men on 10 mg. Safety endpoint was met (well
+tolerated at both doses over 48 weeks). Not RCT-validated for
+longevity.
 
 The off-label longevity-prescribing community (AgelessRx, Healthspan,
 Alan Green's protocol) uses pulse dosing because daily dosing causes

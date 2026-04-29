@@ -28,8 +28,25 @@ LDL-C** when available. apoB counts every atherogenic particle
 (LDL, VLDL, IDL, Lp(a), remnants) directly; LDL-C is a calculated
 estimate of cholesterol content in the LDL subset. Discordance
 between apoB and LDL-C is common, and apoB wins every time the two
-disagree. The 2019 ESC/EAS dyslipidaemia guidelines now name apoB as
-the more accurate marker.
+disagree.
+
+## Guideline status
+- **2019 ESC/EAS** dyslipidaemia guidelines: apoB named as more
+  accurate marker.
+- **2026 ACC/AHA/Multisociety dyslipidemia guideline**
+  (CIR.0000000000001423): "LDL-C and apoB provide differing risk
+  estimates. Clinically significant discordance often occurs when
+  LDL-C is at goal but apoB remains elevated above the treatment
+  goal, indicating persistent atherogenic particle burden and
+  potential need for therapy intensification." apoB recommended for
+  residual-risk assessment in cardiometabolic disease, T2DM,
+  triglycerides ≥150 mg/dL, and ASCVD when LDL-C goals are met.
+
+apoB is a **risk metric**, not a drug target. There is currently no
+approved drug class that directly targets apoB; apoB is lowered as a
+downstream consequence of LDL-lowering (statins, ezetimibe, PCSK9
+inhibitors) and triglyceride-lowering therapies. Several direct
+apoB-targeting agents are in clinical trials.
 
 ## Key findings
 - Meta-analysis across published epidemiological studies.

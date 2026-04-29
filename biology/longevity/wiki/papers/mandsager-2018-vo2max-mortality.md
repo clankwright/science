@@ -42,7 +42,8 @@ prescribing aerobic fitness as a preventive intervention.
 - Measure CRF: lab VO2max (~$200) or watch estimate (within ~10%).
 - Targets for a 40-something adult: >42 mL/kg/min good, >50 excellent.
 - Train for it: see [[papers/helgerud-2007-4x4-vo2max]] for the
-  highest-yield protocol (4x4 intervals, +13% VO2max in 8 weeks).
+  highest-yield protocol (4x4 intervals, +7.2% VO2max in 8 weeks
+  in moderately trained subjects; larger gains in untrained).
 
 ## Caveats
 - Observational. Confounders adjusted but not eliminated.

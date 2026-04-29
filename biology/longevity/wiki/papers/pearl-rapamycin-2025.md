@@ -23,21 +23,47 @@ normative-aging human cohort.
 ## Arms
 Placebo, **5 mg**, or **10 mg** compounded rapamycin once weekly.
 
+## Endpoints
+- **Primary:** safety (AEs, safety blood biomarkers) and visceral
+  adiposity (VAT).
+- **Secondary:** efficacy blood biomarkers, DEXA-derived lean tissue
+  mass and bone mineral content, quality-of-life and frailty surveys.
+
 ## Key outcomes (1 year)
-- **Safe + well tolerated** at both doses.
-- Dose-dependent improvements in:
-  - Lean tissue mass
-  - Pain scores
-  - Social functioning
-  - Overall quality of life
-  - Osteoarthritis score (females)
-  - Bone mineral content (males)
-- **Sex-specific** effect profiles — see [[papers/itp-sex-specific-2025]]
-  for mouse-data parallel.
+- **Primary efficacy endpoint not met.** No significant change in
+  VAT in the main intention-to-treat analysis (F(2, 101.408) = 0.978,
+  **p=0.379**). Main-effect changes in BMC, LTM, and BMD were also
+  not significant (p=0.250, p=0.331, p=0.552 respectively).
+- **Safe + well tolerated** at both doses (primary safety endpoint
+  met). AE rates similar across arms; safety blood biomarkers
+  remained within normal ranges.
+- **Sex-stratified subgroup analyses** found significant effects:
+  - LTM increase specific to **females on 10 mg**
+    (+1939.7 g vs −298.1 g placebo, p=0.002).
+  - BMC increase specific to **males on 10 mg** (interaction
+    p=0.035).
+  - Self-reported pain improvement, females on 10 mg.
+  - Improvements in some QoL/social-function subscales.
+- These are post-hoc sex-stratified analyses of secondary endpoints,
+  not pre-specified primary outcomes. Interpret accordingly.
+
+## Caveats
+- Primary endpoint (VAT) was negative. The headline-friendly
+  findings (lean mass, pain) are sex-stratified subgroup analyses
+  of secondary endpoints.
+- Decentralised, crowd-funded design; recruited via the AgelessRx
+  platform (selection bias toward already-interested users).
+- 48-week follow-up is short relative to the timescale on which
+  rapamycin's geroprotective effects are hypothesised to act.
+- Reported adverse-event profile in healthy adults is reassuring but
+  PEARL is not powered to detect rare immunosuppression events
+  (e.g. opportunistic infections) reported anecdotally elsewhere.
 
 ## Why it's significant
-First large human rapamycin RCT with healthspan primary endpoints
-outside oncology/transplant. Sets a template for follow-ups.
+First large decentralised human rapamycin RCT with healthspan-related
+endpoints outside oncology/transplant. Useful as a safety/feasibility
+template even though efficacy results are limited to subgroup
+findings.
 
 ## Related
 - [[papers/itp-nia]] — rapamycin is the flagship ITP hit
