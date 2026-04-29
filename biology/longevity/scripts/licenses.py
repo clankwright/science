@@ -158,6 +158,9 @@ LICENSE_MAP: dict[str, tuple[str, str]] = {
     "buijze-2016-cold-shower-rct": ("CC-BY-4.0", "PLOS ONE CC-BY-4.0; full text OA."),
     "ulrich-1984-window-view-recovery": ("ARR", "Science (AAAS) paywalled; PubMed abstract free."),
     "marucha-1998-stress-wound-healing": ("ARR", "Psychosomatic Medicine (Wolters Kluwer) paywalled; PubMed abstract free."),
+    "kamstrup-2009-lpa-mendelian": ("ARR", "JAMA paywalled; PubMed abstract free."),
+    "younossi-2023-nafld-masld-epidemiology": ("CC-BY-NC-ND-4.0", "Hepatology (Wolters Kluwer) PMC author manuscript OA, CC-BY-NC-ND."),
+    "save-2016-cpap-cv-prevention": ("ARR", "NEJM paywalled; abstract + figures free."),
 }
 
 

@@ -1608,6 +1608,63 @@
       "note": "Marucha, Kiecolt-Glaser, Favagehi 1998 Psychosom Med. Within-subjects, n=11 dental students. Two 3.5mm palatal punch biopsies per subject: one during summer vacation, one 3 days before a major exam. Exam-period wounds healed 40% slower (3 extra days), with 68% decline in IL-1beta mRNA expression. Mechanistic evidence for stress-immune-healing link; small N but each subject is own control.",
       "license": "ARR",
       "license_note": "Psychosomatic Medicine (Wolters Kluwer) paywalled; PubMed abstract free."
+    },
+    {
+      "id": "kamstrup-2009-lpa-mendelian",
+      "title": "Genetically elevated lipoprotein(a) and increased risk of myocardial infarction",
+      "url": "https://jamanetwork.com/journals/jama/fullarticle/184063",
+      "alt_url": [
+        "https://pubmed.ncbi.nlm.nih.gov/19509380/"
+      ],
+      "topics": [
+        "cardiovascular-prevention",
+        "interventions",
+        "lifespan"
+      ],
+      "kind": "paper",
+      "access": "gated",
+      "note": "Kamstrup et al. 2009 JAMA. Combined Mendelian randomization across three Copenhagen cohorts: CCHS prospective (n=8,637, 599 MI), CGPS cross-sectional (n=29,388, 994 MI), and CIHDS case-control (n=2,461, 1,231 MI). Genetic LPA KIV-2 variants causally elevate Lp(a) and MI risk. Hazard ratios 2.0+ for the highest Lp(a)-genotype tertile vs lowest. Demonstrates causal role of Lp(a) in CVD via genetic instrument variable, independent of classical confounders.",
+      "license": "ARR",
+      "license_note": "JAMA paywalled; PubMed abstract free."
+    },
+    {
+      "id": "younossi-2023-nafld-masld-epidemiology",
+      "title": "The global epidemiology of nonalcoholic fatty liver disease (NAFLD) and nonalcoholic steatohepatitis (NASH): a systematic review",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10026948/",
+      "alt_url": [
+        "https://journals.lww.com/hep/fulltext/2023/04000/the_global_epidemiology_of_nonalcoholic_fatty.27.aspx",
+        "https://pubmed.ncbi.nlm.nih.gov/36626630/"
+      ],
+      "topics": [
+        "cardiovascular-prevention",
+        "body-composition",
+        "interventions",
+        "review"
+      ],
+      "kind": "paper",
+      "access": "open",
+      "note": "Younossi et al. 2023 Hepatology. Systematic review and meta-analysis of 92 studies (n=9,361,716). Global NAFLD/MASLD prevalence 30.05% (95% CI 27.88-32.32). Prevalence rising: 25.26% (1990-2006) -> 38.00% (2016-2019). Mortality: 12.60 per 1,000 person-years all-cause, 4.20 cardiac, 0.92 liver-specific. Cardiovascular causes dominate MASLD mortality; liver-specific death is the minority.",
+      "license": "CC-BY-NC-ND-4.0",
+      "license_note": "Hepatology (Wolters Kluwer) PMC author manuscript OA, CC-BY-NC-ND."
+    },
+    {
+      "id": "save-2016-cpap-cv-prevention",
+      "title": "CPAP for prevention of cardiovascular events in obstructive sleep apnea (SAVE)",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa1606599",
+      "alt_url": [
+        "https://pubmed.ncbi.nlm.nih.gov/27571048/"
+      ],
+      "topics": [
+        "cardiovascular-prevention",
+        "clinical-trials",
+        "interventions",
+        "sleep"
+      ],
+      "kind": "paper",
+      "access": "gated",
+      "note": "McEvoy et al. 2016 NEJM. SAVE RCT, n=2,687 patients with moderate-severe OSA and prior CVD, randomised to CPAP + usual care vs usual care alone. Mean follow-up 3.7 yr; mean CPAP adherence 3.3 hr/night. Primary composite (CV death + MI + stroke + hospitalisation for unstable angina/HF/TIA): 17.0% CPAP vs 15.4% control, HR 1.10 (95% CI 0.91-1.32, p=0.34). Primary endpoint NOT met. CPAP did improve sleep, snoring, and quality-of-life secondary endpoints.",
+      "license": "ARR",
+      "license_note": "NEJM paywalled; abstract + figures free."
     }
   ]
 }

@@ -99,6 +99,7 @@ per-paper before redistributing full text.
 | `gpld1-tnap-brain-vasculature-2026` | `ARR` | https://www.cell.com/cell/fulltext/S0092-8674(26)00111-X | Cell (Elsevier paywall); PMC author manuscript OA (PMC13070421). |
 | `helgerud-2007-4x4-vo2max` | `ARR` | https://pubmed.ncbi.nlm.nih.gov/17414804/ | Lippincott / ACSM. Paywalled; PubMed abstract free. |
 | `itp-mpd-portal` | `website-tos` | https://phenome.jax.org/projects/ITP1 | Jackson Lab Mouse Phenome Database site terms. |
+| `kamstrup-2009-lpa-mendelian` | `ARR` | https://jamanetwork.com/journals/jama/fullarticle/184063 | JAMA paywalled; PubMed abstract free. |
 | `laukkanen-2015-sauna-mortality` | `ARR` | https://pubmed.ncbi.nlm.nih.gov/25705824/ | JAMA Intern Med paywalled; PubMed abstract free. No PMC OA available. |
 | `marucha-1998-stress-wound-healing` | `ARR` | https://journals.lww.com/psychosomaticmedicine/abstract/1998/05000/mucosal_wound_healing_is_impaired_by_examination.25.aspx | Psychosomatic Medicine (Wolters Kluwer) paywalled; PubMed abstract free. |
 | `mesenchymal-drift-cell-2025` | `ARR` | https://www.cell.com/cell/abstract/S0092-8674(25)00853-0 | Cell (Elsevier). Paywalled; no known preprint at time of writing. |
@@ -107,6 +108,7 @@ per-paper before redistributing full text.
 | `paine-partial-reprog-review-2024` | `ARR` | https://onlinelibrary.wiley.com/doi/10.1111/acel.14039 | Wiley Aging Cell. Check OA status per-article; often paywalled. |
 | `plasma-proteomics-brain-immune-2025` | `ARR` | https://www.nature.com/articles/s41591-025-03798-1 | Nature Medicine (paywalled unless CC-BY paid); bioRxiv preprint author-choice. |
 | `retro-precision-reprog-2025` | `ARR` | https://www.liebertpub.com/doi/10.1089/cell.2025.0018 | Liebert Cellular Reprogramming. Paywalled; verify per-article OA status. |
+| `save-2016-cpap-cv-prevention` | `ARR` | https://www.nejm.org/doi/full/10.1056/NEJMoa1606599 | NEJM paywalled; abstract + figures free. |
 | `select-2023-semaglutide-cv-outcomes` | `ARR` | https://www.nejm.org/doi/full/10.1056/NEJMoa2307563 | NEJM paywalled; abstract + figures free. |
 | `tert-knockin-2025` | `ARR` | https://onlinelibrary.wiley.com/doi/10.1111/acel.14445 | Wiley Aging Cell. Verify CC-BY OA status per-article; some articles are OA. |
 | `ulrich-1984-window-view-recovery` | `ARR` | https://www.science.org/doi/10.1126/science.6143402 | Science (AAAS) paywalled; PubMed abstract free. |
@@ -118,6 +120,7 @@ per-paper before redistributing full text.
 | ID | License | URL | Note |
 |---|---|---|---|
 | `chilibeck-2017-creatine-older-adults` | `CC-BY-NC-3.0` | https://pmc.ncbi.nlm.nih.gov/articles/PMC5679696/ | Open Access J Sports Med (Dove Press) CC-BY-NC. |
+| `younossi-2023-nafld-masld-epidemiology` | `CC-BY-NC-ND-4.0` | https://pmc.ncbi.nlm.nih.gov/articles/PMC10026948/ | Hepatology (Wolters Kluwer) PMC author manuscript OA, CC-BY-NC-ND. |
 
 ## Summary
 
@@ -126,9 +129,9 @@ per-paper before redistributing full text.
 | Redistributable | 37 |
 | Restricted | 14 |
 | Varies per paper | 10 |
-| Not redistributable | 22 |
-| Unknown | 1 |
-| **Total** | **84** |
+| Not redistributable | 24 |
+| Unknown | 2 |
+| **Total** | **87** |
 
 ## Safe-to-commit pipeline contract
 

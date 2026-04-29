@@ -157,6 +157,24 @@ hypertensives): intensive SBP target <120 vs <140 cut major CV events
 **25%** and all-cause mortality **27%**. Trial halted early for
 benefit. Home cuff is more accurate than clinic.
 
+### Measure Lp(a) once (Tier 7 causal)
+**Evidence: T7** (Mendelian randomization across 3 cohorts).
+[[papers/kamstrup-2009-lpa-mendelian]]: genetic LPA variants that
+elevate Lp(a) also elevate MI risk ~2-fold, independent of LDL-C
+and ApoB. Lp(a) is the most common genetic CVD risk factor (~20%
+of the population has elevated levels), is set largely at birth,
+and is **not measured on standard lipid panels**.
+
+- One-time measurement is sufficient (set largely by genetics).
+- Reference: >50 mg/dL or >125 nmol/L is broadly considered
+  elevated; risk gradient continues higher.
+- No approved Lp(a)-lowering drug yet; phase-3 readouts pending
+  (HORIZON, OCEAN(a), ACCLAIM-Lp(a) — see
+  [[analysis/yet-to-publish]]).
+- If your Lp(a) is elevated, the actionable response is more
+  aggressive optimisation of every other modifiable risk factor
+  (ApoB, BP, weight, fitness).
+
 ### Lower LDL-C / ApoB with statins where indicated (Tier 7)
 **Evidence: T7** (CTT IPD meta-analysis of 27 RCTs).
 [[papers/ctt-2012-statins-low-risk]]: each 1 mmol/L LDL-C reduction
@@ -418,6 +436,45 @@ if it just happens to correlate with being healthy.
   has weaker RCT evidence than treating the underlying inflammation
   driver.*
 
+## Lp(a)
+
+- **Target.** Reference ranges vary; <50 mg/dL or <125 nmol/L
+  considered desirable. Risk gradient continues to higher
+  values. Population distribution is highly skewed.
+- **What it predicts.** [[papers/kamstrup-2009-lpa-mendelian]]:
+  HRs of ~1.6–2.6× for MI in the highest LPA-genotype tertile,
+  independent of LDL-C and ApoB. Most common genetic CVD risk
+  factor; ~20% of the general population has elevated levels.
+- **Intervention that moves it.** None directly approved as of
+  2026. Niacin lowers Lp(a) modestly but failed to reduce CV
+  events in AIM-HIGH and HPS2-THRIVE; do not use it for Lp(a).
+  Phase-3 antisense (pelacarsen) and siRNA (olpasiran,
+  lepodisiran) trials are pending — see
+  [[analysis/yet-to-publish]].
+- **Marker vs cause.** *Causal* per Mendelian randomization, but
+  not yet pharmacologically actionable. Action: more aggressive
+  optimisation of every other modifiable risk factor (ApoB, BP,
+  weight, fitness) when Lp(a) is elevated.
+- **How to measure.** Order Lp(a) once in a lifetime as part of
+  a comprehensive lipid panel; not on standard panels by default.
+
+## Liver fat (ALT, AST, imaging-based steatosis, MASLD)
+
+- **Target.** Normal ALT/AST. No imaging evidence of steatosis on
+  ultrasound / MRI-PDFF.
+- **What it predicts.** [[papers/younossi-2023-nafld-masld-epidemiology]]:
+  global MASLD prevalence 30% and rising. **Cardiovascular causes
+  dominate MASLD mortality** (~4× liver-specific). Liver fat is
+  effectively a biomarker of cardiometabolic dysfunction.
+- **Intervention that moves it.** Weight loss, fitness, fibre,
+  alcohol minimisation, glucose/insulin management. Same
+  upstream interventions as Tier A. GLP-1s have direct phase-3
+  hepatic-outcome evidence.
+- **Marker vs cause.** *Mostly marker for cardiometabolic
+  dysfunction in early stages; can become causal at the
+  fibrosis stage* (advanced fibrosis carries its own mortality
+  signal).
+
 ## Biological-age clocks (epigenetic / proteomic / metabolomic)
 
 - **Target.** Trajectory over time, not a single absolute value.
@@ -443,6 +500,9 @@ if it just happens to correlate with being healthy.
 - VO2max (lab test or watch estimate).
 - Grip strength (cheap dynamometer).
 - DEXA scan once for body composition baseline.
+- **Lp(a) once in a lifetime.** Set largely by genetics; not
+  measured on standard panels by default; ~20% prevalence of
+  elevated levels.
 - **Optional**: epigenetic age via TruDiagnostic, MyDNAge, or similar
   for longitudinal tracking.
 

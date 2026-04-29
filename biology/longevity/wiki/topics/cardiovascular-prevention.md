@@ -18,7 +18,13 @@ systematically underprescribed in primary prevention.
 - [[papers/sniderman-2011-apob-meta]] — apoB beats LDL-C by ~12%
   on relative-risk-reduction prediction; non-HDL-C is intermediate.
   apoB measurement is now the recommended marker per 2019 ESC/EAS
-  guidelines.
+  and 2026 ACC/AHA guidelines.
+- [[papers/kamstrup-2009-lpa-mendelian]] — Lp(a) is causal for MI
+  via Mendelian randomization across 3 Copenhagen cohorts. Acts
+  independently of LDL-C and ApoB. Measure once in a lifetime.
+  No approved Lp(a)-lowering drug yet; phase 3 trials pending
+  (HORIZON, OCEAN(a), ACCLAIM-Lp(a) — see
+  [[analysis/yet-to-publish]]).
 
 ## Lipids: the intervention works
 - [[papers/ctt-2012-statins-low-risk]] — Cholesterol Treatment
@@ -45,6 +51,21 @@ systematically underprescribed in primary prevention.
   primary MACE HR 0.50 (p=0.003), all-cause mortality HR 0.51
   (p=0.018) over 2 yr. **HF-specific result; not validated in
   healthy adults.**
+
+## MASLD (the metabolic-syndrome face of CV mortality)
+- [[papers/younossi-2023-nafld-masld-epidemiology]] — global MASLD
+  prevalence 30% and rising; **cardiovascular causes dominate
+  mortality** in MASLD cohorts (4× liver-specific mortality). MASLD
+  is effectively a downstream signal of cardiometabolic dysfunction
+  and treats with the same upstream interventions.
+
+## Sleep apnea
+- [[papers/save-2016-cpap-cv-prevention]] — SAVE RCT, n=2,687,
+  CPAP did **not** reduce hard CV endpoints in OSA + prior CVD
+  (HR 1.10, p=0.34). CPAP is excellent for sleepiness and quality
+  of life; the cardiovascular-prevention indication is not RCT-
+  supported despite widespread clinical assumption. Mean adherence
+  3.3 hr/night may explain part of the null result.
 
 ## Heat exposure (observational)
 - [[papers/laukkanen-2015-sauna-mortality]] — Finnish KIHD cohort,

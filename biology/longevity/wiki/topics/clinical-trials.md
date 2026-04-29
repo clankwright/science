@@ -34,6 +34,15 @@ Human RCTs testing interventions with aging-related endpoints.
 - [[papers/buijze-2016-cold-shower-rct]] — n=3,018 cold-shower
   RCT: 29% reduction in self-reported sickness absence (soft
   endpoint).
+- [[papers/save-2016-cpap-cv-prevention]] — SAVE RCT (n=2,687,
+  3.7 yr), CPAP did NOT reduce CV events in OSA + prior CVD
+  (HR 1.10, p=0.34). Useful corrective to clinical-assumption
+  default.
+
+## Pending readouts
+- [[analysis/yet-to-publish]] — running list of trials to ingest
+  when they read out (Lp(a) lowering, tirzepatide CV, partial
+  reprogramming FIH, klotho human, etc.).
 - [[papers/lifestyle-atlas-tirolgesund-2025]] — TirolGESUND
   intermittent-fasting / smoking-cessation multi-omic atlas.
 

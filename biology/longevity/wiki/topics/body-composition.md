@@ -26,6 +26,12 @@ abdominal adiposity predicts mortality independently of BMI.
   [[papers/lifestyle-atlas-tirolgesund-2025]] data show
   intermittent-fasting compliance is the limiting factor.
 
+## MASLD as a cardiometabolic signal
+- [[papers/younossi-2023-nafld-masld-epidemiology]] — global MASLD
+  prevalence 30%, rising. Mortality dominated by cardiovascular
+  causes (4× liver-specific). MASLD is effectively a downstream
+  signal of visceral adiposity and metabolic dysfunction.
+
 ## Adjacent
 - [[topics/caloric-restriction]] — DR / IF intervention evidence.
 - [[topics/cardiovascular-prevention]]
