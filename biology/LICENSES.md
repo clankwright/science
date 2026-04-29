@@ -100,6 +100,7 @@ per-paper before redistributing full text.
 | `helgerud-2007-4x4-vo2max` | `ARR` | https://pubmed.ncbi.nlm.nih.gov/17414804/ | Lippincott / ACSM. Paywalled; PubMed abstract free. |
 | `itp-mpd-portal` | `website-tos` | https://phenome.jax.org/projects/ITP1 | Jackson Lab Mouse Phenome Database site terms. |
 | `laukkanen-2015-sauna-mortality` | `ARR` | https://pubmed.ncbi.nlm.nih.gov/25705824/ | JAMA Intern Med paywalled; PubMed abstract free. No PMC OA available. |
+| `marucha-1998-stress-wound-healing` | `ARR` | https://journals.lww.com/psychosomaticmedicine/abstract/1998/05000/mucosal_wound_healing_is_impaired_by_examination.25.aspx | Psychosomatic Medicine (Wolters Kluwer) paywalled; PubMed abstract free. |
 | `mesenchymal-drift-cell-2025` | `ARR` | https://www.cell.com/cell/abstract/S0092-8674(25)00853-0 | Cell (Elsevier). Paywalled; no known preprint at time of writing. |
 | `mortensen-2014-coq10-qsymbio` | `ARR` | https://www.jacc.org/doi/10.1016/j.jchf.2014.06.008 | JACC paywalled; PubMed abstract free. |
 | `organ-proteomic-clocks-2025` | `ARR` | https://www.nature.com/articles/s43587-025-01016-8 | Nature Aging. Paywalled unless CC-BY paid; verify per-article. |
@@ -108,6 +109,7 @@ per-paper before redistributing full text.
 | `retro-precision-reprog-2025` | `ARR` | https://www.liebertpub.com/doi/10.1089/cell.2025.0018 | Liebert Cellular Reprogramming. Paywalled; verify per-article OA status. |
 | `select-2023-semaglutide-cv-outcomes` | `ARR` | https://www.nejm.org/doi/full/10.1056/NEJMoa2307563 | NEJM paywalled; abstract + figures free. |
 | `tert-knockin-2025` | `ARR` | https://onlinelibrary.wiley.com/doi/10.1111/acel.14445 | Wiley Aging Cell. Verify CC-BY OA status per-article; some articles are OA. |
+| `ulrich-1984-window-view-recovery` | `ARR` | https://www.science.org/doi/10.1126/science.6143402 | Science (AAAS) paywalled; PubMed abstract free. |
 | `urolithin-a-immune-2025` | `ARR` | https://www.nature.com/articles/s43587-025-00996-x | Nature Aging. Verify CC-BY OA status per-article. |
 | `xprize-healthspan` | `website-tos` | https://www.xprize.org/competitions/healthspan | XPRIZE Foundation website; subject to xprize.org site terms. |
 
@@ -124,9 +126,9 @@ per-paper before redistributing full text.
 | Redistributable | 37 |
 | Restricted | 14 |
 | Varies per paper | 10 |
-| Not redistributable | 20 |
+| Not redistributable | 22 |
 | Unknown | 1 |
-| **Total** | **82** |
+| **Total** | **84** |
 
 ## Safe-to-commit pipeline contract
 

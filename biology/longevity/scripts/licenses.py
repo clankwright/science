@@ -156,6 +156,8 @@ LICENSE_MAP: dict[str, tuple[str, str]] = {
     "manson-2017-whi-hrt-mortality": ("CC-BY-NC-4.0", "JAMA paywalled; PMC author manuscript OA."),
     "mortensen-2014-coq10-qsymbio": ("ARR", "JACC paywalled; PubMed abstract free."),
     "buijze-2016-cold-shower-rct": ("CC-BY-4.0", "PLOS ONE CC-BY-4.0; full text OA."),
+    "ulrich-1984-window-view-recovery": ("ARR", "Science (AAAS) paywalled; PubMed abstract free."),
+    "marucha-1998-stress-wound-healing": ("ARR", "Psychosomatic Medicine (Wolters Kluwer) paywalled; PubMed abstract free."),
 }
 
 

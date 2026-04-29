@@ -1574,6 +1574,40 @@
       "note": "Buijze et al. 2016 PLOS ONE. n=3,018 adults 18-65, randomised to 30/60/90-second cold shower or no cold shower x 30 days. Cold pooled vs control: 29% reduction in self-reported sickness absence (IRR 0.71, p=0.003). No significant change in number of illness days, only absence. Soft surrogate endpoint; no mortality data.",
       "license": "CC-BY-4.0",
       "license_note": "PLOS ONE CC-BY-4.0; full text OA."
+    },
+    {
+      "id": "ulrich-1984-window-view-recovery",
+      "title": "View through a window may influence recovery from surgery",
+      "url": "https://www.science.org/doi/10.1126/science.6143402",
+      "alt_url": [
+        "https://pubmed.ncbi.nlm.nih.gov/6143402/"
+      ],
+      "topics": [
+        "interventions",
+        "built-environment"
+      ],
+      "kind": "paper",
+      "access": "gated",
+      "note": "Ulrich 1984 Science. Retrospective matched-pair study, 23 cholecystectomy patients with tree-view rooms vs 23 matched controls with brick-wall views. Tree-view group: 7.96 vs 8.70 days hospital stay, fewer negative nursing notes, fewer potent analgesics. Small N, retrospective room-assignment design - room-assignment confounding is plausible.",
+      "license": "ARR",
+      "license_note": "Science (AAAS) paywalled; PubMed abstract free."
+    },
+    {
+      "id": "marucha-1998-stress-wound-healing",
+      "title": "Mucosal wound healing is impaired by examination stress",
+      "url": "https://journals.lww.com/psychosomaticmedicine/abstract/1998/05000/mucosal_wound_healing_is_impaired_by_examination.25.aspx",
+      "alt_url": [
+        "https://pubmed.ncbi.nlm.nih.gov/9625226/"
+      ],
+      "topics": [
+        "interventions",
+        "built-environment"
+      ],
+      "kind": "paper",
+      "access": "gated",
+      "note": "Marucha, Kiecolt-Glaser, Favagehi 1998 Psychosom Med. Within-subjects, n=11 dental students. Two 3.5mm palatal punch biopsies per subject: one during summer vacation, one 3 days before a major exam. Exam-period wounds healed 40% slower (3 extra days), with 68% decline in IL-1beta mRNA expression. Mechanistic evidence for stress-immune-healing link; small N but each subject is own control.",
+      "license": "ARR",
+      "license_note": "Psychosomatic Medicine (Wolters Kluwer) paywalled; PubMed abstract free."
     }
   ]
 }
