@@ -44,6 +44,8 @@ venue: "<journal or preprint server>"
 access: open | preprint | paywalled
 kind: paper
 topics: [<topic-slug>, <topic-slug>]
+evidence_tier: T0 | T1 | T2 | T3 | T4 | T5 | T6 | T7
+endpoint: primary_met | primary_not_met | secondary_only | observational | n/a
 ---
 
 # <Title>
@@ -110,13 +112,38 @@ front matter minimally `id:` and `title:`.
 5. `python3 scripts/convert.py`: cleans HTML/PDF into markdown under
    `sources/md/`. Uses trafilatura for HTML, pdftotext for PDF.
 6. Read `sources/md/<id>__*.md`. Write `wiki/papers/<id>.md` with YAML front
-   matter, summary, key findings, wikilinks.
+   matter, summary, key findings, wikilinks. Assign an `evidence_tier`
+   (T0-T7 per [[analysis/evidence-tiers]]) and an `endpoint` field
+   indicating whether the primary endpoint was pre-specified and met.
+   Distinguish primary from secondary findings in the body. State
+   absolute and relative effect sizes when both are available.
 7. Link the new paper into every topic page in its `topics:` list.
 8. Update `wiki/index.md` if the new paper reshapes the field map.
 9. `python3 scripts/index.py && python3 scripts/lint.py`. Fix any errors.
 10. Append to `log.md`: `YYYY-MM-DD INGEST: <description>`.
 
 Steps 6, 7, 8 are LLM work. Everything else is scripted.
+
+### Evidence tiers and endpoint integrity
+
+Every intervention or finding in the wiki must be tier-tagged. See
+[[analysis/evidence-tiers]] for the rubric (T0 in vitro through T7
+hard-endpoint RCT or meta-analysis).
+
+When summarizing a paper:
+- State the **primary endpoint** and whether it was met.
+- Distinguish primary from secondary endpoints; flag when "headline"
+  findings come from sex-stratified or post-hoc subgroup analyses.
+- Quote both **absolute** and **relative** effect sizes where both
+  exist; relative-only is misleading on rare events.
+- Note dose, population, and duration. "Vitamin D supplementation in
+  non-deficient adults" without dose, deficiency definition, or
+  duration is uninterpretable.
+- Do not promote an intervention based on T2-T3 evidence in one
+  context while rejecting another for the same reason. If you keep
+  one and drop the other, the asymmetry must be defensible by
+  replication, mechanism, dose-response, or population (see
+  [[analysis/evidence-tiers]] §"Why we accept some T2-T3 evidence").
 
 ### Query
 
