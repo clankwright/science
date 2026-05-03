@@ -2,7 +2,7 @@
 
 > **Summary:** State-space models (Mamba, Mamba-2, Mamba-3) and SSM-Transformer hybrids (Jamba, Zamba2, Hymba). Linear-time sequence modeling with selective state spaces. The structural insight: SSMs and Transformers are connected via state-space duality (Mamba-2). Hybrids interleave Mamba layers with shared attention layers, getting the throughput of SSM/RNN with the quality of Transformer attention. **For 4 GB VRAM, the hybrid family's small KV cache is the structural advantage.**
 
-**Sources:** [raw/lfm2.md](../../raw/lfm2.md). External: arXiv:2312.00752 (Mamba), arXiv:2405.21060 (Mamba-2), Mamba-3 (ICLR 2026), Zyphra Zamba2 model cards.
+**Sources:** [raw/lfm2.md](../../raw/lfm2.md), [raw/mamba-3.md](../../raw/mamba-3.md). External: arXiv:2312.00752 (Mamba), arXiv:2405.21060 (Mamba-2), arXiv:2603.15569 (Mamba-3, ICLR 2026), Zyphra Zamba2 model cards.
 
 ---
 
@@ -10,7 +10,11 @@
 
 - **Mamba (2023):** Linear-time sequence modeling with selective state spaces. Replaces attention with a state-space mechanism that admits a linear recurrence.
 - **Mamba-2 (ICML 2024, arXiv:2405.21060, Dao & Gu):** State-space duality (SSD) framework formally connecting SSMs and attention. Mamba-2's core layer is 2-8x faster than Mamba's selective SSM at competitive quality.
-- **Mamba-3 (ICLR 2026):** Further architectural refinements. Details not extracted (PDF fetch failed); see ICLR 2026 OpenReview ID HwCvaJOiCj.
+- **Mamba-3 (arXiv:2603.15569, March 2026, ICLR 2026):** Three deltas over Mamba-2: (1) exponential-trapezoidal SSM discretization subsuming the short conv used by current linear models, (2) complex-valued state update enabling state tracking that S6 cannot do, (3) MIMO formulation raising arithmetic intensity without increasing decode latency. **At 1.5B: +1.8 average downstream accuracy over Gated DeltaNet** (+0.6 from core, +1.2 from MIMO). **Achieves Mamba-2 perplexity at half the state size**; direct VRAM win for 4 GB. No coder-tuned Mamba-3 checkpoint exists yet; this is the obvious base for one.
+
+### DUET: Disaggregated Hybrid Mamba-Transformer Serving (March 2026)
+
+arXiv:2603.15530. Splits Mamba-Transformer hybrid serving into prefill-specialized and decode-specialized model packages, exploiting that Mamba dominates decode latency while attention dominates prefill quality. Targets multi-GPU serving; the decode-specialized-weights idea is portable to single-GPU offload schemes.
 
 ## Hybrid models
 
@@ -35,6 +39,10 @@ Concrete: Zamba2-7B at Q4 (~4 GB weights) fits the budget; KV cache for its 2 sh
 - Hybrids trail pure-attention SOTA on rapidly-moving benchmarks; ecosystem (kernels, harness compatibility, quant support) lags.
 - Tool-call format conformance not as well measured for hybrids; possible (untested) failure mode.
 - Coder-specific hybrids (e.g., a Mamba-Coder) do not yet exist as of early 2026.
+
+## Half-state-size at parity (Mamba-3): what it changes for 4 GB
+
+Mamba-3's claim is achieving Mamba-2 perplexity at half the recurrent state size. For a 1.5B-class hybrid this halves the state-memory contribution to the VRAM budget. Combined with [Long Context via Filesystem](../analysis/long-context-via-filesystem.md), the case for SSM hybrids on 4 GB sharpens: less critical for raw context length (filesystem tools handle that) but still relevant for sustained decode throughput on long agent traces.
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # Edge-LLM Knowledge Base
 
-> SOTA in small/edge LLMs, scoped to running an agentic coding harness on 4 GB VRAM. Last updated: 2026-05-02. 47 articles compiled from 30 source extracts (cutting-edge 2026 work weighted; foundational reference where needed). All 5 build phases complete (scaffold, seed ingest, breadth ingest, SOTA synthesis, gap analysis, contribution roadmap).
+> SOTA in small/edge LLMs, scoped to running an agentic coding harness on 4 GB VRAM. Last updated: 2026-05-03. 60 articles compiled from 43 source extracts (cutting-edge 2026 work weighted; foundational reference where needed).
 
 ## Goal
 
@@ -16,7 +16,7 @@ Compile what's needed to make an informed choice about (model × quant × runtim
 
 ## Architectures
 
-- [Mamba / SSM and hybrid architectures](architectures/mamba-ssm-hybrids.md): Mamba-3 (ICLR 2026), Mamba-2, Jamba, Zamba2. Hybrids interleave SSM layers (no KV cache) with shared attention. Structural advantage at long context on tight VRAM.
+- [Mamba / SSM and hybrid architectures](architectures/mamba-ssm-hybrids.md): **Mamba-3 (March 2026)** achieves Mamba-2 perplexity at half the state size. Mamba-2, Jamba, Zamba2. Hybrids interleave SSM layers (no KV cache) with shared attention. Structural advantage at long context on tight VRAM.
 - [MoE active-parameter architectures](architectures/moe-active-param.md): Active-vs-total parameter math. Qwen3-MoE-A3B, Gemma-4-26B-A4B, OLMoE, Qwen3-Coder-Next. Wins on agentic coding *only* when training and serving stack are both designed for it.
 
 ## Techniques
@@ -25,10 +25,16 @@ Compile what's needed to make an informed choice about (model × quant × runtim
 
 - [Saguaro / SSD](techniques/saguaro-ssd.md): Speculative speculative decoding (ICLR 2026). 30% faster than optimized SD baselines; up to 5x over autoregressive.
 - [DDTree](techniques/ddtree.md): Block-diffusion draft trees (April 2026). Beats EAGLE-3 autoregressive drafters.
+- [DEER diffusion drafter](techniques/deer-diffusion-draft.md): Single-pass diffusion drafter (Dec 2025). Acceptance lengths up to 32 tokens vs ~10 for EAGLE-3.
+- [VSD](techniques/vsd-variational-spec.md): Variational speculative decoding (Feb 2026). +9.6% over EAGLE-3, drop-in replacement.
 - [DASH-KV](techniques/dash-kv.md): Asymmetric KV-cache hashing (ACL 2026 Findings). O(N²) → O(N) attention.
 - [StructKV](techniques/structkv.md): Structure-aware KV compression (ACL 2026 Findings). Global In-Degree Centrality preserves cross-layer information hubs.
+- [Expected Attention](techniques/expected-attention.md): Training-free KV compression (Oct 2025). Closed-form importance estimation; lives in NVIDIA KVPress.
+- [PolyKV](techniques/polykv.md): Shared asymmetric KV pool across multi-agent scaffolds (April 2026). K8/V3 with cross-persona sharing.
+- [Self-Indexing KVCache](techniques/self-indexing-kv.md): 1-bit sign-based KV (March 2026). Compression and sparse-attention index in one representation.
 - [MoE-Spec](techniques/moe-spec.md): Expert budgeting for MoE speculative decoding (Feb 2026). +10-30% over EAGLE-3 on MoE.
 - [SLMQuant](techniques/slmquant.md): Benchmarking SLM quantization (Nov 2025). LLM quant techniques don't transfer cleanly to small models.
+- [FastTTS](techniques/fasttts.md): Memory-constrained test-time scaling for edge (ASPLOS 2026). 2.2x goodput, 38-68% latency reduction vs vLLM. **Direct hit on the 4 GB target.**
 - [EAGLE-3](techniques/eagle-3.md): Speculative decoding via training-time test (NeurIPS 2025). 6.5x over standard, 1.4x over EAGLE-2.
 
 ### Foundational references
@@ -40,17 +46,19 @@ Compile what's needed to make an informed choice about (model × quant × runtim
 
 ## Runtimes
 
-- [llama.cpp](runtimes/llama-cpp.md): Universal CPU/GPU inference, GGUF, every quant flavor. The default. Partial offload via `-ngl` is the load-bearing 4 GB feature.
+- [llama.cpp](runtimes/llama-cpp.md): Universal CPU/GPU inference, GGUF, every quant flavor. The default. Partial offload via `-ngl` is the load-bearing 4 GB feature. **April 2026 wave** brought tensor parallelism, 1-bit, Hexagon NPU backend.
 - [KTransformers](runtimes/ktransformers.md): Tsinghua, SOSP 2025. Heterogeneous MoE inference. 4.62-19.74x prefill speedup. Substrate for DALI/HybriMoE/FlashMoE.
 - [vLLM](runtimes/vllm.md): Server-side throughput. PagedAttention, prefix caching, native EAGLE-style SD.
 - [DALI](runtimes/dali-moe.md): Workload-aware MoE offloading for local PCs (Feb 2026). 0-1 integer optimization for expert-to-device assignment.
 - [FlashMoE](runtimes/flashmoe.md): SSD-based MoE caching with ML cache replacement (Jan 2026). +51% hit rate vs LRU/LFU.
+- [ExecuTorch](runtimes/executorch.md): PyTorch's edge runtime, GA October 2025. Wins on mobile and Snapdragon NPU; loses to llama.cpp on laptop NVIDIA dGPU.
 - [Ollama / LM Studio / ExLlamaV2 / MLX](runtimes/ollama-and-friends.md): Next-tier runtimes for specific niches.
 
 ## Training
 
 - [Mixture-of-Layers (MoL) CoT distillation](training/mol-distillation.md): Stepwise-attention transfer for reasoning (EMNLP 2025).
-- [Small models for agentic tool calling (350M)](training/slm-agentic-tool-calling.md): Jhandi et al., AAAI 2026. **One-epoch SFT on a 350M base hits 77.55% ToolBench, beating ToolLLaMA's 30%. Direct evidence that targeted SFT at extreme small scale closes the gap.**
+- [Small models for agentic tool calling (350M)](training/slm-agentic-tool-calling.md): Jhandi et al., AAAI 2026. **One-epoch SFT on a 350M base hits 77.55% ToolBench, beating ToolLLaMA's 30%.** Direct evidence that targeted SFT at extreme small scale closes the gap.
+- [Agentic RL for coding (2025-2026)](training/agentic-rl-coding.md): DeepSWE + Self-Play SWE-RL + SWE-RM + SWE-TRACE. The composed solo-dev recipe for RL-tuning a 3B-7B coder.
 - [xLAM-2](training/xlam-2.md): Salesforce, 2025. Open-weight LAMs 1B-70B with APIGen-MT data pipeline. xLAM-2-70b-fc-r approaches Claude 3.5 Sonnet on τ-bench.
 - [ToolACE](training/toolace.md): Liu et al., ICLR 2025. Self-evolution data pipeline; 26,507-API pool. 8B model trained on ToolACE data hits BFCL SOTA.
 
@@ -63,6 +71,8 @@ Compile what's needed to make an informed choice about (model × quant × runtim
 ## Benchmarks
 
 - [SWE-Bench (Original / Lite / Verified / Pro)](benchmarks/swe-bench.md): Real GitHub-issue resolution. The closest proxy for agentic coding capability.
+- [SWE-rebench, Multi-SWE-bench, SWE-Universe](benchmarks/swe-rebench-multi-swe.md): 2025-2026 successors. **Decontaminated, multilingual, scaled to millions.** Prefer SWE-rebench for honest 4 GB-class numbers.
+- [LongCodeBench](benchmarks/longcodebench.md): Coding eval at 32K-1M context (May 2025). Claude 3.5 Sonnet drops 29% → 3% from 32K to 256K. Long-context is broken even for frontier; route around it via filesystem tools.
 - [BFCL (v3 / v4)](benchmarks/bfcl.md): Berkeley Function Calling Leaderboard. Multi-turn, state-based. The most diagnostic small-model agentic benchmark. GLM-4.5 leads v3 at 0.778.
 - [Aider polyglot](benchmarks/aider-polyglot.md): 225 Exercism exercises, 6 languages, two-attempt protocol. Tests both code-correctness and structured-edit-format adherence. 2026 leaders: Claude Opus 4.5 (89.4%), GPT-5 (88.0%), DeepSeek V3.2-Exp (74.2%).
 - [Terminal-Bench (1.0 / 2.0)](benchmarks/terminal-bench.md): Stanford + Laude, January 2026. 89 hard CLI tasks. Frontier models <65%.
@@ -74,10 +84,12 @@ Compile what's needed to make an informed choice about (model × quant × runtim
 ### SOTA synthesis (Phase 3)
 
 - [4 GB VRAM budget math](analysis/four-gb-budget-math.md): VRAM accounting for (model × quant × context length). Weights + KV cache + activations + workspace. **The 4 GB ceiling is roughly a 4 B-parameter ceiling at Q4 with compressed KV cache.** Hybrid SSM/attention models get a structural win at long context.
+- [Long context via filesystem (not attention)](analysis/long-context-via-filesystem.md): The March 2026 thesis that filesystem-tool agents beat published long-context SOTA by 17.3% over corpora up to 3T tokens. **Validates the entire 4 GB-VRAM bet.**
 - [Quant-vs-capability frontier](analysis/quant-vs-capability-frontier.md): Per-quant quality drops, with SLM-specific corrections per [SLMQuant](techniques/slmquant.md). Tool-call format conformance is the most quant-sensitive task.
 - [Runtime comparison](analysis/runtime-comparison.md): Decision tree across llama.cpp / vLLM / KTransformers / ExLlamaV2 / MLX / Ollama. **For dense 1-4B on 4 GB: llama.cpp default, ExLlamaV2 max throughput. For MoE on 4 GB: KTransformers stack only.**
 - [Harness comparison](analysis/harness-comparison.md): Tool-call format taxonomy across Claude Code / aider / Cline / Continue / Goose. Format conformance dominates failure modes at SLM scale.
 - [Speculative decoding at 4 GB](analysis/spec-decoding-at-4gb.md): Three viable patterns; EAGLE-style auxiliary head (default), self-speculative (Medusa/lookahead), block-diffusion drafter (DDTree, emerging). Saguaro composes; MoE-Spec required for MoE targets.
+- [Laptop GPU energy and thermal](analysis/laptop-gpu-energy-thermal.md): Watt Counts (April 2026) + LLM Inference at the Edge (March 2026). **RTX 4050 sustains 131.7 tok/s at 34.1 W**; the hard anchor for laptop wiki claims.
 
 ### Gap analysis (Phase 4)
 

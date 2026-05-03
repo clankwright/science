@@ -34,15 +34,30 @@ For MoE models, `-ngl` is the entry-level offload. [KTransformers](ktransformers
 
 [SLMQuant](../techniques/slmquant.md) caveat applies: Q4_K_M behavior on 1-4B models may not match the 7B+ folklore.
 
+## April 2026 release wave
+
+170+ incremental releases through April 2026 brought four notable additions:
+
+- **Backend-agnostic tensor parallelism**: split a model across iGPU+dGPU on a laptop. Real on a single machine.
+- **1-bit quantization**: BitNet 1.58b lineage now lands inside llama.cpp itself, no experimental fork.
+- **Day-one Gemma 4 support**.
+- **AMD CDNA4 backend**.
+- **Qualcomm Hexagon NPU backend** (build b8755, for Snapdragon X Elite-class laptops). Competes with [ExecuTorch](executorch.md) on the same hardware.
+
+For a 4 GB-class deployment, the Hexagon backend is the most consequential: it brings llama.cpp's quant catalog to Snapdragon laptops without needing the PyTorch toolchain.
+
 ## Pairs with
 
 - [AWQ](../techniques/awq.md) (convert AWQ → GGUF for distribution).
 - [EAGLE-3](../techniques/eagle-3.md) draft heads (recent llama.cpp PRs have added support).
 - [Saguaro/SSD](../techniques/saguaro-ssd.md) (no native support; reference implementation in vLLM).
 - [Ollama](ollama-and-friends.md), [LM Studio](ollama-and-friends.md), [Open WebUI] all wrap llama.cpp.
+- [ExecuTorch](executorch.md) is the alternative on Snapdragon NPU and mobile.
 
 ## See Also
 
 - [KTransformers](ktransformers.md)
 - [Ollama / LM Studio / ExLlamaV2 / MLX](ollama-and-friends.md)
+- [ExecuTorch](executorch.md)
 - [DALI](dali-moe.md)
+- [Laptop GPU Energy and Thermal](../analysis/laptop-gpu-energy-thermal.md)
