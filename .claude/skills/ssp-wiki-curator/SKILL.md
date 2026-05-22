@@ -119,7 +119,7 @@ Every wiki page starts with front matter the linter and indexer can parse. Requi
 ---
 id: <slug>
 title: "<human title>"
-kind: paper | topic | analysis | entity | event | concept
+kind: paper | topic | analysis | entity | event | concept | synthesis
 ---
 ```
 
@@ -127,7 +127,27 @@ Paper pages add: `url`, `year`, `venue`, `access` (open | paywall | preprint), `
 
 Topic pages add: `topic: <slug>` (matches the file's id).
 
+Synthesis pages add: `covers:` (list of topic slugs this page synthesizes). See §Synthesis page kind below.
+
 The minimal variant MAY skip front matter on paper pages and let the source filename + a top-of-page summary block carry the metadata; topic pages still benefit from front matter as soon as a linter exists.
+
+### Synthesis page kind
+
+`synthesis` names the most-read pages in a mature wiki: high-level orientation docs, ranked recommendation lists, evidence rubrics, and master corpus indexes. They sit above the per-subdir taxonomy — typically at `wiki/<slug>.md` or at the wiki root — and are linked prominently from the top of `wiki/index.md`.
+
+What a synthesis page holds (pick what fits your domain):
+
+- **Ranked recommendations** — ordered list of interventions, tools, or strategies with one-line rationale each. Worked example: `biology/longevity/recommendations.md`.
+- **Evidence rubric** — a scoring ladder applied uniformly across pages (T0-T7 tiers, maturity grades). Worked example: `biology/longevity/wiki/analysis/evidence-tiers.md`.
+- **Master corpus index** — links to every page in a topic cluster with one-line summaries, for a reader new to the domain. Worked example: `aliens/grokipedia_ufo_alien_reference.md`.
+
+**Promotion criteria** — create a synthesis page when any of these fire:
+
+1. A topic or analysis page is cited more than the catalog (`index.md`) in cross-references: it has become the de-facto entry point.
+2. An analysis page answers "where do I start?" for a newcomer and has outgrown its analysis subdir.
+3. The same orientation paragraph appears in three or more places: consolidate into one synthesis page.
+
+Once created, link the synthesis page from the `## If you're new here` section at the top of `wiki/index.md` (above the per-subdir catalog).
 
 ### Cross-references
 
@@ -350,6 +370,41 @@ Columns: **Paper | Authors | Venue | Year**
 Worked example: `bpu/wiki/index.md` in the `~/Dev/science/` testbed — 30+ rows, each matching a paper page, making the corpus immediately scannable.
 
 Add this table when: the wiki has 5+ paper pages and readers benefit from seeing the full source set without navigating into subdirs. Skip for topic-only wikis with few or no paper pages.
+
+### A.5b — optional: synthesis-page template
+
+For wikis where a high-level orientation page, ranked list, or rubric would be the most useful starting point, drop a synthesis-page template into the wiki root (not inside a subdir). Add this during scaffold if you already know the shape of the synthesis; add it later when the promotion criteria in §Synthesis page kind fire.
+
+Template:
+
+```markdown
+---
+id: <slug>
+title: "<human title>"
+kind: synthesis
+covers: [<topic-1>, <topic-2>]
+---
+
+# <Title>
+
+> **TL;DR:** One to three sentences. What this page answers, who it's for, and the key takeaway.
+
+## Ranked recommendations (or: rubric / master index)
+
+1. **<Item>** — <one-line rationale>. Source: [[analysis/<slug>]].
+2. **<Item>** — <one-line rationale>. Source: [[papers/<slug>]].
+
+## How to read this page
+
+<Optional: explain the ranking or scoring system in two to four sentences.>
+
+## Sources
+
+- [[papers/<slug>]] — <one-line context>
+- [[analysis/<slug>]] — <one-line context>
+```
+
+Worked examples: `biology/longevity/recommendations.md` (ranked interventions with T0-T7 evidence tier tags), `biology/longevity/wiki/analysis/evidence-tiers.md` (uniform evidence rubric), `aliens/grokipedia_ufo_alien_reference.md` (master corpus index linking 22+ topic pages).
 
 ### A.6 — scripted variant only: copy and customize the script kit
 
@@ -673,7 +728,8 @@ An ingest pass is done when:
 
 A maintain pass is done when:
 
-- `LINT-REPORT.md` is written with all findings categorized.
+- Minimal/middle: `LINT-REPORT.md` is written with all findings categorized.
+- Scripted: lint result recorded in `log.md` only; no `LINT-REPORT.md`.
 - All `[auto]` findings are applied.
 - `log.md` has the new LINT entry.
 - The change is committed in one commit.

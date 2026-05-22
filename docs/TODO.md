@@ -19,6 +19,7 @@
   Trim to last 10.
 -->
 
+- Add synthesis page kind (Phase 1 1.1-1.4), fix maintain-pass criteria (10.2), close batch-sizing advisory (10.3) — by sst-dev-cycle at 2026-05-23T12:00:00Z
 - Add drafts/ optional layer, reading paths pattern, lint-output reconciliation, source-papers table to ssp-wiki-curator (SPEC 2.1-2.4, 5.1-5.2, 9.1-9.2, 10.1) — by sst-dev-cycle at 2026-05-23T00:00:00Z
 - Bootstrap: SPEC + TODO moved to ~/Dev/science/docs/; proprietary working copy ssp-wiki-curator created at .claude/skills/ssp-wiki-curator/SKILL.md (body identical to canonical sst-wiki-curator v1.0.1); Phase 14 (promote-back) appended to SPEC — by claude (manual) at 2026-05-23
 - SPEC + TODO scaffolded for the 13-phase sst-wiki-curator evolution plan — by claude (manual) at 2026-05-23
@@ -31,10 +32,6 @@
   Ordered by priority (highest-impact-low-effort first), not by SPEC phase number.
 -->
 
-- [easy] [should-fix] 10.2 SKILL.md:676 maintain-pass completion criteria lists LINT-REPORT.md unconditionally; §C.3 exempts scripted wikis — review of a457f3e
-- [easy] [should-fix] [batch-sizing] 10.3 next cycle should claim ≥2 more [medium] items from queue (dev input ~66k < 100k medium threshold) — review of a457f3e
-- [medium] Add `synthesis` page kind to the `kind:` enum + describe promotion path (topic → synthesis → root). Reason: SPEC 1.1 + 1.2 — names the most-read page class in mature wikis (longevity recommendations.md, aliens grokipedia ref).
-- [easy] Add synthesis-page template to Mode A scaffold output + cite the three worked examples. Reason: SPEC 1.3 + 1.4 — completes Phase 1 after 1.1/1.2 land.
 - [hard] Write §"Extending the schema for your domain" with longevity's evidence_tier as worked example; add `domain-fields:` block to schema-spec template. Reason: SPEC 3.1 + 3.2 + 3.3 — the most leveraged change; every future scripted/middle wiki benefits.
 - [medium] Spec the domain-field → navigation-axis → reading-path loop with three reference examples. Reason: SPEC 4.1 — depends on Phase 3 landing first; pairs naturally as a follow-up.
 - [hard] Write the middle-variant `lint.py` template (~100 LoC, stdlib only) + wire into Mode A.6.5 + document the lint-output spectrum. Reason: SPEC 6.1 + 6.2 + 6.3 — fills the biggest middle-variant gap.

@@ -21,10 +21,15 @@ Make the wiki-curator skill produce wikis that are more useful, more powerful, a
 
 `longevity/wiki/recommendations.md`, `longevity/wiki/analysis/evidence-tiers.md`, and `aliens/grokipedia_ufo_alien_reference.md` are the most-read pages in their wikis but live above or outside the per-subdir taxonomy. The spec currently has no name for them. Introduce a `synthesis` page kind and document the promotion path (topic → synthesis → root-level link).
 
-- [ ] 1.1 [medium] Add `synthesis` to the `kind:` enum in §File conventions and describe what goes in it (high-level orientation, ranked recommendations, rubric pages, master corpus indexes).
-- [ ] 1.2 [medium] Document the promotion criteria: when a topic page is read more than the catalog OR an analysis page becomes the answer to "where do I start," promote to `synthesis` and link from `wiki/index.md`'s top.
-- [ ] 1.3 [easy] Add a synthesis-page template (front matter + sections: TL;DR, ranked list / rubric, sources) to Mode A scaffold output.
-- [ ] 1.4 [easy] Cite `recommendations.md`, `evidence-tiers.md`, and `grokipedia_ufo_alien_reference.md` as worked examples in the spec.
+- [x] 1.1 [medium] Add `synthesis` to the `kind:` enum in §File conventions and describe what goes in it (high-level orientation, ranked recommendations, rubric pages, master corpus indexes).
+- [x] 1.2 [medium] Document the promotion criteria: when a topic page is read more than the catalog OR an analysis page becomes the answer to "where do I start," promote to `synthesis` and link from `wiki/index.md`'s top.
+- [x] 1.3 [easy] Add a synthesis-page template (front matter + sections: TL;DR, ranked list / rubric, sources) to Mode A scaffold output.
+- [x] 1.4 [easy] Cite `recommendations.md`, `evidence-tiers.md`, and `grokipedia_ufo_alien_reference.md` as worked examples in the spec.
+
+**Phase 1 completed 2026-05-23.** Added `synthesis` as a first-class `kind:` value (§File conventions YAML block), introduced the §Synthesis page kind subsection describing the three page shapes (ranked recommendations, evidence rubric, master corpus index) and three promotion criteria, added synthesis front-matter field `covers:`, added the A.5b synthesis-page template to Mode A with the TL;DR / ranked-list / sources structure, and cited `biology/longevity/recommendations.md`, `biology/longevity/wiki/analysis/evidence-tiers.md`, and `aliens/grokipedia_ufo_alien_reference.md` as worked examples throughout.
+
+- Changes: `.claude/skills/ssp-wiki-curator/SKILL.md` (§File conventions, §Synthesis page kind, §Mode A A.5b), `docs/SPEC.md`, `docs/TODO.md`.
+- Test delta: n/a (prose skill, no automated tests).
 
 ### Phase 2: drafts/ working layer
 
@@ -94,8 +99,8 @@ Spec §C.3 says every maintain pass writes `LINT-REPORT.md`. Longevity skips thi
 - [x] 10.1 [easy] Add §"Optional: source-papers table" to the spec's index.md documentation, with the bpu table layout as a worked example.
 
 **Review follow-ups (open — schedule as the next `/sst-dev-cycle` cycle):**
-- [ ] 10.2 [easy] [should-fix] `SKILL.md:676` — maintain-pass completion criteria lists `LINT-REPORT.md` unconditionally; §C.3 (added this cycle as 9.1) explicitly exempts scripted wikis. An LLM running a scripted maintain pass sees the criterion as unmet and writes `LINT-REPORT.md` despite the §C.3 prohibition, defeating the 9.1/9.2 fix. Proposed fix: append "(minimal/middle only)" to the `LINT-REPORT.md` criterion, or split into two variant-specific lists.
-- [ ] 10.3 [easy] [should-fix] [batch-sizing] Dev cycle input ~66k tokens (medium-difficulty undersize threshold: 100k); window-target stated ~220k but actual filled ~30% of threshold. Queue had 6+ unclaimed medium-compatible items. Proposed fix: at next `/sst-dev-cycle`, claim at least 2 more `[medium]` items from `## Next up` to fill the medium window.
+- [x] 10.2 [easy] [should-fix] `SKILL.md:676` — maintain-pass completion criteria lists `LINT-REPORT.md` unconditionally; §C.3 (added this cycle as 9.1) explicitly exempts scripted wikis. An LLM running a scripted maintain pass sees the criterion as unmet and writes `LINT-REPORT.md` despite the §C.3 prohibition, defeating the 9.1/9.2 fix. Proposed fix: append "(minimal/middle only)" to the `LINT-REPORT.md` criterion, or split into two variant-specific lists.
+- [x] 10.3 [easy] [should-fix] [batch-sizing] Dev cycle input ~66k tokens (medium-difficulty undersize threshold: 100k); window-target stated ~220k but actual filled ~30% of threshold. Queue had 6+ unclaimed medium-compatible items. Proposed fix: at next `/sst-dev-cycle`, claim at least 2 more `[medium]` items from `## Next up` to fill the medium window.
 
 ### Phase 11: contradiction handling with a worked example
 
