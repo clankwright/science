@@ -93,6 +93,10 @@ Spec §C.3 says every maintain pass writes `LINT-REPORT.md`. Longevity skips thi
 
 - [x] 10.1 [easy] Add §"Optional: source-papers table" to the spec's index.md documentation, with the bpu table layout as a worked example.
 
+**Review follow-ups (open — schedule as the next `/sst-dev-cycle` cycle):**
+- [ ] 10.2 [easy] [should-fix] `SKILL.md:676` — maintain-pass completion criteria lists `LINT-REPORT.md` unconditionally; §C.3 (added this cycle as 9.1) explicitly exempts scripted wikis. An LLM running a scripted maintain pass sees the criterion as unmet and writes `LINT-REPORT.md` despite the §C.3 prohibition, defeating the 9.1/9.2 fix. Proposed fix: append "(minimal/middle only)" to the `LINT-REPORT.md` criterion, or split into two variant-specific lists.
+- [ ] 10.3 [easy] [should-fix] [batch-sizing] Dev cycle input ~66k tokens (medium-difficulty undersize threshold: 100k); window-target stated ~220k but actual filled ~30% of threshold. Queue had 6+ unclaimed medium-compatible items. Proposed fix: at next `/sst-dev-cycle`, claim at least 2 more `[medium]` items from `## Next up` to fill the medium window.
+
 ### Phase 11: contradiction handling with a worked example
 
 Spec §Contradiction handling is aspirational — only longevity actually uses it. Either ground it in a real disagreement or downgrade.

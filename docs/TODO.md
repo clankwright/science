@@ -31,6 +31,8 @@
   Ordered by priority (highest-impact-low-effort first), not by SPEC phase number.
 -->
 
+- [easy] [should-fix] 10.2 SKILL.md:676 maintain-pass completion criteria lists LINT-REPORT.md unconditionally; §C.3 exempts scripted wikis — review of a457f3e
+- [easy] [should-fix] [batch-sizing] 10.3 next cycle should claim ≥2 more [medium] items from queue (dev input ~66k < 100k medium threshold) — review of a457f3e
 - [medium] Add `synthesis` page kind to the `kind:` enum + describe promotion path (topic → synthesis → root). Reason: SPEC 1.1 + 1.2 — names the most-read page class in mature wikis (longevity recommendations.md, aliens grokipedia ref).
 - [easy] Add synthesis-page template to Mode A scaffold output + cite the three worked examples. Reason: SPEC 1.3 + 1.4 — completes Phase 1 after 1.1/1.2 land.
 - [hard] Write §"Extending the schema for your domain" with longevity's evidence_tier as worked example; add `domain-fields:` block to schema-spec template. Reason: SPEC 3.1 + 3.2 + 3.3 — the most leveraged change; every future scripted/middle wiki benefits.
