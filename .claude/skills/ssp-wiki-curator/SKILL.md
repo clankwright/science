@@ -197,6 +197,91 @@ Added paper page; linked into topics/<t1>, topics/<t2>.
 License = CC-BY-4.0, full-text redistributable.
 ```
 
+## Extending the schema for your domain
+
+Every wiki past the bootstrap stage benefits from one to three categorical YAML front-matter fields specific to its domain. These extensions turn front matter from passive metadata into a navigation primitive: once a field exists in front matter, `index.md` and synthesis pages can aggregate by it, lint can enforce its presence, and topic pages can sort or filter by its value.
+
+Examples drawn from this skill's testbed wikis (`~/Dev/science/`):
+
+- `biology/longevity/` — `evidence_tier: T0..T7` (mouse-only to RCT meta-analysis) plus `endpoint: primary_met | primary_not_met | secondary_only | observational | n/a`. Tags every paper with the maturity of its evidence and whether the headline finding was pre-specified.
+- `comsci/edge-llm/` — model context length and VRAM-at-context tier, so the index can rank model+quant combinations by what actually fits on a given device.
+- `comsci/ai-empowerment/` — maturity, cost, and access tier per tool, so a beginner can filter to free + ready-to-use options.
+
+Each was invented ad-hoc. The pattern below codifies the steps so the next wiki doesn't reinvent it.
+
+### The five-step pattern
+
+1. **Pick 1-3 fields.** Categorical (an enum or a small ordered ladder), not free-text. A field worth adding is one that (a) you would otherwise re-derive on every query, (b) sorts or filters the corpus into useful subsets, and (c) every page in scope can be assigned a value (or `n/a`) without speculative judgement.
+2. **Define the values.** Enumerate every value the field can take. Avoid open-ended scales; a 4-7 value ladder is usually right. Write a one-line gloss per value.
+3. **Write a rubric synthesis page** at `wiki/<field>-tiers.md` or `wiki/analysis/<field>-tiers.md`, kind `synthesis`. The rubric is the canonical reference: definitions, worked examples per value, within-tier caveats, how the field is assigned during ingest. Cross-reference from every page that uses the field. See §Synthesis page kind.
+4. **Document the field in the schema spec** in a `## Domain fields` section using the `domain-fields:` block format below. The block makes the extension visible to the LLM on every read so it doesn't re-derive the convention from scattered paper pages.
+5. **Add a lint check** so a missing field on an in-scope page becomes a finding. Minimal/middle: append the check to the Mode C.2 LLM-judgment checklist. Scripted: add a per-field required-when-kind rule to `scripts/lint.py`. Lint surfaces drift; without it, the field rots within a few ingest cycles.
+
+### Anatomy of a good domain field
+
+- **Stable values.** Once a value is published in front matter, renaming it churns every page. Pick names you can live with for the life of the wiki.
+- **Assignable from the source alone.** A reviewer should be able to assign the value reading only the source, not the rest of the corpus. Otherwise the field is a synthesis output, not a metadata field.
+- **Orthogonal.** Two fields should not be derivable from each other. If `endpoint: primary_met` always implies `evidence_tier >= T6`, drop one.
+- **Within-tier quality lives outside the field.** The rubric documents quality dimensions (replication, dose-response, effect size); the front-matter field captures only the tier, not the within-tier verdict.
+
+### Worked example: longevity's `evidence_tier`
+
+The longevity wiki at `biology/longevity/` adds two domain fields. `evidence_tier` is the canonical illustration; `endpoint` follows the same pattern at smaller scope.
+
+**Step 1-2: pick the field and enumerate the values.** An eight-rung ladder from in-vitro to hard-endpoint RCT meta-analysis:
+
+```
+T0 — in vitro / cell culture only
+T1 — invertebrate lifespan (C. elegans, Drosophila)
+T2 — single mouse study, lifespan or healthspan endpoint
+T3 — replicated mouse studies; ITP-grade or independent labs
+T4 — non-human primate or large mammal
+T5 — small human trial (n < 100), surrogate endpoint
+T6 — Phase 2/3 human RCT, surrogate endpoint, or large prospective cohort (n>10k) with hard endpoint
+T7 — Phase 3 RCT or meta-analysis with hard endpoint (mortality, MACE)
+```
+
+**Step 3: rubric synthesis page.** `biology/longevity/wiki/analysis/evidence-tiers.md` is the rubric. It carries the value definitions, worked examples per tier, the "within-tier quality" dimensions (endpoint clarity, effect size, replication, population, confounding, design, dose-response), and the editorial rule for when T2-T3 evidence is accepted vs. rejected. Every paper page links to it.
+
+**Step 4: in paper front matter.** Every paper page in the wiki carries the field:
+
+```yaml
+---
+id: pearl-rapamycin-2025
+title: "PEARL: rapamycin in healthy adults"
+kind: paper
+url: <url>
+year: 2025
+venue: Aging
+access: open
+license: CC-BY-4.0
+topics: [rapamycin, clinical-trials]
+evidence_tier: T6
+endpoint: primary_not_met
+---
+```
+
+**Step 5: in topic-page aggregation.** `biology/longevity/wiki/analysis/evidence-tiers.md` aggregates every intervention's maximum tier reached:
+
+```markdown
+### Tier 7 (mortality/hard-endpoint RCT or meta-analysis)
+- **Smoking cessation.** [[papers/jha-2013-smoking-mortality]].
+- **Blood pressure control to <120 SBP.** [[papers/sprint-2015-intensive-bp]].
+- **Statin therapy.** [[papers/ctt-2012-statins-low-risk]].
+
+### Tier 6 (Phase 2/3 RCT, surrogate endpoint)
+- **Vitamin D supplementation.** [[papers/vital-2019-vitd-omega3]]. **Negative result.**
+- **Rapamycin (PEARL).** [[papers/pearl-rapamycin-2025]]. **Primary endpoint negative.**
+```
+
+The same field also drives the recommendations synthesis page (`biology/longevity/recommendations.md`), which tags every recommended intervention with `(Tier N)` inline, so a reader sees the evidence weight without leaving the page.
+
+**Step 6: in lint.** The longevity `scripts/lint.py` requires `evidence_tier` on every page with `kind: paper`; missing the field is an error. Topic pages without an `evidence_tier` summary that aggregates their linked papers' tiers are a `[review]` finding for human attention.
+
+### Declaring fields in the schema spec
+
+Every wiki declares its domain fields in one block at the top of its schema spec (`AGENTS.md` or `CLAUDE.md`), under a `## Domain fields` heading. The block is YAML-shaped for parsing by future tooling and human-readable today. See the `domain-fields:` template inserted by Mode A.3 below.
+
 ## Mode A: scaffold a new wiki
 
 The user passes `scaffold <wiki-root> [--variant minimal|middle|scripted]`. If `--variant` is omitted, default to **minimal** and tell the user; prompt to switch only if the user explicitly mentions a defined corpus or automated lint.
@@ -248,6 +333,46 @@ The schema spec is the contract the LLM reads on every future invocation. Keep i
 4. **Wikilink convention** — wikilinks vs relative links; one or the other, not both.
 5. **Workflows** — `Ingest`, `Query`, `Lint` (each with numbered steps).
 6. **Writing style** — concrete rules. Examples: "no em dashes; use colons or commas instead", "no hedging language (`I believe`, `perhaps`, `it seems`)", "every claim cites a file in `raw/`".
+7. **Domain fields** (optional, add when the wiki has one or more domain-specific categorical fields) — declares the extensions in one place so every future invocation sees them. See §Extending the schema for your domain for the full pattern and worked example. The block format:
+
+   ````markdown
+   ## Domain fields
+
+   This wiki extends the standard schema with these YAML front-matter fields:
+
+   ```yaml
+   domain-fields:
+     <field-name>:
+       type: enum
+       values: [<v1>, <v2>, ...]
+       applies-to: [paper, topic, synthesis]   # which page kinds carry the field
+       required-when: [paper]                   # which page kinds error if missing
+       rubric: wiki/analysis/<field>-tiers.md   # synthesis page documenting the values
+       gloss: "<one-line description of what the field captures>"
+   ```
+
+   Example (longevity):
+
+   ```yaml
+   domain-fields:
+     evidence_tier:
+       type: enum
+       values: [T0, T1, T2, T3, T4, T5, T6, T7]
+       applies-to: [paper, topic, synthesis]
+       required-when: [paper]
+       rubric: wiki/analysis/evidence-tiers.md
+       gloss: "Maturity ladder: in vitro (T0) through hard-endpoint RCT meta-analysis (T7)."
+     endpoint:
+       type: enum
+       values: [primary_met, primary_not_met, secondary_only, observational, n/a]
+       applies-to: [paper]
+       required-when: [paper]
+       rubric: wiki/analysis/evidence-tiers.md
+       gloss: "Whether the paper's primary endpoint was pre-specified and met."
+   ```
+   ````
+
+   Skip this section entirely if the wiki uses only the standard fields. Add it the first time you introduce a domain field; update it when you add another.
 
 A starting template (adapt per domain):
 

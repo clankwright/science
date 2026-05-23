@@ -47,9 +47,14 @@ Make the wiki-curator skill produce wikis that are more useful, more powerful, a
 
 `longevity` added `evidence_tier: T0-T7` + `endpoint: primary_met|...`, `edge-llm` adds VRAM-with-context-length, `ai-empowerment` adds maturity/cost/access tiers. Each was invented ad-hoc. Codify the pattern so the next domain doesn't reinvent it.
 
-- [ ] 3.1 [hard] Write a new §"Extending the schema for your domain" section: pick 1-3 categorical YAML fields, write a rubric page (sibling to `index.md`, kind `synthesis`), add corresponding lint check, document the field in the schema spec.
-- [ ] 3.2 [medium] Use longevity's `evidence_tier` as the canonical worked example: include the actual T0-T7 rubric snippet, show how it appears in paper front matter, show how it appears in topic-page aggregation.
-- [ ] 3.3 [medium] Add a `domain-fields:` block to the schema-spec template so any wiki declares its extensions in one place (visible to the LLM on every read).
+- [x] 3.1 [hard] Write a new §"Extending the schema for your domain" section: pick 1-3 categorical YAML fields, write a rubric page (sibling to `index.md`, kind `synthesis`), add corresponding lint check, document the field in the schema spec.
+- [x] 3.2 [medium] Use longevity's `evidence_tier` as the canonical worked example: include the actual T0-T7 rubric snippet, show how it appears in paper front matter, show how it appears in topic-page aggregation.
+- [x] 3.3 [medium] Add a `domain-fields:` block to the schema-spec template so any wiki declares its extensions in one place (visible to the LLM on every read).
+
+**Phase 3 completed 2026-05-23.** Added §"Extending the schema for your domain" between §File conventions and §Mode A. The new section codifies the five-step pattern (pick 1-3 categorical fields → enumerate values → write rubric synthesis page → document in schema spec → add lint check), gives anatomy criteria for a good domain field (stable, source-assignable, orthogonal, within-tier quality stays outside), and walks the longevity `evidence_tier` worked example end-to-end: T0-T7 ladder snippet, paper front-matter shape (PEARL rapamycin example), topic-page aggregation snippet, recommendations-page integration, and lint-check requirement. The §Mode A.3 schema-spec template grew an optional `Domain fields` section with a `domain-fields:` YAML block format and a real longevity example covering both `evidence_tier` and `endpoint`.
+
+- Changes: `.claude/skills/ssp-wiki-curator/SKILL.md` (new §Extending the schema for your domain section + §Mode A.3 schema-spec template extension), `docs/SPEC.md`, `docs/TODO.md`.
+- Test delta: n/a (prose skill, no automated tests).
 
 ### Phase 4: categorical ranking → navigation primitive
 

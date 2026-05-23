@@ -19,6 +19,7 @@
   Trim to last 10.
 -->
 
+- Close Phase 3 (3.1 + 3.2 + 3.3) — add §"Extending the schema for your domain" with longevity evidence_tier worked example and `domain-fields:` schema-spec template block — by sst-dev-cycle at 2026-05-23T18:00:00Z
 - Append lint-spectrum update reminder to SPEC 6.2; close 11.3 — by sst-dev-cycle at 2026-05-23T16:00:00Z
 - Close batch-sizing advisory (1.5), add contradiction-handling skip softener (11.2), add lint output spectrum section (6.3) — by sst-dev-cycle at 2026-05-23T14:00:00Z
 - Add synthesis page kind (Phase 1 1.1-1.4), fix maintain-pass criteria (10.2), close batch-sizing advisory (10.3) — by sst-dev-cycle at 2026-05-23T12:00:00Z
@@ -34,8 +35,8 @@
   Ordered by priority (highest-impact-low-effort first), not by SPEC phase number.
 -->
 
-- [hard] Write §"Extending the schema for your domain" with longevity's evidence_tier as worked example; add `domain-fields:` block to schema-spec template. Reason: SPEC 3.1 + 3.2 + 3.3 — the most leveraged change; every future scripted/middle wiki benefits.
-- [medium] Spec the domain-field → navigation-axis → reading-path loop with three reference examples. Reason: SPEC 4.1 — depends on Phase 3 landing first; pairs naturally as a follow-up.
+- [medium] Spec the domain-field → navigation-axis → reading-path loop with three reference examples. Reason: SPEC 4.1 — depends on Phase 3 landing first; pairs naturally as a follow-up. (Phase 3 closed 2026-05-23, this is now actionable.)
+- [easy] Add an "aggregation by domain field" snippet to the scaffolded `index.md` template, commented out by default. Reason: SPEC 4.2 — natural pair with 4.1.
 - [hard] Write the middle-variant `lint.py` template (~100 LoC, stdlib only) + wire into Mode A.6.5. Reason: SPEC 6.1 + 6.2 — fills the biggest middle-variant gap.
 - [hard] Spec Mode D `umbrella <parent-dir>` + template + argument-hint update. Reason: SPEC 7.1 + 7.2 + 7.3 — useful at exactly 3+ sibling wikis (science/ already there).
 - [medium] Add variant-boundary assertion to lint (both LLM-judgment and scripted) + mirror in scripted `lint.py`. Reason: SPEC 8.1 + 8.2 — surfaces ambiguous variant claims observed in comsci wikis.
