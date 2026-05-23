@@ -57,8 +57,8 @@ Make the wiki-curator skill produce wikis that are more useful, more powerful, a
 - Test delta: n/a (prose skill, no automated tests).
 
 **Review follow-ups (open — schedule as the next `/sst-dev-cycle` cycle):**
-- [ ] 3.4 [easy] [should-fix] `.claude/skills/ssp-wiki-curator/SKILL.md:264` — Step 5 of the worked example is labeled "in topic-page aggregation" but demonstrates aggregation inside `wiki/analysis/evidence-tiers.md`, which is the same synthesis rubric page introduced in Step 3 (not a topic page; topic pages live in `wiki/topics/`). A reader extending a new domain follows the label literally and puts tier aggregations in `wiki/topics/*.md` instead of in the rubric synthesis page, fragmenting the navigation primitive. Proposed fix: rename Step 5 to "in synthesis-page aggregation" and add one sentence noting that the rubric and the cross-corpus aggregation usually share one synthesis page (as evidence-tiers.md does with §"Tier ladder" + §"Where each intervention currently sits").
-- [ ] 3.5 [easy] [should-fix] [batch-sizing] Dev skill input ~73k tokens (hard-difficulty undersize threshold: 200k; band 400-500k); window-target stated ~450k, actual filled ~16% of lower edge. Third consecutive batch-sizing undersize for this prose skill (prior: 10.3, 1.5). Queue held SPEC 4.1 [medium] explicitly tagged as Phase-3-dependent natural follow-on; not bundled. Structural pattern: prose-only skill edits cannot meet hard-tier thresholds even with multi-item Phase bundles. Proposed fix: at next cycle, bundle SPEC 4.1+4.2 with any residual prose items, AND consider re-tiering remaining hard items in this spec (6.1, 7.1, 13.1) to [medium] since they are also prose-only edits.
+- [x] 3.4 [easy] [should-fix] `.claude/skills/ssp-wiki-curator/SKILL.md:264` — Step 5 of the worked example is labeled "in topic-page aggregation" but demonstrates aggregation inside `wiki/analysis/evidence-tiers.md`, which is the same synthesis rubric page introduced in Step 3 (not a topic page; topic pages live in `wiki/topics/`). A reader extending a new domain follows the label literally and puts tier aggregations in `wiki/topics/*.md` instead of in the rubric synthesis page, fragmenting the navigation primitive. Proposed fix: rename Step 5 to "in synthesis-page aggregation" and add one sentence noting that the rubric and the cross-corpus aggregation usually share one synthesis page (as evidence-tiers.md does with §"Tier ladder" + §"Where each intervention currently sits").
+- [x] 3.5 [easy] [should-fix] [batch-sizing] Dev skill input ~73k tokens (hard-difficulty undersize threshold: 200k; band 400-500k); window-target stated ~450k, actual filled ~16% of lower edge. Third consecutive batch-sizing undersize for this prose skill (prior: 10.3, 1.5). Queue held SPEC 4.1 [medium] explicitly tagged as Phase-3-dependent natural follow-on; not bundled. Structural pattern: prose-only skill edits cannot meet hard-tier thresholds even with multi-item Phase bundles. Proposed fix: at next cycle, bundle SPEC 4.1+4.2 with any residual prose items, AND consider re-tiering remaining hard items in this spec (6.1, 7.1, 13.1) to [medium] since they are also prose-only edits. **Resolved:** re-tiered 6.1, 7.1, 13.1 from [hard] to [medium] in SPEC and TODO; next cycle should bundle 4.1+4.2 together.
 
 ### Phase 4: categorical ranking → navigation primitive
 
@@ -78,7 +78,7 @@ Once a domain field exists in front matter, `index.md` and synthesis pages can a
 
 The middle variant has no automated lint; every maintain pass re-derives the same checks via LLM judgment. Ship a ~100 LoC `lint.py` so middle-variant wikis get fast, deterministic lint.
 
-- [ ] 6.1 [hard] Write a middle-variant `lint.py` template (~100 LoC, no dependencies beyond stdlib): checks broken relative links, missing index entries, orphan files, optional YAML front-matter requirements, empty pages.
+- [ ] 6.1 [medium] Write a middle-variant `lint.py` template (~100 LoC, no dependencies beyond stdlib): checks broken relative links, missing index entries, orphan files, optional YAML front-matter requirements, empty pages.
 - [ ] 6.2 [medium] Add Mode A step A.6.5 that drops the template into middle-variant scaffolds (skipped for minimal; the scripted variant uses its own fuller `lint.py`). Also update the §Lint output spectrum table's Middle row (SKILL.md §Lint output spectrum) to replace "LLM judgment" with the new script path once lint.py exists.
 - [x] 6.3 [easy] Add §"Lint output spectrum" documenting the three lint paths (LLM judgment for minimal, script + LINT-REPORT.md for middle, script + log-only for scripted).
 
@@ -86,7 +86,7 @@ The middle variant has no automated lint; every maintain pass re-derives the sam
 
 `~/Dev/science/` holds 5 wikis with no master catalog. Add a fourth mode `umbrella` that walks sibling wikis and writes a parent-level index.
 
-- [ ] 7.1 [hard] Spec Mode D `umbrella <parent-dir>`: walks child directories, identifies which are wikis (by presence of `index.md` + schema spec), reads each one's variant + page count + last-ingest date, writes/refreshes `<parent-dir>/index.md` with one row per child wiki.
+- [ ] 7.1 [medium] Spec Mode D `umbrella <parent-dir>`: walks child directories, identifies which are wikis (by presence of `index.md` + schema spec), reads each one's variant + page count + last-ingest date, writes/refreshes `<parent-dir>/index.md` with one row per child wiki.
 - [ ] 7.2 [medium] Define the umbrella-index template (`# <Parent> wikis`, table: name | variant | pages | last-ingest | one-line description).
 - [ ] 7.3 [easy] Update `argument-hint:` frontmatter to include the new umbrella invocation form.
 
@@ -135,7 +135,7 @@ Spec §Contradiction handling is aspirational — only longevity actually uses i
 
 `longevity` is publish-quality (full front matter, wikilinks, scripted lint, LICENSES.md); `bpu`/`aliens` are personal-grade (no front matter, relative links, LLM lint). The spec treats all wikis identically. Add a `profile:` axis orthogonal to `variant:`.
 
-- [ ] 13.1 [hard] Spec a `profile:` axis: `personal` (defaults: relative links, no front matter, LLM lint, no license tracking) vs `publishable` (defaults: wikilinks, full front matter, scripted lint, license tracking).
+- [ ] 13.1 [medium] Spec a `profile:` axis: `personal` (defaults: relative links, no front matter, LLM lint, no license tracking) vs `publishable` (defaults: wikilinks, full front matter, scripted lint, license tracking).
 - [ ] 13.2 [medium] Extend the §"The three variants" table with a profile column and document how profile interacts with variant (e.g. minimal+publishable is unusual; scripted+personal is normal for personal research notes).
 - [ ] 13.3 [medium] Add a `profile:` question to Mode A alongside the variant question; default to `personal` for minimal/middle, `publishable` for scripted (changeable on request).
 

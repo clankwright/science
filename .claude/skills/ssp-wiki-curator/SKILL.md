@@ -261,7 +261,7 @@ endpoint: primary_not_met
 ---
 ```
 
-**Step 5: in topic-page aggregation.** `biology/longevity/wiki/analysis/evidence-tiers.md` aggregates every intervention's maximum tier reached:
+**Step 5: in synthesis-page aggregation.** `biology/longevity/wiki/analysis/evidence-tiers.md` aggregates every intervention's maximum tier reached. The rubric definition (the tier ladder) and the cross-corpus aggregation (which intervention sits where) usually share one synthesis page — `evidence-tiers.md` does both in a single file rather than splitting them across a topic page and a separate rubric.
 
 ```markdown
 ### Tier 7 (mortality/hard-endpoint RCT or meta-analysis)

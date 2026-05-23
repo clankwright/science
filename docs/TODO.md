@@ -19,6 +19,7 @@
   Trim to last 10.
 -->
 
+- Close 3.4 (rename Step 5 label to synthesis-page aggregation) + 3.5 (re-tier 6.1/7.1/13.1 hard→medium) — by sst-dev-cycle at 2026-05-23T19:00:00Z
 - Close Phase 3 (3.1 + 3.2 + 3.3) — add §"Extending the schema for your domain" with longevity evidence_tier worked example and `domain-fields:` schema-spec template block — by sst-dev-cycle at 2026-05-23T18:00:00Z
 - Append lint-spectrum update reminder to SPEC 6.2; close 11.3 — by sst-dev-cycle at 2026-05-23T16:00:00Z
 - Close batch-sizing advisory (1.5), add contradiction-handling skip softener (11.2), add lint output spectrum section (6.3) — by sst-dev-cycle at 2026-05-23T14:00:00Z
@@ -35,13 +36,11 @@
   Ordered by priority (highest-impact-low-effort first), not by SPEC phase number.
 -->
 
-- [easy] [should-fix] 3.4 `SKILL.md:264` — rename Step 5 "in topic-page aggregation" to "in synthesis-page aggregation" and note that the rubric and cross-corpus aggregation typically share one synthesis page. Reason: review of b2d5366.
-- [easy] [should-fix] [batch-sizing] 3.5 Bundle SPEC 4.1+4.2 with next cycle, AND consider re-tiering remaining hard items (6.1, 7.1, 13.1) to [medium] since prose-only edits cannot meet hard-tier 200k threshold. Reason: review of b2d5366 (3rd consecutive batch-sizing undersize).
-- [medium] Spec the domain-field → navigation-axis → reading-path loop with three reference examples. Reason: SPEC 4.1 — depends on Phase 3 landing first; pairs naturally as a follow-up. (Phase 3 closed 2026-05-23, this is now actionable.)
+- [medium] Spec the domain-field → navigation-axis → reading-path loop with three reference examples. Reason: SPEC 4.1 — depends on Phase 3 landing first; pairs naturally as a follow-up. Bundle with 4.2 per 3.5 advisory. (Phase 3 closed 2026-05-23, this is now actionable.)
 - [easy] Add an "aggregation by domain field" snippet to the scaffolded `index.md` template, commented out by default. Reason: SPEC 4.2 — natural pair with 4.1.
-- [hard] Write the middle-variant `lint.py` template (~100 LoC, stdlib only) + wire into Mode A.6.5. Reason: SPEC 6.1 + 6.2 — fills the biggest middle-variant gap.
-- [hard] Spec Mode D `umbrella <parent-dir>` + template + argument-hint update. Reason: SPEC 7.1 + 7.2 + 7.3 — useful at exactly 3+ sibling wikis (science/ already there).
+- [medium] Write the middle-variant `lint.py` template (~100 LoC, stdlib only) + wire into Mode A.6.5. Reason: SPEC 6.1 + 6.2 — fills the biggest middle-variant gap; re-tiered hard→medium (3.5 advisory: prose-only edits cannot meet hard-tier 200k threshold).
+- [medium] Spec Mode D `umbrella <parent-dir>` + template + argument-hint update. Reason: SPEC 7.1 + 7.2 + 7.3 — useful at exactly 3+ sibling wikis (science/ already there); re-tiered hard→medium (3.5 advisory).
 - [medium] Add variant-boundary assertion to lint (both LLM-judgment and scripted) + mirror in scripted `lint.py`. Reason: SPEC 8.1 + 8.2 — surfaces ambiguous variant claims observed in comsci wikis.
 - [medium] Embed a real contradiction-resolution worked example from longevity in §Contradiction handling. Reason: SPEC 11.1 — grounds aspirational guidance.
 - [medium] Add §"Adjacent patterns, not wikis" + one-question gate at top of Mode A. Reason: SPEC 12.1 + 12.2 — prevents wiki-ifying bible/, astronomy/, moon-explore/-shaped artifacts.
-- [hard] Spec the `profile:` axis (personal vs publishable) orthogonal to `variant:`; extend §"The three variants" table; add to Mode A. Reason: SPEC 13.1 + 13.2 + 13.3 — biggest mental-model change; do last so other phases inform the profile defaults.
+- [medium] Spec the `profile:` axis (personal vs publishable) orthogonal to `variant:`; extend §"The three variants" table; add to Mode A. Reason: SPEC 13.1 + 13.2 + 13.3 — biggest mental-model change; do last so other phases inform the profile defaults; re-tiered hard→medium (3.5 advisory).
