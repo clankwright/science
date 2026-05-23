@@ -40,6 +40,9 @@
   Ordered by priority (highest-impact-low-effort first), not by SPEC phase number.
 -->
 
+- [easy] [should-fix] 7.4 SKILL.md:1013 Mode D variant inference `scripts/lint.py → scripted` conflicts with A.6.5 middle-variant lint.py — review of f9fd980 (group with mode-d-lint-coherence)
+- [easy] [should-fix] 7.5 SKILL.md:962 Mode C.2 "items 1-5" claim omits item 3 from middle-variant lint; script covers 1,2,4,5 not 3 — review of f9fd980 (group with mode-d-lint-coherence)
+- [easy] [should-fix] 7.6 docs/TODO.md dev-skill ~62k vs 100k medium threshold; bundle 3-4 medium items next cycle — review of f9fd980
 - [medium] Add variant-boundary assertion to lint (both LLM-judgment and scripted) + mirror in scripted `lint.py`. Reason: SPEC 8.1 + 8.2 — surfaces ambiguous variant claims observed in comsci wikis.
 - [medium] Embed a real contradiction-resolution worked example from longevity in §Contradiction handling. Reason: SPEC 11.1 — grounds aspirational guidance.
 - [medium] Add §"Adjacent patterns, not wikis" + one-question gate at top of Mode A. Reason: SPEC 12.1 + 12.2 — prevents wiki-ifying bible/, astronomy/, moon-explore/-shaped artifacts.

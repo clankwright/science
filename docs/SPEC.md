@@ -110,6 +110,11 @@ The middle variant has no automated lint; every maintain pass re-derives the sam
 - Changes: `.claude/skills/ssp-wiki-curator/SKILL.md` (new §Mode D + frontmatter `argument-hint:`), `docs/SPEC.md`, `docs/TODO.md`.
 - Test delta: n/a (prose skill, no automated tests).
 
+**Review follow-ups (open — schedule as the next `/sst-dev-cycle` cycle):**
+- [ ] 7.4 [easy] [should-fix] `SKILL.md:1013` — Mode D variant inference `scripts/lint.py present → scripted` conflicts with A.6.5, which drops `scripts/lint.py` into middle-variant wikis. Any middle wiki that receives the A.6.5 lint.py template will be misclassified as scripted by umbrella mode. Proposed fix: update D.1 to `scripts/lint.py` + `sources.json` → scripted; `scripts/lint.py` alone → middle; `raw/` with subdirectories → middle; otherwise → minimal.
+- [ ] 7.5 [easy] [should-fix] `SKILL.md:962` — Mode C.2 claims `scripts/lint.py` covers "items 1-5 above" but the lint.py template has no check for item 3 ("Papers nothing links to"); the script covers items 1, 2, 4, 5 plus empty-page. Item 3 silently drops from middle-variant lint checks. Proposed fix: either add `check_unlinked_papers` to the lint.py template, or narrow the C.2 claim to "items 1, 2, 4, 5" and include item 3 in LLM-judgment alongside items 6-8.
+- [ ] 7.6 [easy] [should-fix] [batch-sizing] `docs/TODO.md:## Next up` — dev-skill input ~62k tokens (medium undersize threshold: 100k; band 200-300k); window-target ~250k, actual ~25% of lower edge. Queue held 4+ compatible medium items (SPEC 8.1+8.2, 11.1, 12.1+12.2). Fourth consecutive batch-sizing undersize for this prose skill. Proposed fix: bundle 3-4 medium items from Next up at the start of the next cycle; all are prose-only SKILL.md edits with similar per-item token cost to this batch.
+
 ### Phase 8: variant-boundary assertion in lint
 
 `comsci/ai-empowerment/` and `comsci/edge-llm/` call themselves "middle variant" in their schema specs but have no raw dumps yet; their actual implementation is closer to minimal-scaffold. Make variant claims testable.
