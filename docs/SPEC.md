@@ -112,6 +112,9 @@ Spec §Contradiction handling is aspirational — only longevity actually uses i
 - [ ] 11.1 [medium] Pull one real contradiction from the longevity corpus (or another wiki) and embed it as a worked example in §Contradiction handling, showing both source citations and the resolution prose.
 - [x] 11.2 [easy] Add a "skip if your domain doesn't have contested claims" softener so wikis that don't need this section don't pretend to.
 
+**Review follow-ups (open — schedule as the next `/sst-dev-cycle` cycle):**
+- [ ] 11.3 [easy] [should-fix] `SKILL.md:113` & `docs/SPEC.md:6.2` — §Lint output spectrum table says "LLM judgment" for middle (correct today, since lint.py doesn't exist yet), but SPEC 6.2 ("Add Mode A step A.6.5") has no reminder to also update this row after lint.py lands. A cycle closing 6.1+6.2 will leave middle's row stale, contradicting the newly-scaffolded script. Proposed fix: append "also update §Lint output spectrum middle row (SKILL.md §Lint output spectrum) to reflect scripts/lint.py" to SPEC 6.2's description.
+
 ### Phase 12: adjacent-patterns filter ("is this even a wiki?")
 
 `bible/` (4 flat comparison files), `astronomy/` (research project with notebook), `moon-explore/` (project tracker) all sit under `~/Dev/science/` but aren't wikis. The spec should help disambiguate before the user (or agent) tries to wiki-ify the wrong artifact.
