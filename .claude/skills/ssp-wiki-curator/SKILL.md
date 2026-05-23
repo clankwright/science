@@ -97,11 +97,11 @@ Subdir names under `wiki/` are domain-specific. Common choices: `papers/`, `topi
 
 ## The three variants
 
-| Variant   | Sources                  | Scripts | Lint              | Use when                                                        |
-|-----------|--------------------------|---------|-------------------|-----------------------------------------------------------------|
-| Minimal   | Plain markdown in `raw/` | None    | LLM judgment only | Bootstrapping, small domain, hand-curated prose. Cleanest start.|
-| Middle    | Raw dumps in `raw/<src>/`| None    | LLM-written report| Bigger corpus, lots of source material, but no need for automation yet. |
-| Scripted  | `sources.json` manifest  | Full    | Automated checks  | Defined corpus of primary sources, automated ingest desired.    |
+| Variant   | Sources                  | Scripts | Lint              | Profile default | Use when                                                        |
+|-----------|--------------------------|---------|-------------------|-----------------|-----------------------------------------------------------------|
+| Minimal   | Plain markdown in `raw/` | None    | LLM judgment only | personal        | Bootstrapping, small domain, hand-curated prose. Cleanest start.|
+| Middle    | Raw dumps in `raw/<src>/`| None    | LLM-written report| personal        | Bigger corpus, lots of source material, but no need for automation yet. |
+| Scripted  | `sources.json` manifest  | Full    | Automated checks  | publishable     | Defined corpus of primary sources, automated ingest desired.    |
 
 ### Lint output spectrum
 
@@ -114,6 +114,39 @@ Quick-reference summary of which lint path each variant uses. Full details in §
 | Scripted | `scripts/lint.py` exit code        | Entry in `log.md` only           |
 
 Pick one path per wiki and keep it. Writing both `LINT-REPORT.md` and a `log.md` entry for the same lint run creates two sources of truth that drift apart across passes.
+
+## The profile axis
+
+`profile:` is a second dimension orthogonal to `variant:`. Where `variant:` describes the automation level, `profile:` describes the publication intent and the defaults the agent applies during scaffold and ingest passes.
+
+| Profile        | Link style      | Front matter        | Lint path               | License tracking          |
+|---------------|-----------------|--------------------|-----------------------|--------------------------|
+| `personal`    | Relative links  | Optional           | LLM judgment            | Not required             |
+| `publishable` | Wikilinks       | Required, full     | Scripted or strict LLM  | Required (`LICENSES.md`) |
+
+Declare the profile in the schema spec alongside `variant:`:
+
+```yaml
+variant: middle
+profile: personal
+```
+
+**Defaults:** `personal` for minimal and middle wikis; `publishable` for scripted wikis. Changeable at scaffold time.
+
+Profile affects defaults, not hard constraints. A `personal` wiki may choose wikilinks; a `publishable` wiki in active development may defer `LICENSES.md`. The profile signals intent so the agent doesn't ask about link style, front-matter requirements, and license tracking on every ingest.
+
+### Profile × variant interactions
+
+| Combo                  | Typical use                                  | Notes                                                                             |
+|------------------------|---------------------------------------------|-----------------------------------------------------------------------------------|
+| minimal + personal     | Quick bootstrap, private research notes      | Most common starting point for solo research. Front matter optional.              |
+| minimal + publishable  | Tiny public corpus                           | Unusual; consider moving to middle if the corpus will grow.                       |
+| middle + personal      | Growing personal wiki                        | Good for wikis accumulating raw material without publish pressure.                |
+| middle + publishable   | Team wiki, no CI yet                         | Move to scripted when automated lint and license tracking become load-bearing.    |
+| scripted + personal    | Personal research with defined paper corpus  | Common shape for deep-dive personal research. `LICENSES.md` optional.            |
+| scripted + publishable | Production knowledge base                    | Full pipeline: scripted ingest, automated lint, wikilinks, full license tracking. |
+
+Real-world examples from `~/Dev/science/`: `biology/longevity/` is `scripted + personal` (full scripted pipeline, deep research notes, not yet published for redistribution); `bpu/` and `aliens/` are `minimal + personal` (flat `raw/`, relative links, LLM lint, front matter absent on most pages).
 
 ## File conventions
 
@@ -401,6 +434,7 @@ About to scaffold <variant> wiki at <wiki-root> with subdirs:
   - wiki/<sub-1>/  (<purpose>)
   - wiki/<sub-2>/  (<purpose>)
 Schema spec: <AGENTS.md|CLAUDE.md>
+Profile: <personal|publishable>
 Wikilink style: <wikilinks|relative>
 Confirm or correct.
 ```
@@ -413,6 +447,8 @@ Pick the schema name based on the harness: `CLAUDE.md` if the user is on the Cla
 - "Products and companies" → `products/`, `companies/`, `categories/`
 
 If unclear, default to `papers/`, `topics/`, `analysis/` and explain the user can rename later.
+
+Confirm the profile before writing the schema spec. Default is `personal` for minimal and middle wikis (relative links, front matter optional, LLM lint, no `LICENSES.md`) and `publishable` for scripted wikis (wikilinks, full front matter, scripted lint, `LICENSES.md`). Let the user override. Record the chosen profile as `profile: <personal|publishable>` in the schema spec alongside `variant:`, at the top of the spec before any section headings. See §The profile axis for the full interaction matrix.
 
 ### A.2 — create the directory tree
 

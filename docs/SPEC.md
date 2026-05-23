@@ -135,7 +135,7 @@ The middle variant has no automated lint; every maintain pass re-derives the sam
 - Test delta: n/a (prose skill, no automated tests).
 
 **Review follow-ups (open — schedule as the next `/sst-dev-cycle` cycle):**
-- [ ] 8.3 [easy] [should-fix] [batch-sizing] `docs/TODO.md:## Next up` — dev-skill input ~87k tokens (medium undersize threshold: 100k; band 200-300k); window-target ~200k, actual ~44% of lower edge. Sixth consecutive batch-sizing undersize for this prose skill; bundling 6 items (per prior advisory's ≥4 guidance) advanced fill from 38k to 87k but did not cross the 100k threshold. Queue holds SPEC 13.1+13.2+13.3 [medium]. Proposed fix: bundle all three 13.x items in one cycle, or re-tier them to [easy] to match this skill's structural fill rate.
+- [x] 8.3 [easy] [should-fix] [batch-sizing] `docs/TODO.md:## Next up` — dev-skill input ~87k tokens (medium undersize threshold: 100k; band 200-300k); window-target ~200k, actual ~44% of lower edge. Sixth consecutive batch-sizing undersize for this prose skill; bundling 6 items (per prior advisory's ≥4 guidance) advanced fill from 38k to 87k but did not cross the 100k threshold. Queue holds SPEC 13.1+13.2+13.3 [medium]. Proposed fix: bundle all three 13.x items in one cycle, or re-tier them to [easy] to match this skill's structural fill rate. **Resolved:** re-tiered 13.1+13.2+13.3 to [easy] and bundled all three in the 8.3 cycle.
 
 ### Phase 9: reconcile LINT-REPORT.md vs script exit code
 
@@ -185,9 +185,14 @@ Spec §Contradiction handling is aspirational — only longevity actually uses i
 
 `longevity` is publish-quality (full front matter, wikilinks, scripted lint, LICENSES.md); `bpu`/`aliens` are personal-grade (no front matter, relative links, LLM lint). The spec treats all wikis identically. Add a `profile:` axis orthogonal to `variant:`.
 
-- [ ] 13.1 [medium] Spec a `profile:` axis: `personal` (defaults: relative links, no front matter, LLM lint, no license tracking) vs `publishable` (defaults: wikilinks, full front matter, scripted lint, license tracking).
-- [ ] 13.2 [medium] Extend the §"The three variants" table with a profile column and document how profile interacts with variant (e.g. minimal+publishable is unusual; scripted+personal is normal for personal research notes).
-- [ ] 13.3 [medium] Add a `profile:` question to Mode A alongside the variant question; default to `personal` for minimal/middle, `publishable` for scripted (changeable on request).
+- [x] 13.1 [easy] Spec a `profile:` axis: `personal` (defaults: relative links, no front matter, LLM lint, no license tracking) vs `publishable` (defaults: wikilinks, full front matter, scripted lint, license tracking).
+- [x] 13.2 [easy] Extend the §"The three variants" table with a profile column and document how profile interacts with variant (e.g. minimal+publishable is unusual; scripted+personal is normal for personal research notes).
+- [x] 13.3 [easy] Add a `profile:` question to Mode A alongside the variant question; default to `personal` for minimal/middle, `publishable` for scripted (changeable on request).
+
+**Phase 13 completed 2026-05-23.** Added `## The profile axis` section between §Lint output spectrum and §File conventions. The section defines `personal` vs `publishable` as a second orthogonal dimension alongside `variant:`, tabulates the defaults each profile sets (link style, front matter, lint path, license tracking), describes how to declare it in the schema spec (`profile: personal` alongside `variant:`), and documents all six `variant × profile` combinations with typical use cases and notes. The §Three variants table gained a `Profile default` column showing `personal` for minimal/middle and `publishable` for scripted. Mode A.1's confirmation block now includes `Profile: <personal|publishable>`, and the section adds a paragraph explaining the default logic and directing readers to §The profile axis. Real-world examples from `~/Dev/science/` anchor the combinations: `biology/longevity/` as `scripted + personal`, `bpu/` and `aliens/` as `minimal + personal`. Also closed 8.3 by re-tiering 13.1-13.3 from [medium] to [easy] to match the skill's structural prose fill rate.
+
+- Changes: `.claude/skills/ssp-wiki-curator/SKILL.md` (§The three variants table — Profile default column, new §The profile axis, §Mode A.1 — profile confirmation + paragraph), `docs/SPEC.md`, `docs/TODO.md`.
+- Test delta: n/a (prose skill, no automated tests).
 
 ### Phase 14: promote back to skill-set
 

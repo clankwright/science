@@ -19,6 +19,7 @@
   Trim to last 10.
 -->
 
+- Close 8.3+13.1+13.2+13.3: re-tier 13.x to easy, add §Profile axis (personal/publishable), extend variants table with profile column, add profile question to Mode A — by sst-dev-cycle at 2026-05-23T06:00:00Z
 - Close 7.9+8.1+8.2+11.1+12.1+12.2: variant-boundary lint check, NAD+ contradiction worked example, adjacent-patterns section + Mode A gate — by sst-dev-cycle at 2026-05-24T02:00:00Z
 - Fix 7.7+7.8: scope check_orphans to kind==topic only (eliminates paper double-reporting) + annotate SPEC 7.6 batch-pick omission — by sst-dev-cycle at 2026-05-24T01:00:00Z
 - Fix 7.4+7.5: correct Mode D variant inference (sources.json required for scripted) + add check_unlinked_papers to middle lint.py (closes items 1-5 coverage gap) — by sst-dev-cycle at 2026-05-24T00:30:00Z
@@ -28,7 +29,6 @@
 - Add §Aggregating by domain field (4.1) + aggregation snippet to index.md scaffold template (4.2) — by sst-dev-cycle at 2026-05-23T20:00:00Z
 - Close 3.4 (rename Step 5 label to synthesis-page aggregation) + 3.5 (re-tier 6.1/7.1/13.1 hard→medium) — by sst-dev-cycle at 2026-05-23T19:00:00Z
 - Close Phase 3 (3.1 + 3.2 + 3.3) — add §"Extending the schema for your domain" with longevity evidence_tier worked example and `domain-fields:` schema-spec template block — by sst-dev-cycle at 2026-05-23T18:00:00Z
-- Append lint-spectrum update reminder to SPEC 6.2; close 11.3 — by sst-dev-cycle at 2026-05-23T16:00:00Z
 
 ## Next up (queued for next cycle)
 
@@ -38,5 +38,4 @@
   Ordered by priority (highest-impact-low-effort first), not by SPEC phase number.
 -->
 
-- [easy] [should-fix] 8.3 docs/TODO.md:## Next up dev-skill input ~87k (medium, undersize threshold 100k, sixth consecutive); bundle SPEC 13.1+13.2+13.3 together or re-tier to [easy] — review of f1e8cda
-- [medium] Spec the `profile:` axis (personal vs publishable) orthogonal to `variant:`; extend §"The three variants" table; add to Mode A. Reason: SPEC 13.1 + 13.2 + 13.3 — biggest mental-model change; do last so other phases inform the profile defaults; re-tiered hard→medium (3.5 advisory).
+- [medium] Promote working SKILL.md to canonical transferable via sst-sanitize-transferable + sst-promote-skill-proposal. Reason: SPEC 14.1+14.2+14.3+14.4 — all Phases 1-13 now closed.
