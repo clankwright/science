@@ -35,6 +35,8 @@
   Ordered by priority (highest-impact-low-effort first), not by SPEC phase number.
 -->
 
+- [easy] [should-fix] 3.4 `SKILL.md:264` — rename Step 5 "in topic-page aggregation" to "in synthesis-page aggregation" and note that the rubric and cross-corpus aggregation typically share one synthesis page. Reason: review of b2d5366.
+- [easy] [should-fix] [batch-sizing] 3.5 Bundle SPEC 4.1+4.2 with next cycle, AND consider re-tiering remaining hard items (6.1, 7.1, 13.1) to [medium] since prose-only edits cannot meet hard-tier 200k threshold. Reason: review of b2d5366 (3rd consecutive batch-sizing undersize).
 - [medium] Spec the domain-field → navigation-axis → reading-path loop with three reference examples. Reason: SPEC 4.1 — depends on Phase 3 landing first; pairs naturally as a follow-up. (Phase 3 closed 2026-05-23, this is now actionable.)
 - [easy] Add an "aggregation by domain field" snippet to the scaffolded `index.md` template, commented out by default. Reason: SPEC 4.2 — natural pair with 4.1.
 - [hard] Write the middle-variant `lint.py` template (~100 LoC, stdlib only) + wire into Mode A.6.5. Reason: SPEC 6.1 + 6.2 — fills the biggest middle-variant gap.
