@@ -4,11 +4,7 @@
 
 ## In flight
 
-<!--
-  One line per currently-running skill:
-  - [<skill-name> @ <utc-iso>] <one-line>
-  Empty when nothing is in progress.
--->
+- [sst-dev-cycle @ 2026-05-23T09:00:00Z] Close Phase 14: sanitize + promote sst-wiki-curator working SKILL.md to canonical, install, archive spec
 
 ## Just shipped (last cycle)
 
@@ -38,4 +34,5 @@
   Ordered by priority (highest-impact-low-effort first), not by SPEC phase number.
 -->
 
+- [easy] [should-fix] 13.4 SKILL.md:519 Mode A.3 schema-spec template missing variant:/profile: header block — review of ff167ed
 - [medium] Promote working SKILL.md to canonical transferable via sst-sanitize-transferable + sst-promote-skill-proposal. Reason: SPEC 14.1+14.2+14.3+14.4 — all Phases 1-13 now closed.
