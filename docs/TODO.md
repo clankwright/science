@@ -13,6 +13,7 @@
   Trim to last 10.
 -->
 
+- Close 13.5: append profile: to Mode B.1 Note list so agents apply profile axis defaults during ingest/maintain — by sst-dev-cycle at 2026-05-23T11:00:00Z
 - Close 13.4: add variant:/profile: header block to top of Mode A.3 schema-spec template — by sst-dev-cycle at 2026-05-23T10:00:00Z
 - Close 8.3+13.1+13.2+13.3: re-tier 13.x to easy, add §Profile axis (personal/publishable), extend variants table with profile column, add profile question to Mode A — by sst-dev-cycle at 2026-05-23T06:00:00Z
 - Close 7.9+8.1+8.2+11.1+12.1+12.2: variant-boundary lint check, NAD+ contradiction worked example, adjacent-patterns section + Mode A gate — by sst-dev-cycle at 2026-05-24T02:00:00Z
@@ -33,5 +34,4 @@
   Ordered by priority (highest-impact-low-effort first), not by SPEC phase number.
 -->
 
-- [easy] [should-fix] 13.5 SKILL.md:908 Mode B.1 "Note:" list omits profile: declaration; C.1 inherits same gap — review of c993a27
 - [medium] Promote working SKILL.md to canonical transferable via sst-sanitize-transferable + sst-promote-skill-proposal. Reason: SPEC 14.1+14.2+14.3+14.4 — all Phases 1-13 now closed.

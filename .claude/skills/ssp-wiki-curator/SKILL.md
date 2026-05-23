@@ -905,7 +905,7 @@ The user passes `ingest <wiki-root> <source-url-or-file>`. The skill walks the v
 
 ### B.1 — read the schema spec FIRST
 
-Before touching any wiki page, read `<wiki-root>/AGENTS.md` (or `CLAUDE.md`) end-to-end. Note: page kinds, subdir taxonomy, wikilink style, required front-matter fields, contradiction handling, writing style. The schema is authoritative; if your defaults conflict with it, the schema wins.
+Before touching any wiki page, read `<wiki-root>/AGENTS.md` (or `CLAUDE.md`) end-to-end. Note: page kinds, subdir taxonomy, wikilink style, required front-matter fields, contradiction handling, writing style, profile: (if present, apply §The profile axis defaults for link style and front-matter requirements). The schema is authoritative; if your defaults conflict with it, the schema wins.
 
 Also read `<wiki-root>/wiki/index.md` to know what already exists. A new ingest should never duplicate an existing page; it links to the existing one and extends it.
 
