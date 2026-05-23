@@ -680,7 +680,7 @@ Template (stdlib only, no pip installs required):
 """Middle-variant wiki lint — stdlib only.
 Usage: python3 scripts/lint.py [wiki-root]  (default: .)
 Checks: broken relative links, missing index entries, orphan pages,
-        front-matter fields, empty pages.
+        unlinked paper pages, front-matter fields, empty pages.
 Exit 0 on clean, 1 on errors.
 """
 import re, sys
@@ -755,14 +755,32 @@ def check_empty(root, pages):
             errs.append(f"[empty-page] {rel}")
     return errs
 
+def check_unlinked_papers(root, pages):
+    """Paper pages (kind:paper) that no topic page links to."""
+    paper_pages = {rel: absp for rel, absp in pages.items()
+                   if parse_front_matter(absp.read_text(errors="replace")).get("kind") == "paper"}
+    if not paper_pages:
+        return []
+    topic_pages = [absp for rel, absp in pages.items()
+                   if parse_front_matter(absp.read_text(errors="replace")).get("kind") == "topic"]
+    linked = set()
+    for tp in topic_pages:
+        if tp.exists():
+            for link in rel_links(tp.read_text(errors="replace")):
+                t = (tp.parent / link).resolve()
+                for rel, absp in paper_pages.items():
+                    if absp.resolve() == t:
+                        linked.add(rel)
+    return [f"[unlinked-paper] {r}: no topic page links here" for r in paper_pages if r not in linked]
+
 def main():
     root = Path(sys.argv[1] if len(sys.argv) > 1 else ".")
     if not (root / WIKI_DIR).exists():
         sys.exit(f"error: no {WIKI_DIR}/ at {root}")
     pages = wiki_pages(root)
     errs = (check_broken_links(root, pages) + check_index(root, pages) +
-            check_orphans(root, pages) + check_front_matter(root, pages) +
-            check_empty(root, pages))
+            check_orphans(root, pages) + check_unlinked_papers(root, pages) +
+            check_front_matter(root, pages) + check_empty(root, pages))
     for e in errs: print(e)
     sys.exit(1 if errs else 0)
 
@@ -778,7 +796,7 @@ cd <wiki-root> && python3 scripts/lint.py
 
 An empty wiki (no pages yet) has nothing to check and should exit 0. If it errors, the template has a path bug — fix before declaring scaffold done.
 
-During **maintain passes** on a middle-variant wiki: run `python3 scripts/lint.py` first to get the deterministic findings (broken links, missing front matter, orphans, index drift, empty pages), then apply LLM judgment for the fuzzy checks that the script cannot perform (stale claims, contradiction handling, gaps in coverage). Incorporate all findings into `LINT-REPORT.md`.
+During **maintain passes** on a middle-variant wiki: run `python3 scripts/lint.py` first to get the deterministic findings (broken links, missing front matter, orphans, unlinked papers, index drift, empty pages), then apply LLM judgment for the fuzzy checks that the script cannot perform (stale claims, contradiction handling, gaps in coverage). Incorporate all findings into `LINT-REPORT.md`.
 
 ### A.7 — write `.gitignore`
 
@@ -1010,7 +1028,7 @@ Walk `<parent-dir>` up to two levels deep. A directory qualifies as a wiki when 
 Skip directories that don't meet both criteria. For each qualifying directory, collect:
 
 - **Name**: the path relative to `<parent-dir>` (e.g., `aliens`, `comsci/edge-llm`).
-- **Variant**: infer from directory structure — `scripts/lint.py` present → scripted; `raw/` with subdirectories → middle; otherwise minimal.
+- **Variant**: infer from directory structure — `scripts/lint.py` + `sources.json` both present → scripted; `scripts/lint.py` present alone → middle; `raw/` with subdirectories → middle; otherwise minimal.
 - **Page count**: count `*.md` files under `wiki/`, excluding `index.md`, `LINT-REPORT.md`, and anything under `wiki/build/`.
 - **Last-ingest date**: the most recent `YYYY-MM-DD INGEST:` line in `log.md`, or the most recent file modification date under `wiki/` if `log.md` is absent or has no INGEST line.
 - **One-line description**: the first non-blank, non-heading paragraph of `README.md`, trimmed to 80 characters. Fall back to the first sentence of the schema spec's opening paragraph if no README exists.
