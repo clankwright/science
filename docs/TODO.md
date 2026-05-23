@@ -4,8 +4,6 @@
 
 ## In flight
 
-- [sst-dev-cycle @ 2026-05-23T09:00:00Z] Close Phase 14: sanitize + promote sst-wiki-curator working SKILL.md to canonical, install, archive spec
-
 ## Just shipped (last cycle)
 
 <!--
@@ -15,6 +13,7 @@
   Trim to last 10.
 -->
 
+- Close 13.4: add variant:/profile: header block to top of Mode A.3 schema-spec template — by sst-dev-cycle at 2026-05-23T10:00:00Z
 - Close 8.3+13.1+13.2+13.3: re-tier 13.x to easy, add §Profile axis (personal/publishable), extend variants table with profile column, add profile question to Mode A — by sst-dev-cycle at 2026-05-23T06:00:00Z
 - Close 7.9+8.1+8.2+11.1+12.1+12.2: variant-boundary lint check, NAD+ contradiction worked example, adjacent-patterns section + Mode A gate — by sst-dev-cycle at 2026-05-24T02:00:00Z
 - Fix 7.7+7.8: scope check_orphans to kind==topic only (eliminates paper double-reporting) + annotate SPEC 7.6 batch-pick omission — by sst-dev-cycle at 2026-05-24T01:00:00Z
@@ -34,5 +33,4 @@
   Ordered by priority (highest-impact-low-effort first), not by SPEC phase number.
 -->
 
-- [easy] [should-fix] 13.4 SKILL.md:519 Mode A.3 schema-spec template missing variant:/profile: header block — review of ff167ed
 - [medium] Promote working SKILL.md to canonical transferable via sst-sanitize-transferable + sst-promote-skill-proposal. Reason: SPEC 14.1+14.2+14.3+14.4 — all Phases 1-13 now closed.

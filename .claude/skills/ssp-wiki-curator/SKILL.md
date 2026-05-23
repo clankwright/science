@@ -519,6 +519,9 @@ The schema spec is the contract the LLM reads on every future invocation. Keep i
 A starting template (adapt per domain):
 
 ```markdown
+variant: <minimal|middle|scripted>
+profile: <personal|publishable>
+
 # <Domain> Knowledge Base
 
 ## Structure
