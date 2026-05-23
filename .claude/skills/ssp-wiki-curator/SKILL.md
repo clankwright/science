@@ -339,7 +339,7 @@ How the aggregation looks in `index.md` (snippet, commented out in the scaffold 
 
 **Example 3 — ai-empowerment cost/access (cost-friction-filtered tool table)**
 
-`comsci/ai-empowerment/` adds `cost_tier` (enum: `free | freemium | paid`) and `access_tier` (enum: `no-signup | email | account | waitlist`) to tool pages. The aggregation is a cross-filtered view: tools that are `free` + `no-signup` or `email` are the lowest-friction entry points. This becomes a reading path: "Start with free, no-signup tools before evaluating paid options."
+`comsci/ai-empowerment/` uses a `cost_tier` field on tool pages (prospective illustration; actual wiki values are freeform strings such as `low ($0-20/mo)`, `mid ($499/yr)`, `usage-based ($0.10-0.40/sec)` — a categorical enum like `free | freemium | paid` would be a template suggestion for a new wiki, not the declared enum for ai-empowerment). It could also add an `access_tier` field (enum: `no-signup | email | account | waitlist`; prospective illustration — no page in the wiki currently uses this field). The aggregation would be a cross-filtered view: tools that are `free` + `no-signup` or `email` are the lowest-friction entry points. This becomes a reading path: "Start with free, no-signup tools before evaluating paid options."
 
 ```markdown
 <!-- domain-field-aggregation: cost_tier + access_tier -->

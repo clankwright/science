@@ -19,6 +19,7 @@
   Trim to last 10.
 -->
 
+- Fix 4.4+4.5: annotate access_tier as prospective, fix cost_tier to reflect freeform wiki values (not a categorical enum) — by sst-dev-cycle at 2026-05-23T22:00:00Z
 - Fix 4.3: change benchmark_maturity "adds" to "could add" (prospective illustration, not an existing field) — by sst-dev-cycle at 2026-05-23T21:30:00Z
 - Add §Aggregating by domain field (4.1) + aggregation snippet to index.md scaffold template (4.2) — by sst-dev-cycle at 2026-05-23T20:00:00Z
 - Close 3.4 (rename Step 5 label to synthesis-page aggregation) + 3.5 (re-tier 6.1/7.1/13.1 hard→medium) — by sst-dev-cycle at 2026-05-23T19:00:00Z
@@ -38,8 +39,6 @@
   Ordered by priority (highest-impact-low-effort first), not by SPEC phase number.
 -->
 
-- [easy] [should-fix] 4.4 `.claude/skills/ssp-wiki-curator/SKILL.md:342` — access_tier claimed as existing in ai-empowerment but no page uses it; annotate as prospective like 4.3's fix — review of bb93819 (group with example3-field-accuracy)
-- [easy] [should-fix] 4.5 `.claude/skills/ssp-wiki-curator/SKILL.md:342` — cost_tier enum free|freemium|paid mismatches wiki's freeform values; update enum or note it's a template suggestion — review of bb93819 (group with example3-field-accuracy)
 - [medium] Write the middle-variant `lint.py` template (~100 LoC, stdlib only) + wire into Mode A.6.5. Reason: SPEC 6.1 + 6.2 — fills the biggest middle-variant gap; re-tiered hard→medium (3.5 advisory: prose-only edits cannot meet hard-tier 200k threshold).
 - [medium] Spec Mode D `umbrella <parent-dir>` + template + argument-hint update. Reason: SPEC 7.1 + 7.2 + 7.3 — useful at exactly 3+ sibling wikis (science/ already there); re-tiered hard→medium (3.5 advisory).
 - [medium] Add variant-boundary assertion to lint (both LLM-judgment and scripted) + mirror in scripted `lint.py`. Reason: SPEC 8.1 + 8.2 — surfaces ambiguous variant claims observed in comsci wikis.
