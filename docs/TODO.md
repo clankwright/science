@@ -13,6 +13,7 @@
   Trim to last 10.
 -->
 
+- Close 14.1+14.2+14.3+14.4: sanitize working SKILL.md (5 must-fix + 9 should-fix resolved), promote to sst-wiki-curator v1.1.0 in skill-set, archive SPEC — by sst-dev-cycle at 2026-05-23T12:00:00Z
 - Close 13.5: append profile: to Mode B.1 Note list so agents apply profile axis defaults during ingest/maintain — by sst-dev-cycle at 2026-05-23T11:00:00Z
 - Close 13.4: add variant:/profile: header block to top of Mode A.3 schema-spec template — by sst-dev-cycle at 2026-05-23T10:00:00Z
 - Close 8.3+13.1+13.2+13.3: re-tier 13.x to easy, add §Profile axis (personal/publishable), extend variants table with profile column, add profile question to Mode A — by sst-dev-cycle at 2026-05-23T06:00:00Z
@@ -33,5 +34,3 @@
   Format: - [<difficulty>] <one-line>. Reason: <spec id, supervisor verdict, user request>
   Ordered by priority (highest-impact-low-effort first), not by SPEC phase number.
 -->
-
-- [medium] Promote working SKILL.md to canonical transferable via sst-sanitize-transferable + sst-promote-skill-proposal. Reason: SPEC 14.1+14.2+14.3+14.4 — all Phases 1-13 now closed.
