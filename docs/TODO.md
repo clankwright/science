@@ -38,4 +38,5 @@
   Ordered by priority (highest-impact-low-effort first), not by SPEC phase number.
 -->
 
+- [easy] [should-fix] 8.3 docs/TODO.md:## Next up dev-skill input ~87k (medium, undersize threshold 100k, sixth consecutive); bundle SPEC 13.1+13.2+13.3 together or re-tier to [easy] — review of f1e8cda
 - [medium] Spec the `profile:` axis (personal vs publishable) orthogonal to `variant:`; extend §"The three variants" table; add to Mode A. Reason: SPEC 13.1 + 13.2 + 13.3 — biggest mental-model change; do last so other phases inform the profile defaults; re-tiered hard→medium (3.5 advisory).

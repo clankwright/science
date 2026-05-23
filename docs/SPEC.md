@@ -134,6 +134,9 @@ The middle variant has no automated lint; every maintain pass re-derives the sam
 - Changes: `.claude/skills/ssp-wiki-curator/SKILL.md` (§Mode C.2 item 9, §Scripts reference lint.py), `docs/SPEC.md`, `docs/TODO.md`.
 - Test delta: n/a (prose skill, no automated tests).
 
+**Review follow-ups (open — schedule as the next `/sst-dev-cycle` cycle):**
+- [ ] 8.3 [easy] [should-fix] [batch-sizing] `docs/TODO.md:## Next up` — dev-skill input ~87k tokens (medium undersize threshold: 100k; band 200-300k); window-target ~200k, actual ~44% of lower edge. Sixth consecutive batch-sizing undersize for this prose skill; bundling 6 items (per prior advisory's ≥4 guidance) advanced fill from 38k to 87k but did not cross the 100k threshold. Queue holds SPEC 13.1+13.2+13.3 [medium]. Proposed fix: bundle all three 13.x items in one cycle, or re-tier them to [easy] to match this skill's structural fill rate.
+
 ### Phase 9: reconcile LINT-REPORT.md vs script exit code
 
 Spec §C.3 says every maintain pass writes `LINT-REPORT.md`. Longevity skips this in favor of script exit code + log.md entry. Two workflows exist; document both.
