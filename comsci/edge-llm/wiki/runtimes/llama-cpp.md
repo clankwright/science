@@ -57,6 +57,7 @@ For a 4 GB-class deployment, the Hexagon backend is the most consequential: it b
 ## See Also
 
 - [KTransformers](ktransformers.md)
+- [ExLlamaV3 / EXL3](exllamav3.md)
 - [Ollama / LM Studio / ExLlamaV2 / MLX](ollama-and-friends.md)
 - [ExecuTorch](executorch.md)
 - [DALI](dali-moe.md)

@@ -47,6 +47,7 @@ The MoE win for [Qwen3-Coder-Next](../models/qwen3-coder-next.md) appears to com
 ## See Also
 
 - [Qwen3-Coder-Next](../models/qwen3-coder-next.md)
+- [Mellum2](../models/mellum2.md) (12B/2.5B-active code MoE)
 - [Dense vs MoE reasoning tradeoffs](../benchmarks/dense-vs-moe-reasoning-tradeoffs.md)
 - [DALI](../runtimes/dali-moe.md)
 - [KTransformers](../runtimes/ktransformers.md)

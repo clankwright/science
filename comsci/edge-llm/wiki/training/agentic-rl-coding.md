@@ -63,5 +63,7 @@ Cost estimate (Path 1 in [contribution-roadmap.md](../analysis/contribution-road
 - [Contribution Roadmap](../analysis/contribution-roadmap.md)
 - [Agentic SFT Recipe](../analysis/agentic-sft-recipe.md)
 - [SLM Agentic Tool Calling](slm-agentic-tool-calling.md)
+- [SWE-HERO](swe-hero.md)
+- [SWE-TRACE](swe-trace.md)
 - [SWE-rebench / Multi-SWE-bench](../benchmarks/swe-rebench-multi-swe.md)
 - [FastTTS](../techniques/fasttts.md)

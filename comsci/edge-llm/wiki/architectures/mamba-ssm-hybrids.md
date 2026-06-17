@@ -47,6 +47,7 @@ Mamba-3's claim is achieving Mamba-2 perplexity at half the recurrent state size
 ## See Also
 
 - [LFM2](../models/lfm2.md)
+- [Nemotron-3-Nano-4B](../models/nemotron-3-nano.md) (hybrid Mamba-2 + Transformer, 4 GB-class)
 - [DASH-KV](../techniques/dash-kv.md) (compute-side; complements SSM-style state compression)
 - [StructKV](../techniques/structkv.md)
 - [MoE active-param efficiency](moe-active-param.md)

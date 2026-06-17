@@ -1,6 +1,6 @@
 # Edge-LLM Knowledge Base
 
-> SOTA in small/edge LLMs, scoped to running an agentic coding harness on 4 GB VRAM. Last updated: 2026-05-03. 60 articles compiled from 43 source extracts (cutting-edge 2026 work weighted; foundational reference where needed).
+> SOTA in small/edge LLMs, scoped to running an agentic coding harness on 4 GB VRAM. Last updated: 2026-06-17. 67 articles compiled from 50 source extracts (cutting-edge 2026 work weighted; foundational reference where needed).
 
 ## Goal
 
@@ -13,6 +13,8 @@ Compile what's needed to make an informed choice about (model × quant × runtim
 - [Phi-4-Mini](models/phi-4-mini.md): Microsoft, March 2025. 3.8B; Mixture-of-LoRAs multimodal. Reasoning variant rivals DeepSeek-R1-Distill-Qwen-7B and -Llama-8B.
 - [DeepSeek-R1 and Distill family](models/deepseek-r1.md): Pure-RL reasoning training (Nature 2025). Distill-Qwen-1.5B / 7B and Distill-Llama-8B are the edge-relevant variants.
 - [LFM2](models/lfm2.md): Liquid AI, November 2025. 350M-8.3B family, hybrid (gated short conv + GQA), HW-in-the-loop NAS. 2x faster prefill/decode on CPU.
+- [Nemotron-3-Nano-4B](models/nemotron-3-nano.md): NVIDIA, March 2026. 3.97B hybrid Mamba-2 + Transformer; LiveCodeBench 51.8, BFCL v3 61.1; Q4_K_M 2.9 GB. Ready-to-run 4 GB default with strong tool-calling.
+- [Mellum2](models/mellum2.md): JetBrains, June 2026 (Apache-2.0). 12B-total / 2.5B-active code MoE; BFCL v3 66.3, LiveCodeBench v6 69.9 (Thinking). First open code MoE tuned for commodity-GPU inference.
 
 ## Architectures
 
@@ -36,6 +38,7 @@ Compile what's needed to make an informed choice about (model × quant × runtim
 - [SLMQuant](techniques/slmquant.md): Benchmarking SLM quantization (Nov 2025). LLM quant techniques don't transfer cleanly to small models.
 - [FastTTS](techniques/fasttts.md): Memory-constrained test-time scaling for edge (ASPLOS 2026). 2.2x goodput, 38-68% latency reduction vs vLLM. **Direct hit on the 4 GB target.**
 - [EAGLE-3](techniques/eagle-3.md): Speculative decoding via training-time test (NeurIPS 2025). 6.5x over standard, 1.4x over EAGLE-2.
+- [HARP](techniques/harp.md): Learnable Hadamard-preconditioned rotations for extreme quant (May 2026). Rescues 2-bit (Llama 2 7B 2-bit PPL 7.23 vs RHT 8.22), making a 7B 4 GB-viable.
 
 ### Foundational references
 
@@ -52,6 +55,7 @@ Compile what's needed to make an informed choice about (model × quant × runtim
 - [DALI](runtimes/dali-moe.md): Workload-aware MoE offloading for local PCs (Feb 2026). 0-1 integer optimization for expert-to-device assignment.
 - [FlashMoE](runtimes/flashmoe.md): SSD-based MoE caching with ML cache replacement (Jan 2026). +51% hit rate vs LRU/LFU.
 - [ExecuTorch](runtimes/executorch.md): PyTorch's edge runtime, GA October 2025. Wins on mobile and Snapdragon NPU; loses to llama.cpp on laptop NVIDIA dGPU.
+- [ExLlamaV3 / EXL3](runtimes/exllamav3.md): turboderp, through June 2026. Arbitrary bits-per-weight QTIP-variant quant (1.6 bpw 70B coherent) + 2-8 bit KV quant + consumer tensor/expert parallel. Strongest at the extreme-low-VRAM end.
 - [Ollama / LM Studio / ExLlamaV2 / MLX](runtimes/ollama-and-friends.md): Next-tier runtimes for specific niches.
 
 ## Training
@@ -59,6 +63,8 @@ Compile what's needed to make an informed choice about (model × quant × runtim
 - [Mixture-of-Layers (MoL) CoT distillation](training/mol-distillation.md): Stepwise-attention transfer for reasoning (EMNLP 2025).
 - [Small models for agentic tool calling (350M)](training/slm-agentic-tool-calling.md): Jhandi et al., AAAI 2026. **One-epoch SFT on a 350M base hits 77.55% ToolBench, beating ToolLLaMA's 30%.** Direct evidence that targeted SFT at extreme small scale closes the gap.
 - [Agentic RL for coding (2025-2026)](training/agentic-rl-coding.md): DeepSWE + Self-Play SWE-RL + SWE-RM + SWE-TRACE. The composed solo-dev recipe for RL-tuning a 3B-7B coder.
+- [SWE-HERO](training/swe-hero.md): NVIDIA-affiliated, April 2026. Distills a 480B teacher into Qwen2.5-Coder 7B/14B/32B; 32B hits 62.2% SWE-bench Verified, 7B 52.7%. Open 300k+13k trajectories.
+- [SWE-TRACE](training/swe-trace.md): April 2026. Rubric PRM + heuristic test-time scaling; Qwen3-4B to 40.7%, 30B-A3B to 71.2% SWE-bench Verified; cascaded SFT cuts tokens ~21%.
 - [xLAM-2](training/xlam-2.md): Salesforce, 2025. Open-weight LAMs 1B-70B with APIGen-MT data pipeline. xLAM-2-70b-fc-r approaches Claude 3.5 Sonnet on τ-bench.
 - [ToolACE](training/toolace.md): Liu et al., ICLR 2025. Self-evolution data pipeline; 26,507-API pool. 8B model trained on ToolACE data hits BFCL SOTA.
 
@@ -67,6 +73,7 @@ Compile what's needed to make an informed choice about (model × quant × runtim
 - [Claude Code](harnesses/claude-code.md): The wiki's *target* harness; the goal is to come as close as possible on 4 GB.
 - [aider](harnesses/aider.md): Open-source CLI, multi-provider, ships own benchmark with edit-conformance metrics.
 - [Cline / Continue / Goose](harnesses/cline-continue-goose.md): Open-source IDE/CLI agentic harnesses. BYOM. Cline + local Qwen3-Coder/Phi-4-mini fine-tuned for Cline's format = most direct local Claude Code analog.
+- [OpenHands (local-model support)](harnesses/openhands.md): May 2026 update adds saved local-LLM profiles, /model switching, sub-agent delegation, and a prompt-serialization tool-call fallback that props up small models lacking native function calling.
 
 ## Benchmarks
 
