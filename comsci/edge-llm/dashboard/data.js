@@ -101,6 +101,10 @@ window.DASH_SEED = {
   ],
   // LiveCodeBench v6 (%). Small/edge models only.
   lcb: [
+    { name: "Qwen3-235B-A22B",       group: "openLarge", date: "2025-04-28", score: 74.1 },
+    { name: "DeepSeek V3.2 Speciale", group: "openLarge", date: "2025-09-29", score: 89.6 },
+    { name: "Gemini 3 Pro Preview",  group: "google",    date: "2025-11-18", score: 91.7 },
+    { name: "Gemini 3 Flash Preview", group: "google",   date: "2025-12-17", score: 90.8 },
     { name: "Nemotron-3-Nano-4B",    group: "openSmall", date: "2026-03-15", score: 51.8 },
     { name: "Gemma 4 E4B",           group: "openSmall", date: "2026-04-02", score: 52.0 },
     { name: "Gemma 4 26B-A4B",       group: "openSmall", date: "2026-04-02", score: 77.1 },
@@ -209,5 +213,20 @@ window.DASH_DATES = [
   ["bitagent", "2025-10-15", true],
   ["hammer", "2024-10-15", true],
   ["mistral medium 3.5", "2026-04-15", true],
-  ["mistral-large-2411", "2024-11-18", false]
+  ["mistral-large-2411", "2024-11-18", false],
+  ["llama-3.1-nemotron-ultra", "2025-04-08", false],
+  ["llama-3.1", "2024-07-23", false],
+  ["llama-3.2", "2024-09-25", false],
+  ["phi-4", "2024-12-12", false],
+  ["granite-4", "2025-10-01", true],
+  ["granite-3.1|granite-20b", "2024-12-18", false],
+  ["granite-3.2", "2025-02-26", false],
+  ["falcon3", "2024-12-17", false],
+  ["minicpm3", "2024-09-05", true],
+  ["command r7b|command-r7b", "2024-12-13", false],
+  ["amazon-nova-2", "2025-12-03", true],
+  ["amazon-nova", "2024-12-03", false],
+  ["coalm", "2025-02-15", true],
+  ["palmyra-x-004", "2024-09-15", true],
+  ["bielik-11b", "2024-08-15", true]
 ];

@@ -269,8 +269,14 @@ function chart(el, pts, opts) {
     const gp = pts.filter(p => p.group === gr).sort((a, b) => dnum(a.date) - dnum(b.date));
     const rb = robust(gp);
     classFits[gr] = rb;
-    if (rb.keep.length > 1) {
-      const d = rb.keep.map((p, i) => `${i ? "L" : "M"} ${X(dnum(p.date))} ${Y(p.score)}`).join(" ");
+    // same-day multi-size releases stack vertically; connect only each day's best
+    const daily = [...rb.keep.reduce((mp, p) => {
+      const k = p.date;
+      if (!mp.has(k) || p.score > mp.get(k).score) mp.set(k, p);
+      return mp;
+    }, new Map()).values()].sort((a, b) => dnum(a.date) - dnum(b.date));
+    if (daily.length > 1) {
+      const d = daily.map((p, i) => `${i ? "L" : "M"} ${X(dnum(p.date))} ${Y(p.score)}`).join(" ");
       g += `<path class="fr" data-g="${gr}" d="${d}" fill="none" stroke="${col(gr)}" stroke-width="1.5" stroke-linejoin="round" opacity="0.5"/>`;
       g += `<path class="frhit" data-g="${gr}" d="${d}" fill="none" stroke="transparent" stroke-width="11" pointer-events="stroke"/>`;
     }
@@ -450,7 +456,7 @@ function rankList(el, rows, highlight, maxH) {
               extra: r.mt != null ? `multi-turn: ${r.mt}` : ""});
   }
   if (pts.length) chart(document.getElementById("c-bfcl"), pts,
-    {h: 330, w: 560, ticks: 4, ymin: 20, ymax: 90, labels: false, future: 120});
+    {h: 330, w: 640, ticks: 4, ymin: 20, ymax: 90, labels: true, future: 120});
   document.getElementById("bfcl-note").textContent =
     `${pts.length} models dated and plotted; ${undated.length} live entries lack a known release date. ` +
     `Wiki edge checkpoints on BFCL v3 (not comparable): Nemotron-3-Nano-4B 61.1, LFM2.5-8B-A1B 64.8, Mellum2 66.3.`;
@@ -469,7 +475,7 @@ function rankList(el, rows, highlight, maxH) {
   }
   for (const p of S.lcb) if (!seen.has(norm(p.name))) pts.push({...p});
   chart(document.getElementById("c-lcb"), pts,
-    {h: 330, w: 560, ticks: 4, ymin: 20, ymax: 100, labels: false, future: 120});
+    {h: 330, w: 640, ticks: 4, ymin: 30, ymax: 100, labels: true, future: 120});
   document.getElementById("lcb-note").textContent =
     "Version caveat: live scores are the current LCB window; wiki edge checkpoints are v6 vendor-reported. Treat small deltas as noise.";
 }
