@@ -1,16 +1,16 @@
 window.DASH_LIVE = {
- "fetched": "2026-07-07 01:52 UTC",
+ "fetched": "2026-07-07 07:45 UTC",
  "sources": {
   "benchlm": {
    "ok": true,
    "n": 57,
-   "secs": 0.1,
+   "secs": 0.3,
    "url": "https://benchlm.ai/benchmarks/sweVerified"
   },
   "lcb": {
    "ok": true,
    "n": 20,
-   "secs": 0.1,
+   "secs": 0.3,
    "url": "https://benchlm.ai/benchmarks/liveCodeBench"
   },
   "bfclv4": {
@@ -22,7 +22,7 @@ window.DASH_LIVE = {
   "bfcl": {
    "ok": true,
    "n": 109,
-   "secs": 0.1,
+   "secs": 0.2,
    "url": "https://gorilla.cs.berkeley.edu/leaderboard.html"
   },
   "rebench": {

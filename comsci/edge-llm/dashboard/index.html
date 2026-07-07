@@ -77,7 +77,7 @@
 
   <div class="card">
     <h2>SWE-bench Verified over time</h2>
-    <p class="sub">Agentic issue resolution (%). Thin lines connect releases within one model family (Claude, Qwen, Gemma, ...); dashed lines are per-family linear trends (families with 3+ points), extended past today. Color = class. Hollow points: approximate release date. Hover the list to locate a model.</p>
+    <p class="sub">Agentic issue resolution (%). Thin lines connect each class's releases (extreme outliers omitted); dashed trendlines: one per closed lab plus one shared for all open-source models, robust-fit (MAD-filtered) and extended past today. Hollow points: approximate release date. Hover the list to locate a model.</p>
     <div class="cwrap"><div id="c-swe"></div><aside class="rank" id="r-swe"></aside></div>
     <p class="note" id="swe-note"></p>
   </div>
@@ -239,42 +239,67 @@ function chart(el, pts, opts) {
 
   pts.forEach(p => { if (!p.fam) p.fam = famOf(p.name); });
   const groups = [...new Set(pts.map(p => p.group))];
-  const fams = [...new Set(pts.map(p => p.fam))];
   const labelYs = [];
-  for (const fam of fams) {
-    const gp = pts.filter(p => p.fam === fam).sort((a, b) => dnum(a.date) - dnum(b.date));
-    const gr = gp[gp.length - 1].group;
-    // polyline through the family's releases, in date order
-    if (gp.length > 1) {
-      const d = gp.map((p, i) => `${i ? "L" : "M"} ${X(dnum(p.date))} ${Y(p.score)}`).join(" ");
-      g += `<path class="fr" data-f="${fam}" data-g="${gr}" d="${d}" fill="none" stroke="${col(gr)}" stroke-width="1.5" stroke-linejoin="round" opacity="0.5"/>`;
-      g += `<path class="frhit" data-f="${fam}" d="${d}" fill="none" stroke="transparent" stroke-width="11" pointer-events="stroke"/>`;
+  const isOpen = gr => gr === "openLarge" || gr === "openSmall";
+  function lsq(gp) {
+    const fx = gp.map(p => dnum(p.date) / DAY), fy = gp.map(p => p.score), n = fx.length;
+    const mx = fx.reduce((s, v) => s + v) / n, my = fy.reduce((s, v) => s + v) / n;
+    let num = 0, den = 0;
+    for (let i = 0; i < n; i++) { num += (fx[i] - mx) * (fy[i] - my); den += (fx[i] - mx) ** 2; }
+    const b = den ? num / den : 0;
+    return [my - b * mx, b];
+  }
+  // robust fit: MAD-filter residual outliers (kept points drive lines and trends)
+  function robust(gp) {
+    if (gp.length < 5) return {keep: gp, a: null, b: null};
+    let [a, b] = lsq(gp);
+    const res = gp.map(p => p.score - (a + b * dnum(p.date) / DAY));
+    const sorted = [...res].sort((x, y) => x - y), med = sorted[Math.floor(sorted.length / 2)];
+    const mad = [...res.map(r => Math.abs(r - med))].sort((x, y) => x - y)[Math.floor(res.length / 2)];
+    const sigma = 1.4826 * mad || 1;
+    const keep = gp.filter((p, i) => Math.abs(res[i] - med) <= 2.5 * sigma);
+    if (keep.length >= 3) [a, b] = lsq(keep);
+    gp.forEach((p, i) => { if (Math.abs(res[i] - med) > 2.5 * sigma) p.out = true; });
+    return {keep, a, b};
+  }
+  // per-class polylines through non-outlier points
+  const classFits = {};
+  for (const gr of groups) {
+    const gp = pts.filter(p => p.group === gr).sort((a, b) => dnum(a.date) - dnum(b.date));
+    const rb = robust(gp);
+    classFits[gr] = rb;
+    if (rb.keep.length > 1) {
+      const d = rb.keep.map((p, i) => `${i ? "L" : "M"} ${X(dnum(p.date))} ${Y(p.score)}`).join(" ");
+      g += `<path class="fr" data-g="${gr}" d="${d}" fill="none" stroke="${col(gr)}" stroke-width="1.5" stroke-linejoin="round" opacity="0.5"/>`;
+      g += `<path class="frhit" data-g="${gr}" d="${d}" fill="none" stroke="transparent" stroke-width="11" pointer-events="stroke"/>`;
     }
-    // least-squares trendline over the family's points (needs >=3), to future edge
-    const n = gp.length;
-    if (n >= 3) {
-      const fx = gp.map(p => dnum(p.date) / DAY), fy = gp.map(p => p.score);
-      const mx = fx.reduce((s, v) => s + v) / n, my = fy.reduce((s, v) => s + v) / n;
-      let num = 0, den = 0;
-      for (let i = 0; i < n; i++) { num += (fx[i] - mx) * (fy[i] - my); den += (fx[i] - mx) ** 2; }
-      const b = den ? num / den : 0, a = my - b * mx;
-      const t0 = dnum(gp[0].date);
-      const y0 = clampY(a + b * (t0 / DAY)), yEnd = clampY(a + b * (x1 / DAY));
-      g += `<path class="fr ex" data-f="${fam}" data-g="${gr}" d="M ${X(t0)} ${Y(y0)} L ${X(x1)} ${Y(yEnd)}" fill="none" stroke="${col(gr)}" stroke-width="2" stroke-dasharray="7 5" opacity="0.7"/>`;
-      g += `<path class="frhit" data-f="${fam}" d="M ${X(t0)} ${Y(y0)} L ${X(x1)} ${Y(yEnd)}" fill="none" stroke="transparent" stroke-width="11" pointer-events="stroke"/>`;
-      if (o.labels) {
-        let ly = Y(yEnd) + 4;
-        while (labelYs.some(y => Math.abs(y - ly) < 13)) ly += 13;
-        labelYs.push(ly);
-        g += `<text class="dlabel" data-f="${fam}" x="${W - m.r + 6}" y="${ly}" fill="${col(gr)}">${fam} ${gp[n - 1].score}</text>`;
-      }
+  }
+  // trendlines: one per closed lab, one shared for all open-source points
+  const trendSets = groups.filter(gr => !isOpen(gr)).map(gr =>
+    ({key: gr, gr, label: GROUPS[gr].short || GROUPS[gr].label, tp: pts.filter(p => p.group === gr)}));
+  const openPts = pts.filter(p => isOpen(p.group));
+  if (openPts.length) trendSets.push({key: "open", gr: "openLarge", label: "Open", tp: openPts});
+  for (const ts of trendSets) {
+    const gp = ts.tp.filter(p => !p.out).sort((a, b) => dnum(a.date) - dnum(b.date));
+    if (gp.length < 3) continue;
+    const [a, b] = lsq(gp);
+    const t0 = dnum(gp[0].date);
+    const y0 = clampY(a + b * (t0 / DAY)), yEnd = clampY(a + b * (x1 / DAY));
+    g += `<path class="fr ex" data-g="${ts.key}" d="M ${X(t0)} ${Y(y0)} L ${X(x1)} ${Y(yEnd)}" fill="none" stroke="${col(ts.gr)}" stroke-width="2" stroke-dasharray="7 5" opacity="0.7"/>`;
+    g += `<path class="frhit" data-g="${ts.key}" d="M ${X(t0)} ${Y(y0)} L ${X(x1)} ${Y(yEnd)}" fill="none" stroke="transparent" stroke-width="11" pointer-events="stroke"/>`;
+    if (o.labels) {
+      let ly = Y(yEnd) + 4;
+      while (labelYs.some(y => Math.abs(y - ly) < 13)) ly += 13;
+      labelYs.push(ly);
+      g += `<text class="dlabel" x="${W - m.r + 6}" y="${ly}" fill="${col(ts.gr)}">${ts.label} ${gp[gp.length - 1].score}</text>`;
     }
   }
   pts.forEach((p, i) => {
     const cx = X(dnum(p.date)), cy = Y(p.score);
+    const mop = p.out ? 0.45 : 0.9;
     g += p.approx
-      ? `<circle class="pt" data-p="${i}" data-g="${p.group}" data-f="${p.fam}" cx="${cx}" cy="${cy}" r="4" fill="var(--surface)" stroke="${col(p.group)}" stroke-width="2" opacity="0.9"/>`
-      : `<circle class="pt" data-p="${i}" data-g="${p.group}" data-f="${p.fam}" cx="${cx}" cy="${cy}" r="4.2" fill="${col(p.group)}" stroke="var(--surface)" stroke-width="1.5" opacity="0.9"/>`;
+      ? `<circle class="pt" data-p="${i}" data-g="${p.group}" data-f="${p.fam}" cx="${cx}" cy="${cy}" r="4" fill="var(--surface)" stroke="${col(p.group)}" stroke-width="2" opacity="${mop}"/>`
+      : `<circle class="pt" data-p="${i}" data-g="${p.group}" data-f="${p.fam}" cx="${cx}" cy="${cy}" r="4.2" fill="${col(p.group)}" stroke="var(--surface)" stroke-width="1.5" opacity="${mop}"/>`;
     g += `<circle cx="${cx}" cy="${cy}" r="12" fill="transparent" data-i="${i}"/>`;
   });
   g += `</svg>`;
@@ -288,14 +313,16 @@ function chart(el, pts, opts) {
   el.innerHTML = lg + g + tb;
   const marks = [...el.querySelectorAll("circle.pt")];
   const lines = [...el.querySelectorAll("path.fr")];
-  function setState(key, pi, byGroup) {
+  const isOpenKey = g2 => g2 === "openLarge" || g2 === "openSmall";
+  function setState(key, pi) {
     if (key == null) {
       marks.forEach(c => { c.style.opacity = ""; c.setAttribute("r", c.dataset.r0 || c.getAttribute("r"));
                            c.style.stroke = ""; c.style.strokeWidth = ""; });
       lines.forEach(l => l.style.opacity = "");
       return;
     }
-    const hit = el2 => byGroup ? el2.dataset.g === key : el2.dataset.f === key;
+    const hit = el2 => key === "open" ? (isOpenKey(el2.dataset.g) || el2.dataset.g === "open")
+                                       : el2.dataset.g === key;
     marks.forEach(c => {
       if (!c.dataset.r0) c.dataset.r0 = c.getAttribute("r");
       const same = hit(c), sel = pi != null && +c.dataset.p === pi;
@@ -307,19 +334,19 @@ function chart(el, pts, opts) {
     lines.forEach(l => { if (hit(l)) l.style.opacity = "1"; });
   }
   el.querySelectorAll("path.frhit").forEach(h => {
-    h.addEventListener("mouseenter", () => setState(h.dataset.f, null));
+    h.addEventListener("mouseenter", () => setState(h.dataset.g, null));
     h.addEventListener("mouseleave", () => setState(null, null));
   });
   el.querySelectorAll(".legend span[data-g]").forEach(s => {
-    s.addEventListener("mouseenter", () => setState(s.dataset.g, null, true));
+    s.addEventListener("mouseenter", () => setState(s.dataset.g, null));
     s.addEventListener("mouseleave", () => setState(null, null));
   });
   el.querySelectorAll("circle[data-i]").forEach(c => {
     const p = pts[+c.dataset.i];
-    c.addEventListener("mouseenter", () => setState(p.fam, +c.dataset.i));
+    c.addEventListener("mouseenter", () => setState(p.group, +c.dataset.i));
     c.addEventListener("mousemove", e => {
       tip.style.display = "block";
-      tip.innerHTML = `<b>${p.name}</b><span class="v">${p.score}${o.unit || "%"}</span> &middot; ${p.date}${p.approx ? " (approx.)" : ""} &middot; ${p.fam} &middot; ${GROUPS[p.group].label}${p.live ? " &middot; live score" : ""}${p.extra ? "<br>" + p.extra : ""}`;
+      tip.innerHTML = `<b>${p.name}</b><span class="v">${p.score}${o.unit || "%"}</span> &middot; ${p.date}${p.approx ? " (approx.)" : ""} &middot; ${p.fam} &middot; ${GROUPS[p.group].label}${p.live ? " &middot; live score" : ""}${p.out ? " &middot; outlier (excluded from lines/trend)" : ""}${p.extra ? "<br>" + p.extra : ""}`;
       const w = tip.offsetWidth;
       tip.style.left = Math.min(e.clientX + 14, innerWidth - w - 8) + "px";
       tip.style.top = (e.clientY - 14) + "px";
@@ -328,7 +355,7 @@ function chart(el, pts, opts) {
   });
   return function highlight(i) {
     if (i == null) setState(null, null);
-    else setState(pts[i].fam, i);
+    else setState(pts[i].group, i);
   };
 }
 
