@@ -38,6 +38,8 @@ window.DASH_SEED = {
     { name: "GPT-5.1-Codex-Max",     group: "openai",    date: "2025-11-19", score: 77.9 },
     { name: "GPT-5.2",               group: "openai",    date: "2025-12-11", score: 80.0 },
     { name: "GPT-5.3 Codex",         group: "openai",    date: "2026-02-15", score: 85.0, approx: true },
+    { name: "GPT-5.4",               group: "openai",    date: "2026-03-05", score: 77.2 },
+    { name: "GPT-5.5",               group: "openai",    date: "2026-04-23", score: 88.7 },
     { name: "Gemini 2.5 Pro",        group: "google",    date: "2025-03-25", score: 63.8 },
     { name: "Gemini 3 Pro",          group: "google",    date: "2025-11-18", score: 76.2 },
     { name: "Grok Code Fast 1",      group: "xai",       date: "2025-08-26", score: 70.8 },
