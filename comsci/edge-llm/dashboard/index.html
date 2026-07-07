@@ -77,7 +77,7 @@
 
   <div class="card">
     <h2>SWE-bench Verified over time</h2>
-    <p class="sub">Agentic issue resolution (%). Thin lines connect each class's releases (extreme outliers omitted); dashed trendlines: one per closed lab plus one shared for all open-source models, robust-fit (MAD-filtered) and extended past today. Hollow points: approximate release date. Hover the list to locate a model.</p>
+    <p class="sub">Agentic issue resolution (%). Thin lines connect each class's releases (extreme outliers omitted); dashed trendlines: one per closed lab and one per open size class, fit to each series' running-best frontier (outliers excluded) and extended past today. Hollow points: approximate release date. Hover the list to locate a model.</p>
     <div class="cwrap"><div id="c-swe"></div><aside class="rank" id="r-swe"></aside></div>
     <p class="note" id="swe-note"></p>
   </div>
@@ -275,15 +275,17 @@ function chart(el, pts, opts) {
     }
   }
   // trendlines: one per closed lab, one shared for all open-source points
-  const trendSets = groups.filter(gr => !isOpen(gr)).map(gr =>
+  const trendSets = groups.map(gr =>
     ({key: gr, gr, label: GROUPS[gr].short || GROUPS[gr].label, tp: pts.filter(p => p.group === gr)}));
-  const openPts = pts.filter(p => isOpen(p.group));
-  if (openPts.length) trendSets.push({key: "open", gr: "openLarge", label: "Open", tp: openPts});
   for (const ts of trendSets) {
     const gp = ts.tp.filter(p => !p.out).sort((a, b) => dnum(a.date) - dnum(b.date));
     if (gp.length < 3) continue;
-    const [a, b] = lsq(gp);
-    const t0 = dnum(gp[0].date);
+    // fit the trend to the running-best frontier, not the middle of the scatter
+    let best = -Infinity; const fr = [];
+    for (const p of gp) if (p.score > best) { best = p.score; fr.push(p); }
+    const fit = fr.length >= 3 ? fr : gp;
+    const [a, b] = lsq(fit);
+    const t0 = dnum(fit[0].date);
     const y0 = clampY(a + b * (t0 / DAY)), yEnd = clampY(a + b * (x1 / DAY));
     g += `<path class="fr ex" data-g="${ts.key}" d="M ${X(t0)} ${Y(y0)} L ${X(x1)} ${Y(yEnd)}" fill="none" stroke="${col(ts.gr)}" stroke-width="2" stroke-dasharray="7 5" opacity="0.7"/>`;
     g += `<path class="frhit" data-g="${ts.key}" d="M ${X(t0)} ${Y(y0)} L ${X(x1)} ${Y(yEnd)}" fill="none" stroke="transparent" stroke-width="11" pointer-events="stroke"/>`;
@@ -291,7 +293,7 @@ function chart(el, pts, opts) {
       let ly = Y(yEnd) + 4;
       while (labelYs.some(y => Math.abs(y - ly) < 13)) ly += 13;
       labelYs.push(ly);
-      g += `<text class="dlabel" x="${W - m.r + 6}" y="${ly}" fill="${col(ts.gr)}">${ts.label} ${gp[gp.length - 1].score}</text>`;
+      g += `<text class="dlabel" x="${W - m.r + 6}" y="${ly}" fill="${col(ts.gr)}">${ts.label} ${fr[fr.length - 1].score}</text>`;
     }
   }
   pts.forEach((p, i) => {
