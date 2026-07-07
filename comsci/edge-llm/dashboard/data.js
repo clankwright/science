@@ -11,8 +11,8 @@ window.DASH_SEED = {
     openai:     { label: "OpenAI",              closed: true },
     google:     { label: "Google",              closed: true },
     xai:        { label: "xAI",                 closed: true },
-    openLarge:  { label: "Open (>35B)",         closed: false },
-    openSmall:  { label: "Open (≤35B, laptop-class)", closed: false }
+    openLarge:  { label: "Open (>35B)",         short: "Open >35B", closed: false },
+    openSmall:  { label: "Open (≤35B, laptop-class)", short: "Open ≤35B", closed: false }
   },
   // SWE-bench Verified (%).
   swe: [
