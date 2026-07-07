@@ -1,16 +1,16 @@
 window.DASH_LIVE = {
- "fetched": "2026-07-07 00:10 UTC",
+ "fetched": "2026-07-07 00:59 UTC",
  "sources": {
   "benchlm": {
    "ok": true,
    "n": 57,
-   "secs": 0.1,
+   "secs": 0.3,
    "url": "https://benchlm.ai/benchmarks/sweVerified"
   },
   "bfcl": {
    "ok": true,
    "n": 109,
-   "secs": 0.1,
+   "secs": 0.3,
    "url": "https://gorilla.cs.berkeley.edu/leaderboard.html"
   },
   "rebench": {
