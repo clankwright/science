@@ -251,15 +251,16 @@ function chart(el, pts, opts) {
   }
   // robust fit: MAD-filter residual outliers (kept points drive lines and trends)
   function robust(gp) {
-    if (gp.length < 5) return {keep: gp, a: null, b: null};
+    if (gp.length < 8) return {keep: gp, a: null, b: null};
     let [a, b] = lsq(gp);
     const res = gp.map(p => p.score - (a + b * dnum(p.date) / DAY));
     const sorted = [...res].sort((x, y) => x - y), med = sorted[Math.floor(sorted.length / 2)];
     const mad = [...res.map(r => Math.abs(r - med))].sort((x, y) => x - y)[Math.floor(res.length / 2)];
     const sigma = 1.4826 * mad || 1;
-    const keep = gp.filter((p, i) => Math.abs(res[i] - med) <= 2.5 * sigma);
+    const thr = Math.max(2.5 * sigma, 12);   // only truly extreme deviations count
+    const keep = gp.filter((p, i) => Math.abs(res[i] - med) <= thr);
     if (keep.length >= 3) [a, b] = lsq(keep);
-    gp.forEach((p, i) => { if (Math.abs(res[i] - med) > 2.5 * sigma) p.out = true; });
+    gp.forEach((p, i) => { if (Math.abs(res[i] - med) > thr) p.out = true; });
     return {keep, a, b};
   }
   // per-class polylines through non-outlier points
