@@ -4,7 +4,7 @@ A collection of scientific research projects using data science and machine lear
 
 ## Projects
 
-### [Gaia Light Curve Anomaly Detection](https://github.com/toadlyBroodle/science/tree/main/astronomy/Gaia-light-curve-anom-detect)
+### [Gaia Light Curve Anomaly Detection](https://github.com/clankwright/science/tree/main/astronomy/Gaia-light-curve-anom-detect)
 
 Machine learning-based discovery of overlooked variable stars in Gaia DR3.
 
@@ -14,11 +14,11 @@ Machine learning-based discovery of overlooked variable stars in Gaia DR3.
 - **Data:** Gaia DR3 `vari_summary`, TESS FFI photometry, ROSAT X-ray
 - **Status:** Draft research note ready for submission
 
-See the [research note](https://github.com/toadlyBroodle/science/blob/main/astronomy/Gaia-light-curve-anom-detect/research_note_tic22888126_revised.md) for details.
+See the [research note](https://github.com/clankwright/science/blob/main/astronomy/Gaia-light-curve-anom-detect/research_note_tic22888126_revised.md) for details.
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/toadlyBroodle/science/blob/main/astronomy/Gaia-light-curve-anom-detect/Gaia_LightCurve_Anomaly_Detection.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/clankwright/science/blob/main/astronomy/Gaia-light-curve-anom-detect/Gaia_LightCurve_Anomaly_Detection.ipynb)
 
-### [Longevity Research: Knowledge Tree](https://github.com/toadlyBroodle/science/tree/main/biology/longevity)
+### [Longevity Research: Knowledge Tree](https://github.com/clankwright/science/tree/main/biology/longevity)
 
 Markdown-source knowledge base of computational entry points into
 longevity and reverse-aging research. 40 curated sources, 32 topics,
