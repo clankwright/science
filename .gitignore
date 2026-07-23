@@ -58,3 +58,5 @@ moon-explore/
 **/sources/pdf/
 **/sources/md/
 **/sources/download_log.json
+
+.skill-runs/

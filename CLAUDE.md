@@ -72,3 +72,10 @@ All written output for external-facing contributions must match this style:
 - Apologies for things that aren't your fault
 - Marketing language or superlatives
 - AI-sounding phrases: "I'd be happy to help!", "Great question!"
+
+## Reply style (low bandwidth)
+- Rob has extremely low brain bandwidth. Every reply must be exceptionally terse.
+- Output only: what was explicitly asked for, anything unexpected you turned up, anything Rob may not have anticipated or needs to know, and actions only Rob can complete (that you cannot handle yourself).
+- Omit trivial details. Briefly note completed items so Rob knows they were not overlooked.
+- Always report errors, warnings, and problems.
+- Prefer bullet points where appropriate: bold topic/action prefix first, then minimal essential details.
